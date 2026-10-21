@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claude 101 Practice Quiz</title>
+    <meta
+      name="description"
+      content="Free practice quiz for the Claude 101 certification preparation course."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Study prep</p>
+          <h1 id="courseTitle">Loading quiz...</h1>
+        </div>
+        <div class="score-pill">
+          <span>Score</span>
+          <strong id="scoreDisplay">0</strong>
+        </div>
+      </header>
+
+      <section id="quizCard" class="quiz-card">
+        <div class="meta-row">
+          <span id="progressText">Question 1 of 1</span>
+          <span id="lessonText">Lesson </span>
+        </div>
+
+        <div id="questionBox" class="question-box">
+          <p>Loading questions...</p>
+        </div>
+
+        <div id="optionsBox" class="options-box" aria-live="polite"></div>
+
+        <div id="feedbackBox" class="feedback-box hidden"></div>
+
+        <div class="actions-row">
+          <button id="nextBtn" class="primary-btn hidden" type="button">
+            Next question
+          </button>
+          <button id="restartBtn" class="secondary-btn hidden" type="button">
+            Restart quiz
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

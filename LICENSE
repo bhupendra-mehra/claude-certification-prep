@@ -1,0 +1,232 @@
+:root {
+  --bg: #f3f6fb;
+  --panel: #ffffff;
+  --panel-alt: #eef4ff;
+  --ink: #14213d;
+  --muted: #5c6b82;
+  --primary: #2557d6;
+  --primary-dark: #1d43a8;
+  --success: #1e9d5a;
+  --success-soft: #dcfce7;
+  --danger: #d93025;
+  --danger-soft: #fde8e6;
+  --border: #dfe6f1;
+  --shadow: 0 14px 40px rgba(20, 33, 61, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+  color: var(--ink);
+}
+
+.page-shell {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
+}
+
+.topbar {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.8rem;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.score-pill {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: 999px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.score-pill span {
+  color: var(--muted);
+}
+
+.quiz-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.question-box {
+  font-size: clamp(1.05rem, 2vw, 1.5rem);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.options-box {
+  display: grid;
+  gap: 12px;
+}
+
+.option-button {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--border);
+  background: var(--panel-alt);
+  border-radius: 14px;
+  padding: 16px 18px;
+  font: inherit;
+  color: var(--ink);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.option-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  border-color: var(--primary);
+  box-shadow: 0 8px 18px rgba(37, 87, 214, 0.08);
+}
+
+.option-button:disabled {
+  cursor: default;
+}
+
+.option-button.correct {
+  background: var(--success-soft);
+  border-color: rgba(30, 157, 90, 0.35);
+}
+
+.option-button.wrong {
+  background: var(--danger-soft);
+  border-color: rgba(217, 48, 37, 0.28);
+}
+
+.option-letter {
+  min-width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid var(--border);
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.option-text {
+  flex: 1;
+  line-height: 1.5;
+}
+
+.feedback-box {
+  margin-top: 24px;
+  background: #f7f9fd;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 18px;
+  line-height: 1.6;
+}
+
+.feedback-title {
+  margin: 0 0 8px;
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+.correct-answer {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.actions-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.primary-btn,
+.secondary-btn {
+  appearance: none;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.primary-btn {
+  background: var(--primary);
+  color: white;
+}
+
+.primary-btn:hover {
+  background: var(--primary-dark);
+}
+
+.secondary-btn {
+  background: #eef1f8;
+  color: var(--ink);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-1px);
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 640px) {
+  .topbar,
+  .meta-row,
+  .actions-row {
+    display: block;
+  }
+
+  .score-pill {
+    margin-top: 12px;
+    width: fit-content;
+  }
+
+  .quiz-card {
+    padding: 20px 16px;
+  }
+}
