@@ -1,176 +1,214 @@
-const QUIZ_URL = "courses/claude-101/quizzes/lessons-01-05.json";
-
-const courseTitleEl = document.getElementById("courseTitle");
-const scoreDisplayEl = document.getElementById("scoreDisplay");
-const progressTextEl = document.getElementById("progressText");
-const lessonTextEl = document.getElementById("lessonText");
-const questionBoxEl = document.getElementById("questionBox");
-const optionsBoxEl = document.getElementById("optionsBox");
-const feedbackBoxEl = document.getElementById("feedbackBox");
-const nextBtn = document.getElementById("nextBtn");
-const restartBtn = document.getElementById("restartBtn");
-
-let quizData = null;
-let questions = [];
-let currentIndex = 0;
-let score = 0;
-let selectedAnswer = null;
-let answered = false;
-
-function normalizeOptionLabel(option) {
-  const match = option.match(/^\s*([A-D])\s*[\.):-]\s*/i);
-  if (match) return match[1].toUpperCase();
-  const firstChar = option.trim().charAt(0).toUpperCase();
-  return /[A-D]/.test(firstChar) ? firstChar : "";
+:root {
+  --bg: #f4f4f4;
+  --panel: #f7f7f7;
+  --ink: #0f1114;
+  --muted: #4f4f4f;
+  --line: #d8d8d8;
+  --primary: #1a1a1a;
+  --button-bg: #fafafa;
+  --button-border: #1a1a1a;
 }
 
-function stripOptionLabel(option) {
-  return option.replace(/^\s*[A-D]\s*[\.):-]\s*/i, "").trim();
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-function renderQuestion() {
-  const question = questions[currentIndex];
-  const total = questions.length;
+body {
+  min-height: 100vh;
+}
 
-  if (!question) {
-    renderResults();
-    return;
+.page-shell {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 0 32px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 18px 14px;
+  min-height: 72px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255,255,255,0.15);
+}
+
+.eyebrow {
+  display: none;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 2vw, 2.6rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.score-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: var(--muted);
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.35);
+}
+
+.score-pill span {
+  font-weight: 500;
+}
+
+.score-pill strong {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.quiz-card {
+  padding: 28px 0 0 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.meta-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.05rem;
+  color: var(--muted);
+  padding: 0 0 12px 0;
+  margin-left: 0;
+}
+
+.question-box {
+  margin: 0 0 16px 0;
+  font-size: clamp(2.5rem, 4vw, 6rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  font-weight: 500;
+  max-width: 1000px;
+  color: var(--ink);
+}
+
+.options-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.option-button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: auto;
+  min-width: 180px;
+  padding: 14px 16px;
+  border: 1px solid var(--button-border);
+  background: var(--button-bg);
+  color: var(--ink);
+  border-radius: 8px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: none;
+}
+
+.option-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  border: 1px solid var(--button-border);
+  background: #f2f2f2;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.option-text {
+  line-height: 1.35;
+}
+
+.feedback-box {
+  margin-top: 20px;
+  padding: 10px 0;
+  border: none;
+  background: transparent;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.feedback-title {
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.actions-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.primary-btn,
+.secondary-btn {
+  appearance: none;
+  border: 1px solid var(--button-border);
+  background: #f8f8f8;
+  color: var(--ink);
+  border-radius: 6px;
+  padding: 12px 18px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  background: #efefef;
+}
+
+.hidden { display: none !important; }
+
+@media (max-width: 768px) {
+  .page-shell {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
-  selectedAnswer = null;
-  answered = false;
-  nextBtn.classList.add("hidden");
-  feedbackBoxEl.classList.add("hidden");
-  feedbackBoxEl.innerHTML = "";
-  optionsBoxEl.innerHTML = "";
-
-  questionBoxEl.textContent = question.prompt;
-  progressTextEl.textContent = `Question ${currentIndex + 1} of ${total}`;
-  lessonTextEl.textContent = `Lesson ${question.lesson}`;
-  scoreDisplayEl.textContent = String(score);
-
-  question.options.forEach((option) => {
-    const optionLabel = normalizeOptionLabel(option) || "?";
-    const optionText = stripOptionLabel(option);
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "option-button";
-    button.innerHTML = `
-      <span class="option-letter">${optionLabel}</span>
-      <span class="option-text">${optionText}</span>
-    `;
-
-    button.addEventListener("click", () => evaluateAnswer(optionLabel, button));
-    optionsBoxEl.appendChild(button);
-  });
-}
-
-function evaluateAnswer(chosenAnswer, buttonEl) {
-  if (answered) return;
-
-  const question = questions[currentIndex];
-  selectedAnswer = chosenAnswer;
-  answered = true;
-
-  const buttons = [...optionsBoxEl.querySelectorAll(".option-button")];
-
-  buttons.forEach((button) => {
-    const label = button.querySelector(".option-letter")?.textContent ?? "";
-    button.disabled = true;
-
-    if (label === question.answer) {
-      button.classList.add("correct");
-    }
-
-    if (label === chosenAnswer && label !== question.answer) {
-      button.classList.add("wrong");
-    }
-  });
-
-  const isCorrect = chosenAnswer === question.answer;
-  if (isCorrect) {
-    score += 1;
+  .topbar {
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  scoreDisplayEl.textContent = String(score);
-
-  feedbackBoxEl.classList.remove("hidden");
-  feedbackBoxEl.innerHTML = `
-    <p class="feedback-title">${isCorrect ? "Correct ✅" : `Incorrect ❌`}</p>
-    <p>${question.explanation}</p>
-    <p class="correct-answer">
-      ${isCorrect ? "Great job." : `Correct answer: <strong>${question.answer}</strong>`}
-    </p>
-  `;
-
-  nextBtn.textContent = currentIndex === questions.length - 1 ? "Finish quiz" : "Next question";
-  nextBtn.classList.remove("hidden");
-}
-
-function renderResults() {
-  const total = questions.length;
-  const percentage = Math.round((score / total) * 100);
-
-  questionBoxEl.textContent = "Quiz complete!";
-  optionsBoxEl.innerHTML = "";
-  progressTextEl.textContent = `Final score: ${score}/${total}`;
-  lessonTextEl.textContent = `${percentage}% accuracy`;
-  feedbackBoxEl.classList.remove("hidden");
-  feedbackBoxEl.innerHTML = `
-    <p class="feedback-title">Results</p>
-    <p>You scored ${score} out of ${total}.</p>
-    <p>${percentage >= 80 ? "Excellent work — you are ready for more practice." : "Nice effort — review the explanations and try again for a stronger score."}</p>
-  `;
-  nextBtn.classList.add("hidden");
-  restartBtn.classList.remove("hidden");
-}
-
-function goToNextQuestion() {
-  if (currentIndex < questions.length - 1) {
-    currentIndex += 1;
-    renderQuestion();
-    return;
+  .question-box {
+    font-size: 2.5rem;
+    line-height: 1.05;
   }
 
-  renderResults();
-}
+  .meta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 
-async function loadQuiz() {
-  try {
-    const response = await fetch(QUIZ_URL);
-    if (!response.ok) {
-      throw new Error(`Failed to load quiz: ${response.status}`);
-    }
-
-    const data = await response.json();
-    quizData = data;
-    questions = data.questions || [];
-    courseTitleEl.textContent = `${data.course || "Claude"} - ${data.title || "Practice Quiz"}`;
-
-    if (!questions.length) {
-      questionBoxEl.textContent = "No questions found in this quiz file.";
-      return;
-    }
-
-    renderQuestion();
-  } catch (error) {
-    questionBoxEl.textContent = "Unable to load the quiz. Please check the repository or file path.";
-    console.error(error);
+  .actions-row {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
-
-nextBtn.addEventListener("click", () => {
-  if (answered || currentIndex >= questions.length) {
-    goToNextQuestion();
-  }
-});
-
-restartBtn.addEventListener("click", () => {
-  currentIndex = 0;
-  score = 0;
-  scoreDisplayEl.textContent = "0";
-  restartBtn.classList.add("hidden");
-  renderQuestion();
-});
-
-loadQuiz();
