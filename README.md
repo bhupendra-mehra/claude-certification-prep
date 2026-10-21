@@ -1,0 +1,32 @@
+# Claude Certification Prep
+
+Practice quizzes (MCQs) for the Claude certification exam, organized course by course.
+Quizzes are based on the lesson text from [Claude Academy](https://academy.claude.com).
+
+## Structure
+
+```
+courses/
+  claude-101/
+    README.md              # lesson checklist + score log
+    quizzes/
+      lessons-01-05.json   # source of truth
+      lessons-01-05.md     # generated, readable version with answer key
+  <next-course>/...
+templates/quiz-template.json
+scripts/render_quiz.py     # JSON -> Markdown
+```
+
+## Adding a new quiz
+
+1. Copy `templates/quiz-template.json` into `courses/<course>/quizzes/` and name it by lessons, e.g. `lessons-06-10.json`.
+2. Fill in the questions.
+3. Run `python scripts/render_quiz.py --all` to generate the `.md` files.
+4. Update the course `README.md` checklist and score log.
+5. Commit: `git add . && git commit -m "Add Claude 101 lessons 6-10 quiz"`.
+
+## Planned courses
+
+- Claude 101 (in progress)
+- Claude Code 101
+- Claude Platform 101
