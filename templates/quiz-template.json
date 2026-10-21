@@ -1,0 +1,11 @@
+{
+  "course": "Course name",
+  "course_url": "https://academy.claude.com/courses/...",
+  "title": "Lessons X to Y Practice Exam",
+  "lessons": ["X. Lesson title"],
+  "questions": [
+    {"id": 1, "lesson": 1, "prompt": "Question text?",
+     "options": ["Option A", "Option B", "Option C", "Option D"],
+     "answer": "A", "explanation": "Why the answer is correct."}
+  ]
+}
