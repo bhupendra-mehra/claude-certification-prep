@@ -10,6 +10,8 @@ const feedbackBoxEl = document.getElementById("feedbackBox");
 const nextBtn = document.getElementById("nextBtn");
 const restartBtn = document.getElementById("restartBtn");
 
+const OPTION_LABELS = ["A", "B", "C", "D"];
+
 let quizData = null;
 let questions = [];
 let currentIndex = 0;
@@ -17,15 +19,8 @@ let score = 0;
 let selectedAnswer = null;
 let answered = false;
 
-function normalizeOptionLabel(option) {
-  const match = option.match(/^\s*([A-D])\s*[\.):-]\s*/i);
-  if (match) return match[1].toUpperCase();
-  const firstChar = option.trim().charAt(0).toUpperCase();
-  return /[A-D]/.test(firstChar) ? firstChar : "";
-}
-
-function stripOptionLabel(option) {
-  return option.replace(/^\s*[A-D]\s*[\.):-]\s*/i, "").trim();
+function cleanOptionText(optionText) {
+  return String(optionText).replace(/^\s*[A-D]\s*[\.):-]\s*/i, "").trim();
 }
 
 function renderQuestion() {
@@ -49,9 +44,9 @@ function renderQuestion() {
   lessonTextEl.textContent = `Lesson ${question.lesson}`;
   scoreDisplayEl.textContent = String(score);
 
-  question.options.forEach((option) => {
-    const optionLabel = normalizeOptionLabel(option) || "?";
-    const optionText = stripOptionLabel(option);
+  question.options.forEach((option, index) => {
+    const optionLabel = OPTION_LABELS[index] || "?";
+    const optionText = cleanOptionText(option);
     const button = document.createElement("button");
     button.type = "button";
     button.className = "option-button";
@@ -60,12 +55,12 @@ function renderQuestion() {
       <span class="option-text">${optionText}</span>
     `;
 
-    button.addEventListener("click", () => evaluateAnswer(optionLabel, button));
+    button.addEventListener("click", () => evaluateAnswer(optionLabel));
     optionsBoxEl.appendChild(button);
   });
 }
 
-function evaluateAnswer(chosenAnswer, buttonEl) {
+function evaluateAnswer(chosenAnswer) {
   if (answered) return;
 
   const question = questions[currentIndex];
@@ -73,21 +68,22 @@ function evaluateAnswer(chosenAnswer, buttonEl) {
   answered = true;
 
   const buttons = [...optionsBoxEl.querySelectorAll(".option-button")];
+  const correctAnswer = String(question.answer || "").trim().toUpperCase();
 
   buttons.forEach((button) => {
-    const label = button.querySelector(".option-letter")?.textContent ?? "";
+    const label = button.querySelector(".option-letter")?.textContent?.trim() || "";
     button.disabled = true;
 
-    if (label === question.answer) {
+    if (label === correctAnswer) {
       button.classList.add("correct");
     }
 
-    if (label === chosenAnswer && label !== question.answer) {
+    if (label === chosenAnswer && label !== correctAnswer) {
       button.classList.add("wrong");
     }
   });
 
-  const isCorrect = chosenAnswer === question.answer;
+  const isCorrect = chosenAnswer === correctAnswer;
   if (isCorrect) {
     score += 1;
   }
@@ -99,7 +95,7 @@ function evaluateAnswer(chosenAnswer, buttonEl) {
     <p class="feedback-title">${isCorrect ? "Correct ✅" : "Incorrect ❌"}</p>
     <p>${question.explanation}</p>
     <p class="correct-answer">
-      ${isCorrect ? "Great job." : `Correct answer: <strong>${question.answer}</strong>`}
+      ${isCorrect ? "Great job." : `Correct answer: <strong>${correctAnswer}</strong>`}
     </p>
   `;
 
@@ -109,7 +105,7 @@ function evaluateAnswer(chosenAnswer, buttonEl) {
 
 function renderResults() {
   const total = questions.length;
-  const percentage = Math.round((score / total) * 100);
+  const percentage = total ? Math.round((score / total) * 100) : 0;
 
   questionBoxEl.textContent = "Quiz complete!";
   optionsBoxEl.innerHTML = "";
