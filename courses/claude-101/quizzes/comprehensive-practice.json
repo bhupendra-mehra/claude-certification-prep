@@ -24,13 +24,13 @@
       "lesson": 1,
       "prompt": "A manager wants to use Claude's polished answer in a board pack without checking it. What should the manager do?",
       "options": [
-        "Accept it if the answer is detailed and the wording is confident.",
-        "An approach using guiding principles to help shape safer, helpful model behavior",
-        "Ask another chat to repeat the claim and use the majority answer.",
-        "Use the answer unless the conversation itself contains an obvious contradiction."
+        "Treat it as correct because the board pack needs a decisive answer.",
+        "Verify material claims against authoritative sources and correct unsupported statements before sharing.",
+        "Ask a second chat to repeat the answer and trust it if both agree.",
+        "Keep it unless someone has already pointed out a contradiction."
       ],
       "answer": "B",
-      "explanation": "Treat fluency as presentation, verify material claims against authoritative sources, and correct unsupported statements before sharing.",
+      "explanation": "Verify material claims against authoritative sources and correct unsupported statements before sharing.",
       "scenario_based": true
     },
     {
@@ -38,13 +38,13 @@
       "lesson": 1,
       "prompt": "A colleague cites a study that you cannot locate after Claude named it. What is the safest next step?",
       "options": [
-        "Accept it if the answer is detailed and the wording is confident.",
-        "Ask another chat to repeat the claim and use the majority answer.",
-        "Use the answer unless the conversation itself contains an obvious contradiction.",
-        "The amount of input and conversation content a model can consider in a request"
+        "Assume the study exists because Claude supplied a plausible title.",
+        "Replace the citation with another paper without checking it.",
+        "Independently locate the study and verify it supports the claim; qualify or remove anything unverifiable.",
+        null
       ],
       "answer": "D",
-      "explanation": "Check the citation independently, remove or qualify claims that cannot be verified, and do not treat a plausible title as proof.",
+      "explanation": "Independently locate the study and verify that it supports the claim; qualify or remove anything unverifiable.",
       "scenario_based": true
     },
     {
@@ -52,13 +52,13 @@
       "lesson": 1,
       "prompt": "Your team needs a policy that may have changed this week. How should you obtain the answer?",
       "options": [
-        "Fluency does not guarantee factual accuracy",
-        "Accept it if the answer is detailed and the wording is confident.",
-        "Ask another chat to repeat the claim and use the majority answer.",
-        "Use the answer unless the conversation itself contains an obvious contradiction."
+        "Check a current authoritative policy source and verify its date and scope.",
+        "Use Claude's stored knowledge because it can infer recent policy changes.",
+        "Compare several unsourced answers and choose the most common one.",
+        "Use last year's policy unless search snippets show a change."
       ],
       "answer": "A",
-      "explanation": "Use an available current source, inspect the official policy and its date, and distinguish verified facts from uncertainty.",
+      "explanation": "Check a current authoritative policy source and verify its date and scope.",
       "scenario_based": true
     },
     {
@@ -66,10 +66,10 @@
       "lesson": 1,
       "prompt": "What is the safest assumption about a fluent answer from Claude?",
       "options": [
-        "Accept it if the answer is detailed and the wording is confident.",
-        "Ask another chat to repeat the claim and use the majority answer.",
+        "Assume fluent wording is enough unless someone identifies a contradiction.",
+        "Ask another chat to repeat the claim and trust the majority answer.",
         "It may still contain mistakes and needs verification when accuracy matters",
-        "Use the answer unless the conversation itself contains an obvious contradiction."
+        "Use a detailed answer as proof that the underlying claim was verified."
       ],
       "answer": "C",
       "explanation": "A confident tone is not evidence that a claim is true.",
@@ -80,10 +80,10 @@
       "lesson": 1,
       "prompt": "What is Constitutional AI intended to support?",
       "options": [
-        "Accept it if the answer is detailed and the wording is confident.",
+        "Assume fluent wording is enough unless someone identifies a contradiction.",
         "Guiding model behavior with principles intended to make it more helpful and safer",
-        "Ask another chat to repeat the claim and use the majority answer.",
-        "Use the answer unless the conversation itself contains an obvious contradiction."
+        "Ask another chat to repeat the claim and trust the majority answer.",
+        "Use a detailed answer as proof that the underlying claim was verified."
       ],
       "answer": "B",
       "explanation": "Constitutional AI uses principles to guide behavior toward safer, more helpful responses.",
@@ -94,9 +94,9 @@
       "lesson": 1,
       "prompt": "Why does Claude sometimes give an incorrect answer?",
       "options": [
-        "Accept it if the answer is detailed and the wording is confident.",
-        "Ask another chat to repeat the claim and use the majority answer.",
-        "Use the answer unless the conversation itself contains an obvious contradiction.",
+        "Assume fluent wording is enough unless someone identifies a contradiction.",
+        "Ask another chat to repeat the claim and trust the majority answer.",
+        "Use a detailed answer as proof that the underlying claim was verified.",
         "Generative models can produce plausible text without guaranteeing factual correctness"
       ],
       "answer": "D",
@@ -109,9 +109,9 @@
       "prompt": "What does a model's context window refer to?",
       "options": [
         "The amount of input and conversation content the model can consider in a request",
-        "Accept it if the answer is detailed and the wording is confident.",
-        "Ask another chat to repeat the claim and use the majority answer.",
-        "Use the answer unless the conversation itself contains an obvious contradiction."
+        "Assume fluent wording is enough unless someone identifies a contradiction.",
+        "Ask another chat to repeat the claim and trust the majority answer.",
+        "Use a detailed answer as proof that the underlying claim was verified."
       ],
       "answer": "A",
       "explanation": "Context windows are finite and model/feature-dependent.",
@@ -122,27 +122,27 @@
       "lesson": 1,
       "prompt": "What does the course mean by selecting the right tool for a task?",
       "options": [
-        "Accept it if the answer is detailed and the wording is confident.",
-        "Ask another chat to repeat the claim and use the majority answer.",
+        "Assume fluent wording is enough unless someone identifies a contradiction.",
+        "Ask another chat to repeat the claim and trust the majority answer.",
         "Match the work pattern and available capability to the task",
-        "Use the answer unless the conversation itself contains an obvious contradiction."
+        "Use a detailed answer as proof that the underlying claim was verified."
       ],
       "answer": "C",
       "explanation": "Tool choice should fit the task, workflow, and permissions.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 9,
       "lesson": 2,
       "prompt": "You ask for a launch plan but receive generic advice. Which prompt revision is most likely to improve it?",
       "options": [
-        "Add a role label such as 'expert' but leave the task details unchanged.",
-        "Set the context, define the task, and specify rules or output constraints",
-        "Ask for more words and assume extra length will improve relevance.",
-        "Remove constraints so the model has more freedom to choose the output."
+        "Ask for a longer plan without adding business context.",
+        "Add the audience, launch date, constraints, owners, risks, and specific deliverables to the prompt.",
+        "Tell Claude to act as an expert strategist but provide no project details.",
+        "Ask for three plans and choose the longest."
       ],
       "answer": "B",
-      "explanation": "Add audience, project context, timeline, constraints, deliverables, and acceptance criteria instead of merely requesting more detail.",
+      "explanation": "Add the audience, launch date, constraints, owners, risks, and specific deliverables to the prompt.",
       "scenario_based": true
     },
     {
@@ -150,13 +150,13 @@
       "lesson": 2,
       "prompt": "Claude keeps assuming the application runs on AWS, but your team uses Google Cloud. What should you change?",
       "options": [
-        "Add a role label such as 'expert' but leave the task details unchanged.",
-        "Ask for more words and assume extra length will improve relevance.",
-        "Remove constraints so the model has more freedom to choose the output.",
-        "Add relevant context, audience, examples, and success criteria"
+        "Keep the AWS assumption but request a more concise answer.",
+        "Remove cloud-specific details so the model can choose the common platform.",
+        "State Google Cloud and relevant architecture constraints explicitly, then verify the revised answer uses them.",
+        null
       ],
       "answer": "D",
-      "explanation": "State the actual cloud platform and relevant architecture constraints explicitly, then check that the answer uses them.",
+      "explanation": "State Google Cloud and the relevant architecture constraints explicitly, then verify the revised answer uses them.",
       "scenario_based": true
     },
     {
@@ -164,13 +164,13 @@
       "lesson": 2,
       "prompt": "You need JSON consumed by a script. How should you specify and validate the output?",
       "options": [
-        "Provide relevant examples and state which features to emulate",
-        "Add a role label such as 'expert' but leave the task details unchanged.",
-        "Ask for more words and assume extra length will improve relevance.",
-        "Remove constraints so the model has more freedom to choose the output."
+        "Specify the schema and allowed fields, require JSON only, then parse and validate it in code.",
+        "Ask for a formatted table because tables resemble structured data.",
+        "Request JSON and assume it will always parse correctly.",
+        "Allow commentary around the JSON so the script has context."
       ],
       "answer": "A",
-      "explanation": "Specify a schema and allowed fields, require valid JSON without surrounding prose, and parse/validate it in code.",
+      "explanation": "Specify the schema and allowed fields, require JSON only, then parse and validate it in code.",
       "scenario_based": true
     },
     {
@@ -178,10 +178,10 @@
       "lesson": 2,
       "prompt": "Your first response is too generic. What is the best next step?",
       "options": [
-        "Add a role label such as 'expert' but leave the task details unchanged.",
-        "Ask for more words and assume extra length will improve relevance.",
+        "Add a role label but leave the task, audience, and constraints unspecified.",
+        "Ask for a longer response without explaining what is missing.",
         "Add the missing context, constraints, examples, or output criteria",
-        "Remove constraints so the model has more freedom to choose the output."
+        "Remove output constraints so the model can choose its own format."
       ],
       "answer": "C",
       "explanation": "Refine the prompt based on the mismatch rather than merely repeating it.",
@@ -192,10 +192,10 @@
       "lesson": 2,
       "prompt": "What is the benefit of requesting a specific output format?",
       "options": [
-        "Add a role label such as 'expert' but leave the task details unchanged.",
+        "Add a role label but leave the task, audience, and constraints unspecified.",
         "It helps make the response easier to use, compare, or process",
-        "Ask for more words and assume extra length will improve relevance.",
-        "Remove constraints so the model has more freedom to choose the output."
+        "Ask for a longer response without explaining what is missing.",
+        "Remove output constraints so the model can choose its own format."
       ],
       "answer": "B",
       "explanation": "Format instructions reduce ambiguity about the expected structure.",
@@ -206,9 +206,9 @@
       "lesson": 2,
       "prompt": "Which prompt includes a meaningful constraint?",
       "options": [
-        "Add a role label such as 'expert' but leave the task details unchanged.",
-        "Ask for more words and assume extra length will improve relevance.",
-        "Remove constraints so the model has more freedom to choose the output.",
+        "Add a role label but leave the task, audience, and constraints unspecified.",
+        "Ask for a longer response without explaining what is missing.",
+        "Remove output constraints so the model can choose its own format.",
         "Explain REST APIs to a junior developer in five bullets, with one example and no code"
       ],
       "answer": "D",
@@ -221,40 +221,40 @@
       "prompt": "What should a good prompt do when the task has multiple deliverables?",
       "options": [
         "List the deliverables and define their order or relationship",
-        "Add a role label such as 'expert' but leave the task details unchanged.",
-        "Ask for more words and assume extra length will improve relevance.",
-        "Remove constraints so the model has more freedom to choose the output."
+        "Add a role label but leave the task, audience, and constraints unspecified.",
+        "Ask for a longer response without explaining what is missing.",
+        "Remove output constraints so the model can choose its own format."
       ],
       "answer": "A",
       "explanation": "A clear breakdown helps with completeness and sequencing.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 16,
       "lesson": 2,
       "prompt": "When should you ask Claude to state assumptions?",
       "options": [
-        "Add a role label such as 'expert' but leave the task details unchanged.",
-        "Ask for more words and assume extra length will improve relevance.",
+        "Add a role label but leave the task, audience, and constraints unspecified.",
+        "Ask for a longer response without explaining what is missing.",
         "When details are missing and assumptions could materially affect the result",
-        "Remove constraints so the model has more freedom to choose the output."
+        "Remove output constraints so the model can choose its own format."
       ],
       "answer": "C",
       "explanation": "Visible assumptions help you detect misunderstandings and correct them early.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 17,
       "lesson": 3,
       "prompt": "A ticket classifier works on easy examples but fails on unusual cases. What should the team do before rollout?",
       "options": [
-        "Test only common examples and launch if the first few are correct.",
-        "Delegation, Description, Discernment, Diligence",
-        "Ask Claude to certify its own answer before deployment.",
-        "Judge quality mainly by response length and writing style."
+        "Test only common examples and launch if those pass.",
+        "Evaluate a representative labelled set, include edge cases, inspect errors, and define a human-review threshold.",
+        "Ask Claude to certify that the classifier is reliable.",
+        "Increase confidence wording for unusual tickets."
       ],
       "answer": "B",
-      "explanation": "Evaluate against representative labelled examples, add edge cases, inspect error patterns, and define a human-review threshold.",
+      "explanation": "Evaluate a representative labelled set, include edge cases, inspect errors, and define a human-review threshold.",
       "scenario_based": true
     },
     {
@@ -262,13 +262,13 @@
       "lesson": 3,
       "prompt": "A spreadsheet formula generated by Claude looks plausible. How should you verify it?",
       "options": [
-        "Test only common examples and launch if the first few are correct.",
-        "Ask Claude to certify its own answer before deployment.",
-        "Judge quality mainly by response length and writing style.",
-        "Discernment"
+        "Accept the formula if the total looks plausible.",
+        "Ask Claude to confirm the formula and treat that as independent verification.",
+        "Compare it with a tutorial and skip testing if it looks similar.",
+        "Test known cases, inspect references and edge cases, and reconcile results with source data."
       ],
       "answer": "D",
-      "explanation": "Test known inputs, inspect cell references and edge cases, and reconcile calculated results with the source data.",
+      "explanation": "Test known cases, inspect references and edge cases, and reconcile results with source data.",
       "scenario_based": true
     },
     {
@@ -276,13 +276,13 @@
       "lesson": 3,
       "prompt": "A team wants to compare two prompt versions fairly. Which test design is best?",
       "options": [
-        "Verify important claims and apply qualified human judgment",
-        "Test only common examples and launch if the first few are correct.",
-        "Ask Claude to certify its own answer before deployment.",
-        "Judge quality mainly by response length and writing style."
+        "Run both prompts on the same representative cases and compare using predefined criteria.",
+        "Use different requests for each prompt so each can show its strengths.",
+        "Choose the version that produces longer explanations.",
+        "Ask the model which prompt it prefers."
       ],
       "answer": "A",
-      "explanation": "Run both prompts on the same representative cases and compare against predefined quality criteria.",
+      "explanation": "Run both prompts on the same representative cases and compare using predefined criteria.",
       "scenario_based": true
     },
     {
@@ -290,10 +290,10 @@
       "lesson": 3,
       "prompt": "Which 4D competency concerns deciding what should be done by AI versus a human?",
       "options": [
-        "Test only common examples and launch if the first few are correct.",
-        "Ask Claude to certify its own answer before deployment.",
+        "Test only a few easy examples and assume edge cases will behave similarly.",
+        "Ask the model to certify that its own output is correct.",
         "Delegation",
-        "Judge quality mainly by response length and writing style."
+        "Use writing quality as the main measure of analytical accuracy."
       ],
       "answer": "C",
       "explanation": "Delegation is about allocating work appropriately between people and AI.",
@@ -304,10 +304,10 @@
       "lesson": 3,
       "prompt": "Which 4D competency focuses on critically evaluating AI outputs and behavior?",
       "options": [
-        "Test only common examples and launch if the first few are correct.",
+        "Test only a few easy examples and assume edge cases will behave similarly.",
         "Discernment",
-        "Ask Claude to certify its own answer before deployment.",
-        "Judge quality mainly by response length and writing style."
+        "Ask the model to certify that its own output is correct.",
+        "Use writing quality as the main measure of analytical accuracy."
       ],
       "answer": "B",
       "explanation": "Discernment means evaluating whether the output is appropriate, useful, and accurate.",
@@ -318,9 +318,9 @@
       "lesson": 3,
       "prompt": "Which 4D competency emphasizes responsible use and accountability?",
       "options": [
-        "Test only common examples and launch if the first few are correct.",
-        "Ask Claude to certify its own answer before deployment.",
-        "Judge quality mainly by response length and writing style.",
+        "Test only a few easy examples and assume edge cases will behave similarly.",
+        "Ask the model to certify that its own output is correct.",
+        "Use writing quality as the main measure of analytical accuracy.",
         "Diligence"
       ],
       "answer": "D",
@@ -333,9 +333,9 @@
       "prompt": "What is a hallucination in an AI response?",
       "options": [
         "A plausible-sounding but unsupported or incorrect claim",
-        "Test only common examples and launch if the first few are correct.",
-        "Ask Claude to certify its own answer before deployment.",
-        "Judge quality mainly by response length and writing style."
+        "Test only a few easy examples and assume edge cases will behave similarly.",
+        "Ask the model to certify that its own output is correct.",
+        "Use writing quality as the main measure of analytical accuracy."
       ],
       "answer": "A",
       "explanation": "Hallucinations are generated claims that may not be grounded in facts.",
@@ -346,10 +346,10 @@
       "lesson": 3,
       "prompt": "Which is the best handling of confidential company data?",
       "options": [
-        "Test only common examples and launch if the first few are correct.",
-        "Ask Claude to certify its own answer before deployment.",
+        "Test only a few easy examples and assume edge cases will behave similarly.",
+        "Ask the model to certify that its own output is correct.",
         "Check organizational policy and product data controls before sharing sensitive material",
-        "Judge quality mainly by response length and writing style."
+        "Use writing quality as the main measure of analytical accuracy."
       ],
       "answer": "C",
       "explanation": "Data handling must follow policy, confidentiality, and applicable controls.",
@@ -360,13 +360,13 @@
       "lesson": 4,
       "prompt": "An AI workflow drafts an email with an unverified delivery date and can send it. What should happen next?",
       "options": [
-        "Allow the action because the workflow has already completed most steps.",
-        "Turn-by-turn Chat",
-        "Restart the whole workflow without inspecting what has already changed.",
-        "Grant broader permissions so the same failure is less likely next time."
+        "Send the email because most of the workflow is complete.",
+        "Pause sending, verify the date with an authoritative source, and review the final message before sending.",
+        "Delete the date and send immediately without checking whether it is required.",
+        "Ask Claude to estimate the date and use that estimate."
       ],
       "answer": "B",
-      "explanation": "Pause sending, verify the date with an authoritative source, and review the final message before taking the external action.",
+      "explanation": "Pause sending, verify the date with an authoritative source, and review the final message before sending.",
       "scenario_based": true
     },
     {
@@ -374,13 +374,13 @@
       "lesson": 4,
       "prompt": "A file-editing agent proposes changing files outside the agreed folder. What is the correct response?",
       "options": [
-        "Allow the action because the workflow has already completed most steps.",
-        "Restart the whole workflow without inspecting what has already changed.",
-        "Grant broader permissions so the same failure is less likely next time.",
-        "Clear scope, authorized data, constraints, and expected deliverables"
+        "Allow the change because the agent may need extra files.",
+        "Grant access to the whole repository to avoid interruptions.",
+        "Ignore the proposed change if the build passes.",
+        "Stop the change, restore the agreed scope, and obtain authorization before editing outside it."
       ],
       "answer": "D",
-      "explanation": "Stop the change, re-establish the approved file scope, and obtain authorization before expanding it.",
+      "explanation": "Stop the change, restore the agreed scope, and obtain authorization before editing outside it.",
       "scenario_based": true
     },
     {
@@ -388,10 +388,10 @@
       "lesson": 4,
       "prompt": "A multi-step workflow fails halfway through. What is the safest recovery approach?",
       "options": [
-        "Turn-by-turn work in Chat",
-        "Allow the action because the workflow has already completed most steps.",
-        "Restart the whole workflow without inspecting what has already changed.",
-        "Grant broader permissions so the same failure is less likely next time."
+        "Inspect completed steps, isolate the failed dependency, and resume without duplicating irreversible actions.",
+        "Restart everything without checking side effects.",
+        "Assume the deliverable exists because earlier steps succeeded.",
+        "Delete logs and retry with broader permissions."
       ],
       "answer": "A",
       "explanation": "Inspect completed steps, isolate the failed dependency, and resume without duplicating irreversible actions.",
@@ -402,42 +402,42 @@
       "lesson": 4,
       "prompt": "Which work pattern fits delegating a multi-step task over files and connected tools?",
       "options": [
-        "Allow the action because the workflow has already completed most steps.",
-        "Restart the whole workflow without inspecting what has already changed.",
+        "Grant broader permissions to avoid interruptions.",
+        "Let the workflow continue when a consequential detail is unverified.",
         "Cowork-style handoff, when available and authorized",
-        "Grant broader permissions so the same failure is less likely next time."
+        "Restart every step without checking what has already changed."
       ],
       "answer": "C",
       "explanation": "Cowork is designed around multi-step task handoffs and working with files/tools.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 29,
       "lesson": 4,
       "prompt": "Why should you preview or inspect files Claude creates?",
       "options": [
-        "Allow the action because the workflow has already completed most steps.",
+        "Grant broader permissions to avoid interruptions.",
         "The file may not satisfy formatting, content, or business requirements until reviewed",
-        "Restart the whole workflow without inspecting what has already changed.",
-        "Grant broader permissions so the same failure is less likely next time."
+        "Let the workflow continue when a consequential detail is unverified.",
+        "Restart every step without checking what has already changed."
       ],
       "answer": "B",
       "explanation": "Generated artifacts should be checked before use or sharing.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 30,
       "lesson": 4,
       "prompt": "A task requires repeated user choices at each step. Which approach is usually preferable?",
       "options": [
-        "Allow the action because the workflow has already completed most steps.",
-        "Restart the whole workflow without inspecting what has already changed.",
-        "Grant broader permissions so the same failure is less likely next time.",
+        "Grant broader permissions to avoid interruptions.",
+        "Let the workflow continue when a consequential detail is unverified.",
+        "Restart every step without checking what has already changed.",
         "Interactive turn-by-turn conversation"
       ],
       "answer": "D",
       "explanation": "Interactive work is appropriate when decisions depend on intermediate answers.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 31,
@@ -445,40 +445,40 @@
       "prompt": "What is important when using scheduled or automated task features?",
       "options": [
         "Check availability, execution conditions, permissions, and output before relying on it",
-        "Allow the action because the workflow has already completed most steps.",
-        "Restart the whole workflow without inspecting what has already changed.",
-        "Grant broader permissions so the same failure is less likely next time."
+        "Grant broader permissions to avoid interruptions.",
+        "Let the workflow continue when a consequential detail is unverified.",
+        "Restart every step without checking what has already changed."
       ],
       "answer": "A",
       "explanation": "Automation behavior depends on product capabilities, access, and task environment.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 32,
       "lesson": 4,
       "prompt": "Why are permissions important in a tool-using workflow?",
       "options": [
-        "Allow the action because the workflow has already completed most steps.",
-        "Restart the whole workflow without inspecting what has already changed.",
+        "Grant broader permissions to avoid interruptions.",
+        "Let the workflow continue when a consequential detail is unverified.",
         "They limit actions and data access to what is authorized",
-        "Grant broader permissions so the same failure is less likely next time."
+        "Restart every step without checking what has already changed."
       ],
       "answer": "C",
       "explanation": "Least-privilege access reduces risk from accidental or inappropriate actions.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 33,
       "lesson": 5,
       "prompt": "Two Project reference documents show different reimbursement limits. How should Claude's answer be grounded?",
       "options": [
-        "Choose whichever source has the most detailed explanation.",
-        "Keeping related work together with reusable instructions and knowledge",
-        "Blend both documents into one answer without mentioning the disagreement.",
-        "Assume the model can infer which document is newest from its wording."
+        "Choose whichever document is longer.",
+        "Identify the current authoritative source, label or remove stale material, and disclose unresolved conflict.",
+        "Average the two limits and report the midpoint.",
+        "Infer which limit is newer from writing style."
       ],
       "answer": "B",
-      "explanation": "Identify the current authoritative source, label or remove stale material, and disclose any unresolved conflict.",
+      "explanation": "Identify the current authoritative source, label or remove stale material, and disclose unresolved conflict.",
       "scenario_based": true
     },
     {
@@ -486,13 +486,13 @@
       "lesson": 5,
       "prompt": "A colleague requests access to a Project containing restricted customer data. What should the owner check first?",
       "options": [
-        "Choose whichever source has the most detailed explanation.",
-        "Blend both documents into one answer without mentioning the disagreement.",
-        "Assume the model can infer which document is newest from its wording.",
-        "Guidance intended to apply across the project's chats"
+        "Invite the colleague and remove sensitive files only if they complain.",
+        "Share a public link because it can be revoked later.",
+        "Copy customer names into a separate Project.",
+        "Check business need, authorization, and the full scope of content the colleague would access."
       ],
       "answer": "D",
-      "explanation": "Confirm business need and authorization, then check the full scope of Project content the colleague would access.",
+      "explanation": "Check business need, authorization, and the full scope of content the colleague would access.",
       "scenario_based": true
     },
     {
@@ -500,13 +500,13 @@
       "lesson": 5,
       "prompt": "A team wants consistent weekly reports while the weekly data changes. How should the Project be structured?",
       "options": [
-        "Keeping related work organized with reusable instructions and project knowledge",
-        "Choose whichever source has the most detailed explanation.",
-        "Blend both documents into one answer without mentioning the disagreement.",
-        "Assume the model can infer which document is newest from its wording."
+        "Keep stable templates and definitions as project knowledge and provide each week's current data as task input.",
+        "Store every weekly dataset permanently in the instructions.",
+        "Use last week's report and ask Claude to guess the changes.",
+        "Create an unrelated Project for every reporting period."
       ],
       "answer": "A",
-      "explanation": "Keep stable templates and definitions in project knowledge, while providing current weekly data as task input.",
+      "explanation": "Keep stable templates and definitions as project knowledge and provide each week's current data as task input.",
       "scenario_based": true
     },
     {
@@ -514,42 +514,42 @@
       "lesson": 5,
       "prompt": "Where should guidance intended to apply across chats in a Project generally go?",
       "options": [
-        "Choose whichever source has the most detailed explanation.",
-        "Blend both documents into one answer without mentioning the disagreement.",
+        "Choose the longest reference document without checking its date or authority.",
+        "Blend conflicting policy statements into one answer without disclosing the conflict.",
         "Project instructions",
-        "Assume the model can infer which document is newest from its wording."
+        "Assume all past chats are automatically available in the current Project."
       ],
       "answer": "C",
       "explanation": "Project instructions establish reusable guidance for chats in that workspace.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 37,
       "lesson": 5,
       "prompt": "How should a one-off file differ from a reusable project reference?",
       "options": [
-        "Choose whichever source has the most detailed explanation.",
+        "Choose the longest reference document without checking its date or authority.",
         "Attach it to the specific conversation if it should not be shared as persistent project knowledge",
-        "Blend both documents into one answer without mentioning the disagreement.",
-        "Assume the model can infer which document is newest from its wording."
+        "Blend conflicting policy statements into one answer without disclosing the conflict.",
+        "Assume all past chats are automatically available in the current Project."
       ],
       "answer": "B",
       "explanation": "Conversation attachments and shared project knowledge serve different scopes.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 38,
       "lesson": 5,
       "prompt": "A shared project contains customer information. What should you check before inviting a colleague?",
       "options": [
-        "Choose whichever source has the most detailed explanation.",
-        "Blend both documents into one answer without mentioning the disagreement.",
-        "Assume the model can infer which document is newest from its wording.",
+        "Choose the longest reference document without checking its date or authority.",
+        "Blend conflicting policy statements into one answer without disclosing the conflict.",
+        "Assume all past chats are automatically available in the current Project.",
         "Whether the colleague is authorized and what the sharing permissions expose"
       ],
       "answer": "D",
       "explanation": "Access should be granted according to business need and data policy.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 39,
@@ -557,40 +557,40 @@
       "prompt": "What is the best approach when project knowledge is large?",
       "options": [
         "Organize, label, and maintain relevant knowledge; verify retrieved facts",
-        "Choose whichever source has the most detailed explanation.",
-        "Blend both documents into one answer without mentioning the disagreement.",
-        "Assume the model can infer which document is newest from its wording."
+        "Choose the longest reference document without checking its date or authority.",
+        "Blend conflicting policy statements into one answer without disclosing the conflict.",
+        "Assume all past chats are automatically available in the current Project."
       ],
       "answer": "A",
       "explanation": "Good organization and verification improve the reliability of knowledge-assisted work.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 40,
       "lesson": 5,
       "prompt": "Do Project instructions eliminate the need to specify the immediate task?",
       "options": [
-        "Choose whichever source has the most detailed explanation.",
-        "Blend both documents into one answer without mentioning the disagreement.",
+        "Choose the longest reference document without checking its date or authority.",
+        "Blend conflicting policy statements into one answer without disclosing the conflict.",
         "No; the current prompt still needs to state the task and its specifics",
-        "Assume the model can infer which document is newest from its wording."
+        "Assume all past chats are automatically available in the current Project."
       ],
       "answer": "C",
       "explanation": "Persistent context supports but does not replace the immediate request.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 41,
       "lesson": 6,
       "prompt": "A dashboard looks polished but totals do not match the source spreadsheet. What should you investigate?",
       "options": [
-        "Publish the artifact if its visual design meets expectations.",
-        "Creating a separate, viewable content deliverable or interactive experience",
-        "Change the display until the result appears consistent with the expected answer.",
-        "Ask the model to confirm its output and treat that as an independent check."
+        "Publish it because the chart looks professional.",
+        "Reconcile source coverage, filters, formulas, units, and aggregations before sharing.",
+        "Change the chart until the total appears closer.",
+        "Ask Claude to confirm the total and accept that as independent validation."
       ],
       "answer": "B",
-      "explanation": "Reconcile source coverage, filters, formulas, units, and aggregations before sharing the dashboard.",
+      "explanation": "Reconcile source coverage, filters, formulas, units, and aggregations before sharing.",
       "scenario_based": true
     },
     {
@@ -598,13 +598,13 @@
       "lesson": 6,
       "prompt": "An interactive artifact has controls that do not change the displayed data. What is the best next step?",
       "options": [
-        "Publish the artifact if its visual design meets expectations.",
-        "Change the display until the result appears consistent with the expected answer.",
-        "Ask the model to confirm its output and treat that as an independent check.",
-        "Data, labels, units, calculations, and interpretation"
+        "Remove all controls so users cannot notice the problem.",
+        "Share it because the controls look interactive.",
+        "Add more controls to make the artifact appear complete.",
+        "Describe expected behavior, test each control, and revise the implementation before relying on it."
       ],
       "answer": "D",
-      "explanation": "Test each control against expected state changes and revise the implementation before relying on it.",
+      "explanation": "Describe expected behavior, test each control, and revise the implementation before relying on it.",
       "scenario_based": true
     },
     {
@@ -612,10 +612,10 @@
       "lesson": 6,
       "prompt": "A chart exaggerates a small difference because its axis is truncated. How should it be corrected?",
       "options": [
-        "A content or deliverable such as a document, visualization, or interactive piece created alongside a conversation",
-        "Publish the artifact if its visual design meets expectations.",
-        "Change the display until the result appears consistent with the expected answer.",
-        "Ask the model to confirm its output and treat that as an independent check."
+        "Use a truthful scale or clearly disclose the axis choice so the chart does not mislead.",
+        "Keep the axis because it makes the difference easier to see.",
+        "Replace it with a 3D chart.",
+        "Hide axis labels and explain the difference in a footnote."
       ],
       "answer": "A",
       "explanation": "Use a truthful scale or clearly disclose the axis choice so the chart does not mislead.",
@@ -626,10 +626,10 @@
       "lesson": 6,
       "prompt": "What is the best way to request a polished artifact?",
       "options": [
-        "Publish the artifact if its visual design meets expectations.",
-        "Change the display until the result appears consistent with the expected answer.",
+        "Publish the artifact if the visual design looks polished.",
+        "Adjust the chart until it supports the intended conclusion.",
         "Describe the audience, purpose, content, desired format, and constraints",
-        "Ask the model to confirm its output and treat that as an independent check."
+        "Assume clickable-looking controls are functional without testing them."
       ],
       "answer": "C",
       "explanation": "A good brief gives the artifact a clear purpose and acceptance criteria.",
@@ -640,10 +640,10 @@
       "lesson": 6,
       "prompt": "If an artifact misses an important requirement, what is the best iteration strategy?",
       "options": [
-        "Publish the artifact if its visual design meets expectations.",
+        "Publish the artifact if the visual design looks polished.",
         "Give specific feedback about the missing element and expected change",
-        "Change the display until the result appears consistent with the expected answer.",
-        "Ask the model to confirm its output and treat that as an independent check."
+        "Adjust the chart until it supports the intended conclusion.",
+        "Assume clickable-looking controls are functional without testing them."
       ],
       "answer": "B",
       "explanation": "Targeted revision instructions make correction more efficient.",
@@ -654,9 +654,9 @@
       "lesson": 6,
       "prompt": "Which concern matters for an interactive artifact?",
       "options": [
-        "Publish the artifact if its visual design meets expectations.",
-        "Change the display until the result appears consistent with the expected answer.",
-        "Ask the model to confirm its output and treat that as an independent check.",
+        "Publish the artifact if the visual design looks polished.",
+        "Adjust the chart until it supports the intended conclusion.",
+        "Assume clickable-looking controls are functional without testing them.",
         "Whether controls behave as intended, content is accessible, and edge cases are handled"
       ],
       "answer": "D",
@@ -669,9 +669,9 @@
       "prompt": "Why should generated documents be checked for citations and factual claims?",
       "options": [
         "Because generated content may contain errors, missing context, or unsupported assertions",
-        "Publish the artifact if its visual design meets expectations.",
-        "Change the display until the result appears consistent with the expected answer.",
-        "Ask the model to confirm its output and treat that as an independent check."
+        "Publish the artifact if the visual design looks polished.",
+        "Adjust the chart until it supports the intended conclusion.",
+        "Assume clickable-looking controls are functional without testing them."
       ],
       "answer": "A",
       "explanation": "Review helps ensure the deliverable is factually sound and usable.",
@@ -682,10 +682,10 @@
       "lesson": 6,
       "prompt": "Which statement about artifacts is most accurate?",
       "options": [
-        "Publish the artifact if its visual design meets expectations.",
-        "Change the display until the result appears consistent with the expected answer.",
+        "Publish the artifact if the visual design looks polished.",
+        "Adjust the chart until it supports the intended conclusion.",
         "They are useful deliverables, but complex outputs still require testing and review",
-        "Ask the model to confirm its output and treat that as an independent check."
+        "Assume clickable-looking controls are functional without testing them."
       ],
       "answer": "C",
       "explanation": "Artifacts can be powerful, but capabilities and sharing behavior should be checked.",
@@ -696,10 +696,10 @@
       "lesson": 7,
       "prompt": "A code-review Skill runs on unrelated writing tasks. What change is most likely to fix this?",
       "options": [
-        "Make the Skill mandatory for all tasks to improve consistency.",
-        "Reusable instructions and knowledge for a task or workflow",
-        "Remove examples and scope statements so the model can improvise.",
-        "Add more instructions without testing how the Skill is triggered."
+        "Make the Skill mandatory for all tasks.",
+        "Clarify the Skill's trigger, intended scope, and explicit non-use cases.",
+        "Remove all scope instructions so it can improvise.",
+        "Add more steps without checking when the Skill is selected."
       ],
       "answer": "B",
       "explanation": "Clarify the Skill's trigger, intended scope, and explicit non-use cases.",
@@ -710,13 +710,13 @@
       "lesson": 7,
       "prompt": "A Skill update makes results less consistent. How should the owner troubleshoot it?",
       "options": [
-        "Make the Skill mandatory for all tasks to improve consistency.",
-        "Remove examples and scope statements so the model can improvise.",
-        "Add more instructions without testing how the Skill is triggered.",
-        "Clear scope, relevant instructions, examples, and testing"
+        "Assume results will stabilize with more use.",
+        "Delete all examples to simplify it.",
+        "Make the Skill mandatory to avoid variation.",
+        "Compare before-and-after outputs on representative tasks, inspect regressions, and revise or roll back the change."
       ],
       "answer": "D",
-      "explanation": "Compare before-and-after outputs on representative cases, inspect regressions, and revise or roll back the change.",
+      "explanation": "Compare before-and-after outputs on representative tasks, inspect regressions, and revise or roll back the change.",
       "scenario_based": true
     },
     {
@@ -724,10 +724,10 @@
       "lesson": 7,
       "prompt": "A Skill tells Claude to ignore company policy to finish faster. What should the team do?",
       "options": [
-        "When a repeatable task benefits from documented steps, standards, and examples",
-        "Make the Skill mandatory for all tasks to improve consistency.",
-        "Remove examples and scope statements so the model can improvise.",
-        "Add more instructions without testing how the Skill is triggered."
+        "Correct or remove the conflicting instruction; a Skill cannot override company policy.",
+        "Keep the instruction because Skills override policy.",
+        "Use the Skill only for small tasks and leave it unchanged.",
+        "Move the instruction into a sample output."
       ],
       "answer": "A",
       "explanation": "Correct or remove the conflicting instruction; a Skill cannot override company policy.",
@@ -738,10 +738,10 @@
       "lesson": 7,
       "prompt": "What makes a Skill more reliable?",
       "options": [
-        "Make the Skill mandatory for all tasks to improve consistency.",
-        "Remove examples and scope statements so the model can improvise.",
+        "Make the Skill apply to every request so it is never missed.",
+        "Remove trigger conditions and non-use cases to make the Skill flexible.",
         "Relevant instructions, clear triggers, examples, and maintained supporting resources",
-        "Add more instructions without testing how the Skill is triggered."
+        "Assume more instructions always produce more consistent behavior."
       ],
       "answer": "C",
       "explanation": "Clear scope and useful examples improve discoverability and consistent behavior.",
@@ -752,28 +752,28 @@
       "lesson": 7,
       "prompt": "What should you do after changing a Skill?",
       "options": [
-        "Make the Skill mandatory for all tasks to improve consistency.",
+        "Make the Skill apply to every request so it is never missed.",
         "Test it on representative tasks and inspect whether it follows the intended workflow",
-        "Remove examples and scope statements so the model can improvise.",
-        "Add more instructions without testing how the Skill is triggered."
+        "Remove trigger conditions and non-use cases to make the Skill flexible.",
+        "Assume more instructions always produce more consistent behavior."
       ],
       "answer": "B",
       "explanation": "Testing helps discover conflicting instructions and missing edge cases.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 54,
       "lesson": 7,
       "prompt": "A Skill includes instructions that conflict with company policy. What should happen?",
       "options": [
-        "Make the Skill mandatory for all tasks to improve consistency.",
-        "Remove examples and scope statements so the model can improvise.",
-        "Add more instructions without testing how the Skill is triggered.",
+        "Make the Skill apply to every request so it is never missed.",
+        "Remove trigger conditions and non-use cases to make the Skill flexible.",
+        "Assume more instructions always produce more consistent behavior.",
         "Follow company policy and correct the Skill before reuse"
       ],
       "answer": "D",
       "explanation": "Reusable instructions do not override organizational requirements or higher-priority rules.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 55,
@@ -781,9 +781,9 @@
       "prompt": "What is a useful use of a Skill in software development?",
       "options": [
         "Applying a consistent code-review checklist and repository conventions",
-        "Make the Skill mandatory for all tasks to improve consistency.",
-        "Remove examples and scope statements so the model can improvise.",
-        "Add more instructions without testing how the Skill is triggered."
+        "Make the Skill apply to every request so it is never missed.",
+        "Remove trigger conditions and non-use cases to make the Skill flexible.",
+        "Assume more instructions always produce more consistent behavior."
       ],
       "answer": "A",
       "explanation": "A Skill can encode repeatable standards, but code still needs testing and review.",
@@ -794,10 +794,10 @@
       "lesson": 7,
       "prompt": "What is the difference between a Skill and a normal prompt?",
       "options": [
-        "Make the Skill mandatory for all tasks to improve consistency.",
-        "Remove examples and scope statements so the model can improvise.",
+        "Make the Skill apply to every request so it is never missed.",
+        "Remove trigger conditions and non-use cases to make the Skill flexible.",
         "A Skill can package reusable guidance for repeated use, whereas a prompt usually describes an immediate task",
-        "Add more instructions without testing how the Skill is triggered."
+        "Assume more instructions always produce more consistent behavior."
       ],
       "answer": "C",
       "explanation": "Skills help reuse workflows without rewriting the full guidance every time.",
@@ -808,13 +808,13 @@
       "lesson": 8,
       "prompt": "A connector requests full-drive access but only one folder is needed. What should you do?",
       "options": [
-        "Approve the broad access now and narrow it only if a problem occurs.",
-        "Authorized interaction with an external service or data source",
-        "Use a colleague's existing connection instead of reviewing the permissions.",
-        "Assume a successful connection means all returned data is appropriate to disclose."
+        "Approve full-drive access and narrow it only after a problem.",
+        "Pause and request narrower access or an approved alternative before connecting.",
+        "Use a colleague's connection instead of reviewing permissions.",
+        "Assume broad access is acceptable if the vendor is known."
       ],
       "answer": "B",
-      "explanation": "Pause and request a narrower permission scope or use an approved alternative before connecting.",
+      "explanation": "Pause and request narrower access or an approved alternative before connecting.",
       "scenario_based": true
     },
     {
@@ -822,10 +822,10 @@
       "lesson": 8,
       "prompt": "A connector unexpectedly returns a confidential record unrelated to the request. What is the correct response?",
       "options": [
-        "Approve the broad access now and narrow it only if a problem occurs.",
-        "Use a colleague's existing connection instead of reviewing the permissions.",
-        "Assume a successful connection means all returned data is appropriate to disclose.",
-        "Grant only the access needed for the task"
+        "Include the record because the connector returned it.",
+        "Copy it into a shared Project to investigate later.",
+        "Assume access means every user can see it.",
+        "Avoid disclosure and further processing, then investigate query scope and permissions with the appropriate owner."
       ],
       "answer": "D",
       "explanation": "Avoid disclosure and further processing, then investigate query scope and permissions with the appropriate owner.",
@@ -836,10 +836,10 @@
       "lesson": 8,
       "prompt": "A read-only task uses a connector that can also edit records. What permission setup is preferable?",
       "options": [
-        "It lets Claude interact with an external service or data source within configured permissions",
-        "Approve the broad access now and narrow it only if a problem occurs.",
-        "Use a colleague's existing connection instead of reviewing the permissions.",
-        "Assume a successful connection means all returned data is appropriate to disclose."
+        "Use read-only access if it satisfies the task; grant write permissions only when justified.",
+        "Grant write access because it may be useful later.",
+        "Share an administrator account.",
+        "Disable audit logging to avoid noise."
       ],
       "answer": "A",
       "explanation": "Use read-only access if it satisfies the task; grant write permissions only when justified.",
@@ -850,42 +850,42 @@
       "lesson": 8,
       "prompt": "What should you check before connecting a workplace account?",
       "options": [
-        "Approve the broad access now and narrow it only if a problem occurs.",
-        "Use a colleague's existing connection instead of reviewing the permissions.",
+        "Approve broad permissions and narrow them only after an incident.",
+        "Assume connector access means every retrieved item is appropriate to disclose.",
         "The requested permissions, data scope, organizational approval, and intended use",
-        "Assume a successful connection means all returned data is appropriate to disclose."
+        "Store tokens in a shared prompt so teammates can reuse them."
       ],
       "answer": "C",
       "explanation": "Connections can expose sensitive data or enable actions, so access deserves review.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 61,
       "lesson": 8,
       "prompt": "A connector returns a customer record unrelated to the question. What should you do?",
       "options": [
-        "Approve the broad access now and narrow it only if a problem occurs.",
+        "Approve broad permissions and narrow them only after an incident.",
         "Avoid exposing it, stop unnecessary processing, and investigate permissions or query scope",
-        "Use a colleague's existing connection instead of reviewing the permissions.",
-        "Assume a successful connection means all returned data is appropriate to disclose."
+        "Assume connector access means every retrieved item is appropriate to disclose.",
+        "Store tokens in a shared prompt so teammates can reuse them."
       ],
       "answer": "B",
       "explanation": "Unexpectedly retrieved data should not be disclosed; check access and relevance.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 62,
       "lesson": 8,
       "prompt": "What is a safe pattern when using a connector to perform an external action?",
       "options": [
-        "Approve the broad access now and narrow it only if a problem occurs.",
-        "Use a colleague's existing connection instead of reviewing the permissions.",
-        "Assume a successful connection means all returned data is appropriate to disclose.",
+        "Approve broad permissions and narrow them only after an incident.",
+        "Assume connector access means every retrieved item is appropriate to disclose.",
+        "Store tokens in a shared prompt so teammates can reuse them.",
         "Confirm intended action and scope, then review high-impact changes as appropriate"
       ],
       "answer": "D",
       "explanation": "Actions should be authorized and reviewed in proportion to their impact.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 63,
@@ -893,9 +893,9 @@
       "prompt": "How should credentials for integrations be handled?",
       "options": [
         "Use supported secure authentication and never paste secrets into ordinary prompts",
-        "Approve the broad access now and narrow it only if a problem occurs.",
-        "Use a colleague's existing connection instead of reviewing the permissions.",
-        "Assume a successful connection means all returned data is appropriate to disclose."
+        "Approve broad permissions and narrow them only after an incident.",
+        "Assume connector access means every retrieved item is appropriate to disclose.",
+        "Store tokens in a shared prompt so teammates can reuse them."
       ],
       "answer": "A",
       "explanation": "Credentials should be protected and managed through approved authentication mechanisms.",
@@ -906,10 +906,10 @@
       "lesson": 8,
       "prompt": "What is the value of connecting a tool rather than copying data by hand?",
       "options": [
-        "Approve the broad access now and narrow it only if a problem occurs.",
-        "Use a colleague's existing connection instead of reviewing the permissions.",
+        "Approve broad permissions and narrow them only after an incident.",
+        "Assume connector access means every retrieved item is appropriate to disclose.",
         "It can streamline workflows and access relevant data within permissions",
-        "Assume a successful connection means all returned data is appropriate to disclose."
+        "Store tokens in a shared prompt so teammates can reuse them."
       ],
       "answer": "C",
       "explanation": "Connectors may improve workflow efficiency but do not remove risk or review needs.",
@@ -920,10 +920,10 @@
       "lesson": 9,
       "prompt": "Enterprise Search returns two conflicting policies. How should the answer be handled?",
       "options": [
-        "Use the first result because search ranking is a reliable authority signal.",
-        "Finding relevant content across connected organizational sources within access controls",
-        "Treat all returned documents as equally authoritative and summarize both.",
-        "Assume no result means the policy or information does not exist."
+        "Choose the first result because ranking proves authority.",
+        "Check authority, freshness, and scope; cite the current source and flag any unresolved conflict.",
+        "Average the two policy versions.",
+        "Treat both documents as equally current without checking dates."
       ],
       "answer": "B",
       "explanation": "Check authority, freshness, and scope; cite the current source and flag any unresolved conflict.",
@@ -934,10 +934,10 @@
       "lesson": 9,
       "prompt": "You know a policy exists, but Enterprise Search returns nothing. What should you check?",
       "options": [
-        "Use the first result because search ranking is a reliable authority signal.",
-        "Treat all returned documents as equally authoritative and summarize both.",
-        "Assume no result means the policy or information does not exist.",
-        "Inspect the cited source and ensure it supports the claim"
+        "Conclude the policy does not exist.",
+        "Ask Claude to invent likely policy wording.",
+        "Use another user's account to search restricted sources.",
+        "Refine the query and check source connection, indexing, and access, or ask the policy owner."
       ],
       "answer": "D",
       "explanation": "Refine the query and check source connection, indexing, and access, or ask the policy owner.",
@@ -948,10 +948,10 @@
       "lesson": 9,
       "prompt": "A result is relevant but three years old, while the user asks for the current procedure. What should you do?",
       "options": [
-        "They should ensure people see only information they are authorized to access",
-        "Use the first result because search ranking is a reliable authority signal.",
-        "Treat all returned documents as equally authoritative and summarize both.",
-        "Assume no result means the policy or information does not exist."
+        "Find a current authoritative source and disclose any freshness limitation if current status cannot be confirmed.",
+        "Use the old result because it is relevant.",
+        "Remove the publication date from the summary.",
+        "Assume the policy has not changed because search found no newer result."
       ],
       "answer": "A",
       "explanation": "Find a current authoritative source and disclose any freshness limitation if current status cannot be confirmed.",
@@ -962,24 +962,24 @@
       "lesson": 9,
       "prompt": "How should you evaluate an enterprise-search answer that cites internal sources?",
       "options": [
-        "Use the first result because search ranking is a reliable authority signal.",
-        "Treat all returned documents as equally authoritative and summarize both.",
+        "Choose the first result because search ranking proves authority.",
+        "Treat every returned document as equally current and authoritative.",
         "Open or inspect cited sources and confirm they support the answer",
-        "Assume no result means the policy or information does not exist."
+        "Assume no result means the policy does not exist."
       ],
       "answer": "C",
       "explanation": "Citations help verification, but the source must actually support the claim.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 69,
       "lesson": 9,
       "prompt": "Why might Enterprise Search miss relevant information?",
       "options": [
-        "Use the first result because search ranking is a reliable authority signal.",
+        "Choose the first result because search ranking proves authority.",
         "A source may not be connected, indexed, accessible, or phrased in a way the query retrieves",
-        "Treat all returned documents as equally authoritative and summarize both.",
-        "Assume no result means the policy or information does not exist."
+        "Treat every returned document as equally current and authoritative.",
+        "Assume no result means the policy does not exist."
       ],
       "answer": "B",
       "explanation": "Coverage and permissions depend on configuration, source state, and query.",
@@ -990,14 +990,14 @@
       "lesson": 9,
       "prompt": "What is a good search question for company policy?",
       "options": [
-        "Use the first result because search ranking is a reliable authority signal.",
-        "Treat all returned documents as equally authoritative and summarize both.",
-        "Assume no result means the policy or information does not exist.",
+        "Choose the first result because search ranking proves authority.",
+        "Treat every returned document as equally current and authoritative.",
+        "Assume no result means the policy does not exist.",
         "What is the current travel reimbursement limit, and which official policy section states it?"
       ],
       "answer": "D",
       "explanation": "A focused question and request for supporting policy source make verification easier.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 71,
@@ -1005,9 +1005,9 @@
       "prompt": "What is the best reason to include citations in enterprise search responses?",
       "options": [
         "They help users verify claims and navigate to supporting information",
-        "Use the first result because search ranking is a reliable authority signal.",
-        "Treat all returned documents as equally authoritative and summarize both.",
-        "Assume no result means the policy or information does not exist."
+        "Choose the first result because search ranking proves authority.",
+        "Treat every returned document as equally current and authoritative.",
+        "Assume no result means the policy does not exist."
       ],
       "answer": "A",
       "explanation": "Source links support auditability and fact checking.",
@@ -1018,27 +1018,27 @@
       "lesson": 9,
       "prompt": "How should you handle duplicate or contradictory internal sources?",
       "options": [
-        "Use the first result because search ranking is a reliable authority signal.",
-        "Treat all returned documents as equally authoritative and summarize both.",
+        "Choose the first result because search ranking proves authority.",
+        "Treat every returned document as equally current and authoritative.",
         "Identify source-of-truth hierarchy and freshness; report unresolved conflicts",
-        "Assume no result means the policy or information does not exist."
+        "Assume no result means the policy does not exist."
       ],
       "answer": "C",
       "explanation": "Source authority and freshness matter when records disagree.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 73,
       "lesson": 10,
       "prompt": "Two credible market reports give different estimates. How should a research report handle the difference?",
       "options": [
-        "Choose the largest estimate because it provides a conservative planning buffer.",
-        "Systematic collection and synthesis of multiple relevant sources",
-        "Average the figures without checking their definitions or methods.",
-        "Use the number repeated most often in search results."
+        "Choose the larger estimate because it is useful for planning.",
+        "Compare dates, definitions, scope, and methods; explain the difference rather than averaging blindly.",
+        "Average estimates without checking their methods.",
+        "Use whichever estimate appears in more search results."
       ],
       "answer": "B",
-      "explanation": "Compare dates, definitions, scope, and methods; explain why the estimates differ rather than averaging blindly.",
+      "explanation": "Compare dates, definitions, scope, and methods; explain the difference rather than averaging blindly.",
       "scenario_based": true
     },
     {
@@ -1046,10 +1046,10 @@
       "lesson": 10,
       "prompt": "A cited study does not support the claim beside it. What should the researcher do?",
       "options": [
-        "Choose the largest estimate because it provides a conservative planning buffer.",
-        "Average the figures without checking their definitions or methods.",
-        "Use the number repeated most often in search results.",
-        "Separate confirmed facts, inferences, and unresolved questions"
+        "Keep the citation because the source is reputable.",
+        "Add unrelated citations to make the paragraph look balanced.",
+        "Move the citation to a footnote but keep the claim unchanged.",
+        "Correct or remove the claim and locate evidence that actually supports it."
       ],
       "answer": "D",
       "explanation": "Correct or remove the claim and locate evidence that actually supports it.",
@@ -1060,10 +1060,10 @@
       "lesson": 10,
       "prompt": "A decision-maker wants a recommendation, but key evidence is missing. What should the report include?",
       "options": [
-        "The question, scope, time period, source preferences, and desired deliverables",
-        "Choose the largest estimate because it provides a conservative planning buffer.",
-        "Average the figures without checking their definitions or methods.",
-        "Use the number repeated most often in search results."
+        "Separate established findings, assumptions, unknowns, and implications; explain what evidence would change the recommendation.",
+        "Present a confident recommendation and omit missing evidence.",
+        "Fill gaps with plausible estimates without labeling them.",
+        "Delay all useful synthesis until every fact is known."
       ],
       "answer": "A",
       "explanation": "Separate established findings, assumptions, unknowns, and implications; explain what evidence would change the recommendation.",
@@ -1074,37 +1074,37 @@
       "lesson": 10,
       "prompt": "Why is source quality important in research?",
       "options": [
-        "Choose the largest estimate because it provides a conservative planning buffer.",
-        "Average the figures without checking their definitions or methods.",
+        "Choose the largest estimate without comparing the definitions.",
+        "Average conflicting figures before checking their scope or methodology.",
         "Different sources vary in authority, evidence, recency, and potential bias",
-        "Use the number repeated most often in search results."
+        "Use the number that appears most often in search results."
       ],
       "answer": "C",
       "explanation": "Assess sources based on relevance, evidence quality, authority, and recency.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 77,
       "lesson": 10,
       "prompt": "When researching a fast-changing topic, what should you prioritize?",
       "options": [
-        "Choose the largest estimate because it provides a conservative planning buffer.",
+        "Choose the largest estimate without comparing the definitions.",
         "Recent, authoritative sources and explicit publication or event dates",
-        "Average the figures without checking their definitions or methods.",
-        "Use the number repeated most often in search results."
+        "Average conflicting figures before checking their scope or methodology.",
+        "Use the number that appears most often in search results."
       ],
       "answer": "B",
       "explanation": "Recency and source authority both matter for dynamic topics.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 78,
       "lesson": 10,
       "prompt": "Why seek opposing or differing perspectives?",
       "options": [
-        "Choose the largest estimate because it provides a conservative planning buffer.",
-        "Average the figures without checking their definitions or methods.",
-        "Use the number repeated most often in search results.",
+        "Choose the largest estimate without comparing the definitions.",
+        "Average conflicting figures before checking their scope or methodology.",
+        "Use the number that appears most often in search results.",
         "To identify disagreement, uncertainty, assumptions, and evidence limits"
       ],
       "answer": "D",
@@ -1117,23 +1117,23 @@
       "prompt": "How should uncertainty be represented in a research report?",
       "options": [
         "State what is known, what is inferred, and what remains uncertain",
-        "Choose the largest estimate because it provides a conservative planning buffer.",
-        "Average the figures without checking their definitions or methods.",
-        "Use the number repeated most often in search results."
+        "Choose the largest estimate without comparing the definitions.",
+        "Average conflicting figures before checking their scope or methodology.",
+        "Use the number that appears most often in search results."
       ],
       "answer": "A",
       "explanation": "Transparent uncertainty reduces overclaiming.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 80,
       "lesson": 10,
       "prompt": "What does triangulation mean in research?",
       "options": [
-        "Choose the largest estimate because it provides a conservative planning buffer.",
-        "Average the figures without checking their definitions or methods.",
+        "Choose the largest estimate without comparing the definitions.",
+        "Average conflicting figures before checking their scope or methodology.",
         "Checking a conclusion against multiple independent sources or evidence types",
-        "Use the number repeated most often in search results."
+        "Use the number that appears most often in search results."
       ],
       "answer": "C",
       "explanation": "Independent corroboration increases confidence when sources agree for good reasons.",
@@ -1144,13 +1144,13 @@
       "lesson": 11,
       "prompt": "A Product Manager asks Claude to rank roadmap priorities from customer feedback. What workflow is most appropriate?",
       "options": [
-        "Let Claude make the final decision because it has summarized the available evidence.",
-        "Review, test, and validate it before relying on it",
-        "Use only the most common pattern and ignore context or exceptions.",
-        "Skip human review when the output includes an explanation."
+        "Let Claude set priorities based only on mention frequency.",
+        "Provide approved feedback and criteria, then validate themes and trade-offs against product strategy.",
+        "Ignore negative feedback to avoid biasing the summary.",
+        "Treat the ranked list as a binding roadmap decision."
       ],
       "answer": "B",
-      "explanation": "Provide approved feedback data and prioritization criteria, then validate themes and trade-offs against product strategy.",
+      "explanation": "Provide approved feedback and criteria, then validate themes and trade-offs against product strategy.",
       "scenario_based": true
     },
     {
@@ -1158,13 +1158,13 @@
       "lesson": 11,
       "prompt": "A developer uses an observability log to investigate a production bug with Claude. What should the workflow include?",
       "options": [
-        "Let Claude make the final decision because it has summarized the available evidence.",
-        "Use only the most common pattern and ignore context or exceptions.",
-        "Skip human review when the output includes an explanation.",
-        "Draft or synthesize relevant work, with accuracy and policy review"
+        "Paste all raw logs and secrets into the prompt.",
+        "Rewrite the whole service before reproducing the issue.",
+        "Deploy the first proposed fix directly to production.",
+        "Sanitize logs, correlate timestamps and traces, reproduce the issue, test a targeted fix, and follow release controls."
       ],
       "answer": "D",
-      "explanation": "Sanitize logs, correlate timestamps/traces, reproduce the issue, test a targeted fix, and use normal release and rollback controls.",
+      "explanation": "Sanitize logs, correlate timestamps and traces, reproduce the issue, test a targeted fix, and follow release controls.",
       "scenario_based": true
     },
     {
@@ -1172,13 +1172,13 @@
       "lesson": 11,
       "prompt": "A project manager asks Claude to convert meeting notes into action items. What must be verified?",
       "options": [
-        "The dataset context, definitions, question, constraints, and desired outputs",
-        "Let Claude make the final decision because it has summarized the available evidence.",
-        "Use only the most common pattern and ignore context or exceptions.",
-        "Skip human review when the output includes an explanation."
+        "Confirm decisions, owners, deadlines, and dependencies against source notes or with participants.",
+        "Let Claude infer owners and dates where notes are incomplete.",
+        "Remove actions that have no due date.",
+        "Treat all generated deadlines as approved commitments."
       ],
       "answer": "A",
-      "explanation": "Confirm decisions, owners, deadlines, and dependencies against the source notes or with participants.",
+      "explanation": "Confirm decisions, owners, deadlines, and dependencies against source notes or with participants.",
       "scenario_based": true
     },
     {
@@ -1186,24 +1186,24 @@
       "lesson": 11,
       "prompt": "How might a project manager use Claude effectively?",
       "options": [
-        "Let Claude make the final decision because it has summarized the available evidence.",
-        "Use only the most common pattern and ignore context or exceptions.",
+        "Let Claude make the final decision because it can explain its reasoning.",
+        "Use unverified inferred facts to personalize customer communications.",
         "Summarize updates into risks, owners, dependencies, and next actions, then verify them",
-        "Skip human review when the output includes an explanation."
+        "Skip review when generated output includes a rationale."
       ],
       "answer": "C",
       "explanation": "Structured synthesis can support coordination when facts are validated.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 85,
       "lesson": 11,
       "prompt": "How can a researcher use Claude safely with scientific literature?",
       "options": [
-        "Let Claude make the final decision because it has summarized the available evidence.",
+        "Let Claude make the final decision because it can explain its reasoning.",
         "Ask for synthesis and critical comparison, then verify cited papers and interpretations",
-        "Use only the most common pattern and ignore context or exceptions.",
-        "Skip human review when the output includes an explanation."
+        "Use unverified inferred facts to personalize customer communications.",
+        "Skip review when generated output includes a rationale."
       ],
       "answer": "B",
       "explanation": "AI-assisted synthesis should be grounded in real publications and careful reading.",
@@ -1214,9 +1214,9 @@
       "lesson": 11,
       "prompt": "What is an appropriate use for HR-related drafting?",
       "options": [
-        "Let Claude make the final decision because it has summarized the available evidence.",
-        "Use only the most common pattern and ignore context or exceptions.",
-        "Skip human review when the output includes an explanation.",
+        "Let Claude make the final decision because it can explain its reasoning.",
+        "Use unverified inferred facts to personalize customer communications.",
+        "Skip review when generated output includes a rationale.",
         "Draft role descriptions or communication templates with human review for fairness and policy"
       ],
       "answer": "D",
@@ -1229,9 +1229,9 @@
       "prompt": "What is a practical use of Claude in sales?",
       "options": [
         "Draft tailored outreach based on approved, accurate prospect context and review it before sending",
-        "Let Claude make the final decision because it has summarized the available evidence.",
-        "Use only the most common pattern and ignore context or exceptions.",
-        "Skip human review when the output includes an explanation."
+        "Let Claude make the final decision because it can explain its reasoning.",
+        "Use unverified inferred facts to personalize customer communications.",
+        "Skip review when generated output includes a rationale."
       ],
       "answer": "A",
       "explanation": "Personalized drafting can help, but claims and data use must be appropriate.",
@@ -1242,10 +1242,10 @@
       "lesson": 11,
       "prompt": "How should a teacher use Claude-generated learning materials?",
       "options": [
-        "Let Claude make the final decision because it has summarized the available evidence.",
-        "Use only the most common pattern and ignore context or exceptions.",
+        "Let Claude make the final decision because it can explain its reasoning.",
+        "Use unverified inferred facts to personalize customer communications.",
         "Review accuracy, level, inclusiveness, and alignment with learning goals before use",
-        "Skip human review when the output includes an explanation."
+        "Skip review when generated output includes a rationale."
       ],
       "answer": "C",
       "explanation": "Generated education content should be reviewed for accuracy and learner suitability.",
@@ -1256,13 +1256,13 @@
       "lesson": 12,
       "prompt": "A generated spreadsheet contains fewer rows than the source. What should be investigated?",
       "options": [
-        "Assume the generated file is complete because it opened successfully.",
-        "Formulas, assumptions, units, coverage, and totals",
-        "Fill gaps with typical values without marking them as assumptions.",
-        "Ask Claude whether the file is correct and rely on its confirmation."
+        "Assume the file is complete because it opened successfully.",
+        "Investigate parsing, filtering, duplicates, extraction limits, and reconcile row counts and samples.",
+        "Fill missing rows with typical values without disclosure.",
+        "Ask Claude whether it processed every row and rely on its answer."
       ],
       "answer": "B",
-      "explanation": "Investigate parsing, filtering, duplicates, context/extraction limits, and reconcile row counts and samples.",
+      "explanation": "Investigate parsing, filtering, duplicates, extraction limits, and reconcile row counts and samples.",
       "scenario_based": true
     },
     {
@@ -1270,13 +1270,13 @@
       "lesson": 12,
       "prompt": "A workflow routes customer documents automatically but sometimes receives incomplete records. What design is safest?",
       "options": [
-        "Assume the generated file is complete because it opened successfully.",
-        "Fill gaps with typical values without marking them as assumptions.",
-        "Ask Claude whether the file is correct and rely on its confirmation.",
-        "Use bounded scope, test cases, exception handling, and review for risky actions"
+        "Let the workflow guess missing fields so processing continues.",
+        "Skip invalid records silently and do not log them.",
+        "Retry every incomplete record indefinitely.",
+        "Validate required fields, define exception handling, log failures, and route uncertain cases for review."
       ],
       "answer": "D",
-      "explanation": "Validate required fields, define exception handling, log failures, and route uncertain or risky cases for review.",
+      "explanation": "Validate required fields, define exception handling, log failures, and route uncertain cases for review.",
       "scenario_based": true
     },
     {
@@ -1284,13 +1284,13 @@
       "lesson": 12,
       "prompt": "A generated report includes a percentage without stating its denominator. What should the analyst do?",
       "options": [
-        "Check formulas, units, row coverage, assumptions, and totals against source data",
-        "Assume the generated file is complete because it opened successfully.",
-        "Fill gaps with typical values without marking them as assumptions.",
-        "Ask Claude whether the file is correct and rely on its confirmation."
+        "Request numerator, denominator, population, filters, and method, then verify the calculation.",
+        "Use the percentage if it is rounded.",
+        "Add decimal places to make it look more precise.",
+        "Assume the denominator is the total row count."
       ],
       "answer": "A",
-      "explanation": "Request numerator, denominator, population, filters, and calculation method, then verify the percentage.",
+      "explanation": "Request numerator, denominator, population, filters, and method, then verify the calculation.",
       "scenario_based": true
     },
     {
@@ -1298,10 +1298,10 @@
       "lesson": 12,
       "prompt": "What is the purpose of exporting or downloading a generated file?",
       "options": [
-        "Assume the generated file is complete because it opened successfully.",
-        "Fill gaps with typical values without marking them as assumptions.",
+        "Assume a file is complete because it opens without an error.",
+        "Fill missing data with typical values without labeling assumptions.",
         "To use the deliverable in another workflow, while checking format and contents first",
-        "Ask Claude whether the file is correct and rely on its confirmation."
+        "Use percentages without documenting the denominator or filters."
       ],
       "answer": "C",
       "explanation": "Export enables reuse but should be followed by validation and safe handling.",
@@ -1312,28 +1312,28 @@
       "lesson": 12,
       "prompt": "What should you do if a product feature is unavailable in your workspace?",
       "options": [
-        "Assume the generated file is complete because it opened successfully.",
+        "Assume a file is complete because it opens without an error.",
         "Check plan/workspace settings or an administrator and choose an approved alternative",
-        "Fill gaps with typical values without marking them as assumptions.",
-        "Ask Claude whether the file is correct and rely on its confirmation."
+        "Fill missing data with typical values without labeling assumptions.",
+        "Use percentages without documenting the denominator or filters."
       ],
       "answer": "B",
       "explanation": "Availability and permission should be resolved through supported routes.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 94,
       "lesson": 12,
       "prompt": "What should you consider when asking Claude to process a large collection of files?",
       "options": [
-        "Assume the generated file is complete because it opened successfully.",
-        "Fill gaps with typical values without marking them as assumptions.",
-        "Ask Claude whether the file is correct and rely on its confirmation.",
+        "Assume a file is complete because it opens without an error.",
+        "Fill missing data with typical values without labeling assumptions.",
+        "Use percentages without documenting the denominator or filters.",
         "File coverage, context limits, extraction quality, duplicates, and a way to verify important findings"
       ],
       "answer": "D",
       "explanation": "Large-scale tasks need validation of scope and completeness.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 95,
@@ -1341,9 +1341,9 @@
       "prompt": "Why might an AI-generated summary of a meeting need confirmation?",
       "options": [
         "Names, decisions, owners, and deadlines may be misheard or inferred incorrectly",
-        "Assume the generated file is complete because it opened successfully.",
-        "Fill gaps with typical values without marking them as assumptions.",
-        "Ask Claude whether the file is correct and rely on its confirmation."
+        "Assume a file is complete because it opens without an error.",
+        "Fill missing data with typical values without labeling assumptions.",
+        "Use percentages without documenting the denominator or filters."
       ],
       "answer": "A",
       "explanation": "Verify decisions and action owners before distributing meeting notes.",
@@ -1354,24 +1354,24 @@
       "lesson": 12,
       "prompt": "What is a sensible approach to automating a workflow?",
       "options": [
-        "Assume the generated file is complete because it opened successfully.",
-        "Fill gaps with typical values without marking them as assumptions.",
+        "Assume a file is complete because it opens without an error.",
+        "Fill missing data with typical values without labeling assumptions.",
         "Start with bounded scope, test cases, exception handling, and human approval for risky actions",
-        "Ask Claude whether the file is correct and rely on its confirmation."
+        "Use percentages without documenting the denominator or filters."
       ],
       "answer": "C",
       "explanation": "Safe automation uses boundaries, validation, and escalation paths.",
-      "scenario_based": true
+      "scenario_based": false
     },
     {
       "id": 97,
       "lesson": 13,
       "prompt": "A learner scores 92% on this practice bank. What does that result actually demonstrate?",
       "options": [
-        "Memorize the answer letters and retake the same questions until fast.",
-        "It shows performance on this set, not a guarantee of official exam success",
-        "Treat a high score as proof that every official exam topic is mastered.",
-        "Use this practice bank instead of checking current official course guidance."
+        "It guarantees the official assessment result.",
+        "It shows performance on this set only; review mistakes and consult current official assessment guidance.",
+        "It proves every course topic was tested.",
+        "It means the official course can be skipped."
       ],
       "answer": "B",
       "explanation": "It shows performance on this set only; review mistakes and consult current official assessment guidance.",
@@ -1382,13 +1382,13 @@
       "lesson": 13,
       "prompt": "A question conflicts with the current product interface. What should the learner do?",
       "options": [
-        "Memorize the answer letters and retake the same questions until fast.",
-        "Treat a high score as proof that every official exam topic is mastered.",
-        "Use this practice bank instead of checking current official course guidance.",
-        "As original practice material that supports learning, not as official or leaked exam content"
+        "Assume the practice bank is more current than the interface.",
+        "Memorize both answers without resolving the conflict.",
+        "Use whichever answer appears more often online.",
+        "Check current official documentation and mark the practice item for revision if outdated."
       ],
       "answer": "D",
-      "explanation": "Check current official documentation and mark the practice item for revision if its product detail is outdated.",
+      "explanation": "Check current official documentation and mark the practice item for revision if outdated.",
       "scenario_based": true
     },
     {
@@ -1396,10 +1396,10 @@
       "lesson": 13,
       "prompt": "A learner keeps missing scenario questions about connectors. Which study method is strongest?",
       "options": [
-        "Check current official documentation and treat the item as potentially outdated",
-        "Memorize the answer letters and retake the same questions until fast.",
-        "Treat a high score as proof that every official exam topic is mastered.",
-        "Use this practice bank instead of checking current official course guidance."
+        "Revisit the connector lesson, explain permission and least-privilege principles, and retest with new scenarios.",
+        "Memorize answer letters and repeat the same quiz.",
+        "Skip connectors because the score is already adequate.",
+        "Rely on explanations without revisiting the lesson."
       ],
       "answer": "A",
       "explanation": "Revisit the connector lesson, explain permission and least-privilege principles, and retest with new scenarios.",
@@ -1410,10 +1410,10 @@
       "lesson": 13,
       "prompt": "How can a learner show genuine understanding rather than memorizing answer letters?",
       "options": [
-        "Memorize the answer letters and retake the same questions until fast.",
-        "Treat a high score as proof that every official exam topic is mastered.",
-        "Check the current official course and assessment instructions, then interpret within that context",
-        "Use this practice bank instead of checking current official course guidance."
+        "Memorize the correct letter and recognize the same wording.",
+        "Choose the longest option because it usually includes more safeguards.",
+        "Explain the reasoning and apply the principle correctly to a new scenario with different details.",
+        "Retake the same items until familiar without explaining why."
       ],
       "answer": "C",
       "explanation": "Explain the reasoning and apply the principle correctly to a new scenario with different details.",
