@@ -6,7 +6,7 @@ import streamlit as st
 
 @st.cache_data
 def load_quiz():
-    quiz_path = Path(__file__).resolve().parent / "quizzes" / "lessons-01-05.json"
+    quiz_path = Path(__file__).resolve().parent / "quizzes" / "comprehensive-practice.json"
     with open(quiz_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
