@@ -217,7 +217,7 @@
     {
       "id": 16,
       "lesson": 5,
-      "prompt": "What are Projects useful for?",
+      "prompt": "A team has several ongoing chats about the same product and wants reusable project-wide guidance. Which feature best fits?",
       "options": [
         "Replacing every chat with a permanent record",
         "Granting access to all files",
@@ -295,7 +295,7 @@
     {
       "id": 22,
       "lesson": 7,
-      "prompt": "What is a Skill intended to provide?",
+      "prompt": "Which is the main purpose of a Skill in a repeated business process?",
       "options": [
         "A new permanent model",
         "Unrestricted account access",
@@ -308,7 +308,7 @@
     {
       "id": 23,
       "lesson": 7,
-      "prompt": "What makes a Skill more reliable?",
+      "prompt": "Which set of practices usually improves a Skill's consistency over time?",
       "options": [
         "Clear scope, relevant instructions, examples, and testing",
         "Ambiguous instructions",
@@ -321,7 +321,7 @@
     {
       "id": 24,
       "lesson": 8,
-      "prompt": "What does a connector generally enable?",
+      "prompt": "A team wants Claude to retrieve CRM details while respecting account permissions. What can a connector provide?",
       "options": [
         "Unlimited access to company data",
         "An automatic copy of every system",
