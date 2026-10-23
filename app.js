@@ -1,4 +1,4 @@
-const QUIZ_URL = "courses/claude-101/quizzes/lessons-01-05.json";
+const QUIZ_URL = "courses/claude-101/quizzes/comprehensive-practice.json";
 
 const courseTitleEl = document.getElementById("courseTitle");
 const scoreDisplayEl = document.getElementById("scoreDisplay");
