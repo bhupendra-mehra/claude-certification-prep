@@ -12,7 +12,7 @@ courses/
     quizzes/
       lessons-01-05.json   # source of truth
       lessons-01-05.md     # focused review with answer key
-      comprehensive-practice.json # 100+ mixed MCQs for Claude 101
+      comprehensive-practice.json # 100 scenario-based MCQs for Claude 101
       comprehensive-practice.md   # readable questions and explanations
   <next-course>/...
 templates/quiz-template.json
@@ -29,6 +29,6 @@ scripts/render_quiz.py     # JSON -> Markdown
 
 ## Planned courses
 
-- Claude 101 (completed; 100+ question review set available)
+- Claude 101 (completed; 100-question scenario-based review set available)
 - Claude Code 101
 - Claude Platform 101
