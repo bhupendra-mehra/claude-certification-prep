@@ -1,0 +1,2207 @@
+{
+  "course": "Claude 101",
+  "course_url": "https://academy.claude.com/courses/claude-101",
+  "title": "Comprehensive Practice Exam (168 MCQs)",
+  "lessons": [
+    "1. What is Claude?",
+    "2. Your first conversation with Claude",
+    "3. Getting better results",
+    "4. How you'll work with Claude on your desktop",
+    "5. Introduction to projects",
+    "6. Creating with artifacts",
+    "7. Working with skills",
+    "8. Connecting your tools",
+    "9. Enterprise search",
+    "10. Research for deep dives",
+    "11. Claude in action: use-cases by role",
+    "12. Other ways to work with Claude",
+    "13. What's next?"
+  ],
+  "note": "Original practice questions for learning and revision. Not official exam questions or a guarantee of certification results. Product features can change; consult current official course guidance.",
+  "questions": [
+    {
+      "id": 1,
+      "lesson": 1,
+      "prompt": "What does 'Constitutional AI' refer to in Claude?",
+      "options": [
+        "A government regulation framework",
+        "An approach using guiding principles to help shape safer, helpful model behavior",
+        "A setting that blocks all uploaded files",
+        "A user profile feature"
+      ],
+      "answer": "B",
+      "explanation": "Constitutional AI uses principles to guide model behavior toward safer and more helpful responses."
+    },
+    {
+      "id": 2,
+      "lesson": 1,
+      "prompt": "What is the context window?",
+      "options": [
+        "The number of accounts in a workspace",
+        "The number of files in a folder",
+        "The amount of input and conversation content a model can consider in a request",
+        "A permanent memory of all prior chats"
+      ],
+      "answer": "C",
+      "explanation": "A context window is the amount of content the model can consider at once; it is finite and model-dependent."
+    },
+    {
+      "id": 3,
+      "lesson": 1,
+      "prompt": "When is Claude best treated as a thinking partner?",
+      "options": [
+        "When a task depends on your situation, draft, or judgment",
+        "When you only need a known capital city",
+        "When you need a random number",
+        "When you want a fixed URL"
+      ],
+      "answer": "A",
+      "explanation": "Tasks shaped by personal context often benefit from collaboration rather than simple lookup."
+    },
+    {
+      "id": 4,
+      "lesson": 1,
+      "prompt": "Why verify a fluent factual answer?",
+      "options": [
+        "Fluent answers are never true",
+        "Claude always uses live search",
+        "Only long answers can be wrong",
+        "Fluency does not guarantee factual accuracy"
+      ],
+      "answer": "D",
+      "explanation": "Generative AI can provide plausible but incorrect claims."
+    },
+    {
+      "id": 5,
+      "lesson": 2,
+      "prompt": "Which prompt structure is most useful?",
+      "options": [
+        "Ask vaguely and correct nothing",
+        "Set the context, define the task, and specify rules or output constraints",
+        "Request every possible result",
+        "Avoid describing the audience"
+      ],
+      "answer": "B",
+      "explanation": "Context, task, and rules make expectations clearer."
+    },
+    {
+      "id": 6,
+      "lesson": 2,
+      "prompt": "How can you improve an answer that is too generic?",
+      "options": [
+        "Repeat the same request forever",
+        "Delete all constraints",
+        "Add relevant context, audience, examples, and success criteria",
+        "Ask for more adjectives"
+      ],
+      "answer": "C",
+      "explanation": "Targeted additional context generally improves relevance."
+    },
+    {
+      "id": 7,
+      "lesson": 2,
+      "prompt": "What does specifying an output format do?",
+      "options": [
+        "Clarifies how the answer should be structured and used",
+        "Guarantees factual accuracy",
+        "Increases the model's context automatically",
+        "Enables any connector"
+      ],
+      "answer": "A",
+      "explanation": "Format requirements reduce ambiguity, but content still needs review."
+    },
+    {
+      "id": 8,
+      "lesson": 2,
+      "prompt": "How should you use examples in prompts?",
+      "options": [
+        "Include irrelevant examples only",
+        "Assume they are understood without sharing them",
+        "Use them as a guarantee of correctness",
+        "Provide relevant examples and state which features to emulate"
+      ],
+      "answer": "D",
+      "explanation": "Examples can demonstrate desired tone, structure, and detail."
+    },
+    {
+      "id": 9,
+      "lesson": 3,
+      "prompt": "What are the 4Ds of AI Fluency?",
+      "options": [
+        "Draft, Decide, Deliver, Delete",
+        "Delegation, Description, Discernment, Diligence",
+        "Data, Design, Debug, Deploy",
+        "Detect, Direct, Document, Deliver"
+      ],
+      "answer": "B",
+      "explanation": "The four competencies cover work allocation, communication, evaluation, and responsible use."
+    },
+    {
+      "id": 10,
+      "lesson": 3,
+      "prompt": "Which competency evaluates the quality and appropriateness of AI output?",
+      "options": [
+        "Delegation",
+        "Description",
+        "Discernment",
+        "Diligence"
+      ],
+      "answer": "C",
+      "explanation": "Discernment means critically evaluating AI work."
+    },
+    {
+      "id": 11,
+      "lesson": 3,
+      "prompt": "How can you test AI output for an analysis task?",
+      "options": [
+        "Compare against a known, trusted example and investigate the gaps",
+        "Trust its confidence",
+        "Only use a new unknown case",
+        "Ask the model to certify itself"
+      ],
+      "answer": "A",
+      "explanation": "Known-answer tests provide a basis for evaluating accuracy."
+    },
+    {
+      "id": 12,
+      "lesson": 3,
+      "prompt": "How should high-impact AI outputs be handled?",
+      "options": [
+        "Use them without review",
+        "Hide limitations",
+        "Treat them as professional advice automatically",
+        "Verify important claims and apply qualified human judgment"
+      ],
+      "answer": "D",
+      "explanation": "Higher stakes require stronger verification and oversight."
+    },
+    {
+      "id": 13,
+      "lesson": 4,
+      "prompt": "Which pattern suits iterative brainstorming?",
+      "options": [
+        "Unattended scheduling",
+        "Turn-by-turn Chat",
+        "Batch file deletion",
+        "A code deployment"
+      ],
+      "answer": "B",
+      "explanation": "Interactive work fits tasks where each answer shapes the next question."
+    },
+    {
+      "id": 14,
+      "lesson": 4,
+      "prompt": "What is important before a multi-step tool-assisted handoff?",
+      "options": [
+        "Unrestricted permissions",
+        "No success criteria",
+        "Clear scope, authorized data, constraints, and expected deliverables",
+        "No output review"
+      ],
+      "answer": "C",
+      "explanation": "A clear task contract reduces unexpected actions and omissions."
+    },
+    {
+      "id": 15,
+      "lesson": 4,
+      "prompt": "What should be done before trusting an automated task?",
+      "options": [
+        "Check its permissions, execution conditions, outputs, and exceptions",
+        "Assume it cannot fail",
+        "Give it all permissions",
+        "Disable logging"
+      ],
+      "answer": "A",
+      "explanation": "Automation needs boundaries and validation."
+    },
+    {
+      "id": 16,
+      "lesson": 5,
+      "prompt": "What are Projects useful for?",
+      "options": [
+        "Replacing every chat with a permanent record",
+        "Granting access to all files",
+        "Changing global model weights",
+        "Keeping related work together with reusable instructions and knowledge"
+      ],
+      "answer": "D",
+      "explanation": "Projects provide an organized context for ongoing work."
+    },
+    {
+      "id": 17,
+      "lesson": 5,
+      "prompt": "What belongs in reusable Project instructions?",
+      "options": [
+        "A different temporary task each day",
+        "Guidance intended to apply across the project's chats",
+        "Unrelated private data",
+        "Passwords"
+      ],
+      "answer": "B",
+      "explanation": "Project instructions guide recurring style, constraints, and context across chats."
+    },
+    {
+      "id": 18,
+      "lesson": 5,
+      "prompt": "What should you do when Project reference files conflict?",
+      "options": [
+        "Let Claude choose without stating uncertainty",
+        "Keep all sources as equal",
+        "Identify the current authoritative source and update stale materials",
+        "Hide the conflict"
+      ],
+      "answer": "C",
+      "explanation": "Source-of-truth clarity helps avoid inconsistent answers."
+    },
+    {
+      "id": 19,
+      "lesson": 6,
+      "prompt": "What is an artifact useful for?",
+      "options": [
+        "Creating a separate, viewable content deliverable or interactive experience",
+        "Changing account security",
+        "Expanding a model permanently",
+        "Granting access to connected apps"
+      ],
+      "answer": "A",
+      "explanation": "Artifacts support tangible work products that can be viewed and refined."
+    },
+    {
+      "id": 20,
+      "lesson": 6,
+      "prompt": "Before sharing a generated chart, what should you check?",
+      "options": [
+        "Only its background color",
+        "Whether the title is clever",
+        "Nothing if it looks polished",
+        "Data, labels, units, calculations, and interpretation"
+      ],
+      "answer": "D",
+      "explanation": "Visual polish does not guarantee correct data or interpretation."
+    },
+    {
+      "id": 21,
+      "lesson": 6,
+      "prompt": "How should you improve an artifact that misses a requirement?",
+      "options": [
+        "Publish it anyway",
+        "Give targeted feedback about the gap and required revision",
+        "Add unrelated features",
+        "Ask the model to guarantee it"
+      ],
+      "answer": "B",
+      "explanation": "Specific iteration instructions help close identified gaps."
+    },
+    {
+      "id": 22,
+      "lesson": 7,
+      "prompt": "What is a Skill intended to provide?",
+      "options": [
+        "A new permanent model",
+        "Unrestricted account access",
+        "Reusable instructions and knowledge for a task or workflow",
+        "A guarantee of accuracy"
+      ],
+      "answer": "C",
+      "explanation": "Skills package repeatable guidance for repeated work."
+    },
+    {
+      "id": 23,
+      "lesson": 7,
+      "prompt": "What makes a Skill more reliable?",
+      "options": [
+        "Clear scope, relevant instructions, examples, and testing",
+        "Ambiguous instructions",
+        "No ownership",
+        "Conflicts with policies"
+      ],
+      "answer": "A",
+      "explanation": "Good scope and testing improve consistent use."
+    },
+    {
+      "id": 24,
+      "lesson": 8,
+      "prompt": "What does a connector generally enable?",
+      "options": [
+        "Unlimited access to company data",
+        "An automatic copy of every system",
+        "An authentication bypass",
+        "Authorized interaction with an external service or data source"
+      ],
+      "answer": "D",
+      "explanation": "Connector access depends on configuration and permissions."
+    },
+    {
+      "id": 25,
+      "lesson": 8,
+      "prompt": "What does least privilege mean?",
+      "options": [
+        "Grant administrator access to everyone",
+        "Grant only the access needed for the task",
+        "Store tokens in prompts",
+        "Disable authorization checks"
+      ],
+      "answer": "B",
+      "explanation": "Least privilege limits the scope of accidental or inappropriate actions."
+    },
+    {
+      "id": 26,
+      "lesson": 8,
+      "prompt": "If a connector returns unrelated sensitive data, what should you do?",
+      "options": [
+        "Share it to explain the issue",
+        "Keep processing it",
+        "Avoid disclosure and investigate relevance and permissions",
+        "Assume access means permission to publish"
+      ],
+      "answer": "C",
+      "explanation": "Do not expose irrelevant sensitive data; review access and query scope."
+    },
+    {
+      "id": 27,
+      "lesson": 9,
+      "prompt": "What does Enterprise Search help with?",
+      "options": [
+        "Finding relevant content across connected organizational sources within access controls",
+        "Replacing every source database",
+        "Making all files public",
+        "Automatically updating official policy"
+      ],
+      "answer": "A",
+      "explanation": "Enterprise Search can retrieve organization information across connected sources and must respect permissions."
+    },
+    {
+      "id": 28,
+      "lesson": 9,
+      "prompt": "How should you validate a search answer's citation?",
+      "options": [
+        "Assume it is correct",
+        "Only check the URL color",
+        "Ignore source text",
+        "Inspect the cited source and ensure it supports the claim"
+      ],
+      "answer": "D",
+      "explanation": "A citation is useful only if it substantiates the answer."
+    },
+    {
+      "id": 29,
+      "lesson": 10,
+      "prompt": "What defines deep research?",
+      "options": [
+        "One unsupported conclusion",
+        "Systematic collection and synthesis of multiple relevant sources",
+        "No citations",
+        "A copied search result"
+      ],
+      "answer": "B",
+      "explanation": "Research for complex questions benefits from multiple sources and synthesis."
+    },
+    {
+      "id": 30,
+      "lesson": 10,
+      "prompt": "What should a research report do with uncertainty?",
+      "options": [
+        "Hide it from decision-makers",
+        "Use made-up precision",
+        "Separate confirmed facts, inferences, and unresolved questions",
+        "Call every source definitive"
+      ],
+      "answer": "C",
+      "explanation": "Transparent uncertainty keeps findings appropriately bounded."
+    },
+    {
+      "id": 31,
+      "lesson": 11,
+      "prompt": "How should developers use AI-generated code?",
+      "options": [
+        "Review, test, and validate it before relying on it",
+        "Deploy it directly without testing",
+        "Assume it has no vulnerabilities",
+        "Replace version control"
+      ],
+      "answer": "A",
+      "explanation": "AI-assisted code needs normal engineering checks."
+    },
+    {
+      "id": 32,
+      "lesson": 11,
+      "prompt": "What is an appropriate use of role-specific AI workflows?",
+      "options": [
+        "Make consequential decisions solely with AI",
+        "Use confidential data without permission",
+        "Invent customer promises",
+        "Draft or synthesize relevant work, with accuracy and policy review"
+      ],
+      "answer": "D",
+      "explanation": "Role-specific assistance should retain accountability and human oversight."
+    },
+    {
+      "id": 33,
+      "lesson": 12,
+      "prompt": "What should you check in AI-produced spreadsheet work?",
+      "options": [
+        "Only font size",
+        "Formulas, assumptions, units, coverage, and totals",
+        "Only sheet names",
+        "Nothing if the file opens"
+      ],
+      "answer": "B",
+      "explanation": "Spreadsheet errors can be subtle and materially affect conclusions."
+    },
+    {
+      "id": 34,
+      "lesson": 12,
+      "prompt": "What is a safe way to automate repetitive work?",
+      "options": [
+        "Automate every action with no checks",
+        "Give unrestricted permissions",
+        "Use bounded scope, test cases, exception handling, and review for risky actions",
+        "Ignore failures"
+      ],
+      "answer": "C",
+      "explanation": "Robust automation includes validation and escalation paths."
+    },
+    {
+      "id": 35,
+      "lesson": 13,
+      "prompt": "What does a high practice score mean?",
+      "options": [
+        "It shows performance on this set, not a guarantee of official exam success",
+        "It guarantees passing",
+        "It proves every topic was tested",
+        "It makes official docs unnecessary"
+      ],
+      "answer": "A",
+      "explanation": "Practice tests are useful indicators but not guarantees."
+    },
+    {
+      "id": 36,
+      "lesson": 13,
+      "prompt": "What should you do if a question looks outdated?",
+      "options": [
+        "Assume it is correct indefinitely",
+        "Change settings blindly",
+        "Rely only on social media",
+        "Check current official documentation and course instructions"
+      ],
+      "answer": "D",
+      "explanation": "Product details change, so current official references take precedence."
+    },
+    {
+      "id": 37,
+      "lesson": 1,
+      "prompt": "What is Claude best described as?",
+      "options": [
+        "A search index that returns only copied webpages",
+        "An AI assistant that can help reason, create, analyze, and work with information",
+        "A deterministic calculator that always returns exact answers",
+        "A database that stores every public webpage"
+      ],
+      "answer": "B",
+      "explanation": "Claude is a generative AI assistant for a range of knowledge and creative tasks; it can still make mistakes."
+    },
+    {
+      "id": 38,
+      "lesson": 1,
+      "prompt": "What is the safest assumption about a fluent answer from Claude?",
+      "options": [
+        "Fluency proves accuracy",
+        "It is correct if it contains specific numbers",
+        "It may still contain mistakes and needs verification when accuracy matters",
+        "It is reliable only when it is short"
+      ],
+      "answer": "C",
+      "explanation": "A confident tone is not evidence that a claim is true."
+    },
+    {
+      "id": 39,
+      "lesson": 1,
+      "prompt": "When is Claude most useful as a thinking partner rather than a simple lookup tool?",
+      "options": [
+        "When a task depends on your draft, context, trade-offs, or judgment",
+        "When asking for a universally known capital city",
+        "When checking a basic arithmetic fact",
+        "When you need a direct copy of a URL"
+      ],
+      "answer": "A",
+      "explanation": "Thinking-partner tasks benefit from iteration and user-specific context."
+    },
+    {
+      "id": 40,
+      "lesson": 1,
+      "prompt": "What is Constitutional AI intended to support?",
+      "options": [
+        "Automatic approval of every user request",
+        "Replacing all human decisions",
+        "Making model responses longer",
+        "Guiding model behavior with principles intended to make it more helpful and safer"
+      ],
+      "answer": "D",
+      "explanation": "Constitutional AI uses principles to guide behavior toward safer, more helpful responses."
+    },
+    {
+      "id": 41,
+      "lesson": 1,
+      "prompt": "Why does Claude sometimes give an incorrect answer?",
+      "options": [
+        "It never uses learned patterns",
+        "Generative models can produce plausible text without guaranteeing factual correctness",
+        "It always prioritizes the newest web page",
+        "It refuses to process context"
+      ],
+      "answer": "B",
+      "explanation": "Generated text is not a guarantee of truth; verification is important."
+    },
+    {
+      "id": 42,
+      "lesson": 1,
+      "prompt": "What should you do before using Claude's answer for a high-impact decision?",
+      "options": [
+        "Trust it if it sounds confident",
+        "Remove all context from the prompt",
+        "Verify material claims against authoritative sources and apply human judgment",
+        "Ask it to guarantee accuracy"
+      ],
+      "answer": "C",
+      "explanation": "High-stakes outputs need independent checking and appropriate human responsibility."
+    },
+    {
+      "id": 43,
+      "lesson": 1,
+      "prompt": "What does a model's context window refer to?",
+      "options": [
+        "The amount of input and conversation content the model can consider in a request",
+        "The number of users logged into Claude",
+        "How many files exist in your computer folder",
+        "The time limit for an account"
+      ],
+      "answer": "A",
+      "explanation": "Context windows are finite and model/feature-dependent."
+    },
+    {
+      "id": 44,
+      "lesson": 1,
+      "prompt": "Why can exact Claude capabilities differ across plans and interfaces?",
+      "options": [
+        "Every account always has identical tools",
+        "Plans only change the font size",
+        "Features are determined solely by prompt length",
+        "Availability may depend on plan, workspace settings, region, and product surface"
+      ],
+      "answer": "D",
+      "explanation": "Feature access is product- and plan-dependent, and can change over time."
+    },
+    {
+      "id": 45,
+      "lesson": 1,
+      "prompt": "What does the course mean by selecting the right tool for a task?",
+      "options": [
+        "Always choose the most complex feature",
+        "Match the work pattern and available capability to the task",
+        "Use only chat for every task",
+        "Avoid checking whether the feature is available"
+      ],
+      "answer": "B",
+      "explanation": "Tool choice should fit the task, workflow, and permissions."
+    },
+    {
+      "id": 46,
+      "lesson": 1,
+      "prompt": "Which statement about Claude's output is most responsible?",
+      "options": [
+        "It should be treated as a draft or aid whose suitability depends on the task",
+        "It automatically replaces domain expertise",
+        "It cannot reflect bias",
+        "It never needs review if a source is attached"
+      ],
+      "answer": "A",
+      "explanation": "Human oversight and task-appropriate review remain important."
+    },
+    {
+      "id": 47,
+      "lesson": 2,
+      "prompt": "Which prompt is most likely to produce a useful business email?",
+      "options": [
+        "Write something",
+        "Email now",
+        "Act as a professional editor; draft a concise follow-up to a client who missed a deadline, keep it polite, and include a clear next step",
+        "Make a perfect email with no other details"
+      ],
+      "answer": "C",
+      "explanation": "A defined role, task, audience/context, tone, and desired outcome improve specificity."
+    },
+    {
+      "id": 48,
+      "lesson": 2,
+      "prompt": "Your first response is too generic. What is the best next step?",
+      "options": [
+        "Start a new account",
+        "Repeat exactly the same prompt indefinitely",
+        "Ask for a random answer",
+        "Add the missing context, constraints, examples, or output criteria"
+      ],
+      "answer": "D",
+      "explanation": "Refine the prompt based on the mismatch rather than merely repeating it."
+    },
+    {
+      "id": 49,
+      "lesson": 2,
+      "prompt": "Why specify the target audience in a prompt?",
+      "options": [
+        "It makes the answer independent of context",
+        "It helps Claude choose appropriate detail, tone, and assumptions",
+        "It prevents all hallucinations",
+        "It guarantees that external research is performed"
+      ],
+      "answer": "B",
+      "explanation": "Audience affects language, depth, and the examples that will be useful."
+    },
+    {
+      "id": 50,
+      "lesson": 2,
+      "prompt": "What is the benefit of requesting a specific output format?",
+      "options": [
+        "It helps make the response easier to use, compare, or process",
+        "It guarantees the content is factually correct",
+        "It increases available context automatically",
+        "It removes the need to define the task"
+      ],
+      "answer": "A",
+      "explanation": "Format instructions reduce ambiguity about the expected structure."
+    },
+    {
+      "id": 51,
+      "lesson": 2,
+      "prompt": "Which prompt includes a meaningful constraint?",
+      "options": [
+        "Explain APIs",
+        "Tell me everything",
+        "Explain REST APIs to a junior developer in five bullets, with one example and no code",
+        "Be useful"
+      ],
+      "answer": "C",
+      "explanation": "The prompt names audience, length, examples, and a format constraint."
+    },
+    {
+      "id": 52,
+      "lesson": 2,
+      "prompt": "You have an example of the style you want Claude to follow. What can you do?",
+      "options": [
+        "Assume Claude will infer it without seeing it",
+        "Include the example and state what aspects should be matched",
+        "Paste unrelated examples without instructions",
+        "Ask Claude to ignore it"
+      ],
+      "answer": "B",
+      "explanation": "Relevant examples can demonstrate tone, structure, and expected output."
+    },
+    {
+      "id": 53,
+      "lesson": 2,
+      "prompt": "What should a good prompt do when the task has multiple deliverables?",
+      "options": [
+        "Hide the deliverables in an unstructured paragraph",
+        "Ask Claude to decide whether to do anything",
+        "Avoid explaining dependencies",
+        "List the deliverables and define their order or relationship"
+      ],
+      "answer": "D",
+      "explanation": "A clear breakdown helps with completeness and sequencing."
+    },
+    {
+      "id": 54,
+      "lesson": 2,
+      "prompt": "What is a practical way to improve an answer over multiple turns?",
+      "options": [
+        "Provide targeted feedback identifying what to keep and what to change",
+        "Delete all previous constraints",
+        "Only type 'wrong'",
+        "Change the subject each time"
+      ],
+      "answer": "A",
+      "explanation": "Specific feedback gives a clear direction for revision."
+    },
+    {
+      "id": 55,
+      "lesson": 2,
+      "prompt": "When should you ask Claude to state assumptions?",
+      "options": [
+        "Never; assumptions should always stay hidden",
+        "Only when doing creative writing",
+        "When details are missing and assumptions could materially affect the result",
+        "Only after you have published the answer"
+      ],
+      "answer": "C",
+      "explanation": "Visible assumptions help you detect misunderstandings and correct them early."
+    },
+    {
+      "id": 56,
+      "lesson": 2,
+      "prompt": "Which instruction best reduces ambiguity in a summarization task?",
+      "options": [
+        "Summarize it however you like",
+        "Summarize for a busy executive in 150 words, highlighting decisions, risks, and owners",
+        "Make it better",
+        "Give me useful information"
+      ],
+      "answer": "B",
+      "explanation": "Audience, length, and summary dimensions define what matters."
+    },
+    {
+      "id": 57,
+      "lesson": 3,
+      "prompt": "What is the AI Fluency 4D framework?",
+      "options": [
+        "Discover, Design, Deploy, Debug",
+        "Draft, Decide, Deliver, Delete",
+        "Data, Documents, Devices, Dashboards",
+        "Delegation, Description, Discernment, Diligence"
+      ],
+      "answer": "D",
+      "explanation": "The 4D framework describes competencies for collaborating with AI thoughtfully."
+    },
+    {
+      "id": 58,
+      "lesson": 3,
+      "prompt": "Which 4D competency concerns deciding what should be done by AI versus a human?",
+      "options": [
+        "Delegation",
+        "Description",
+        "Discernment",
+        "Diligence"
+      ],
+      "answer": "A",
+      "explanation": "Delegation is about allocating work appropriately between people and AI."
+    },
+    {
+      "id": 59,
+      "lesson": 3,
+      "prompt": "Which 4D competency is about communicating instructions and context to AI?",
+      "options": [
+        "Diligence",
+        "Discernment",
+        "Description",
+        "Delegation"
+      ],
+      "answer": "C",
+      "explanation": "Description is the ability to communicate the task and relevant context."
+    },
+    {
+      "id": 60,
+      "lesson": 3,
+      "prompt": "Which 4D competency focuses on critically evaluating AI outputs and behavior?",
+      "options": [
+        "Delegation",
+        "Discernment",
+        "Description",
+        "Diligence"
+      ],
+      "answer": "B",
+      "explanation": "Discernment means evaluating whether the output is appropriate, useful, and accurate."
+    },
+    {
+      "id": 61,
+      "lesson": 3,
+      "prompt": "Which 4D competency emphasizes responsible use and accountability?",
+      "options": [
+        "Description",
+        "Delegation",
+        "Discernment",
+        "Diligence"
+      ],
+      "answer": "D",
+      "explanation": "Diligence includes care, ethical use, and responsible follow-through."
+    },
+    {
+      "id": 62,
+      "lesson": 3,
+      "prompt": "How should you test whether Claude can reliably do a recurring analysis?",
+      "options": [
+        "Use a known case, compare output against a trusted result, refine, and retest",
+        "Use only a new case whose answer is unknown",
+        "Judge only by writing quality",
+        "Ask Claude to certify itself as correct"
+      ],
+      "answer": "A",
+      "explanation": "Known-answer tests make it easier to evaluate quality and limits."
+    },
+    {
+      "id": 63,
+      "lesson": 3,
+      "prompt": "What is a hallucination in an AI response?",
+      "options": [
+        "A file permission error",
+        "A style preference",
+        "A plausible-sounding but unsupported or incorrect claim",
+        "A verified citation"
+      ],
+      "answer": "C",
+      "explanation": "Hallucinations are generated claims that may not be grounded in facts."
+    },
+    {
+      "id": 64,
+      "lesson": 3,
+      "prompt": "What should you do when current information matters?",
+      "options": [
+        "Assume the model's internal knowledge is live",
+        "Provide current source material or use an available search/research capability and verify results",
+        "Ask for a more confident tone",
+        "Avoid including dates"
+      ],
+      "answer": "B",
+      "explanation": "Models may not know the latest events unless current sources are available."
+    },
+    {
+      "id": 65,
+      "lesson": 3,
+      "prompt": "Which is the best handling of confidential company data?",
+      "options": [
+        "Paste it into any AI tool for convenience",
+        "Share credentials so Claude has full context",
+        "Assume every workspace has identical privacy terms",
+        "Check organizational policy and product data controls before sharing sensitive material"
+      ],
+      "answer": "D",
+      "explanation": "Data handling must follow policy, confidentiality, and applicable controls."
+    },
+    {
+      "id": 66,
+      "lesson": 3,
+      "prompt": "Why is human review still needed when Claude summarizes a contract?",
+      "options": [
+        "The reviewer is accountable for material interpretations and must check completeness and accuracy",
+        "Summaries are always intentionally wrong",
+        "Claude cannot read documents",
+        "Only lawyers can read summaries"
+      ],
+      "answer": "A",
+      "explanation": "A polished summary can omit nuance or misrepresent a clause."
+    },
+    {
+      "id": 67,
+      "lesson": 4,
+      "prompt": "Which work pattern fits a back-and-forth brainstorm where each answer shapes the next question?",
+      "options": [
+        "A scheduled unattended job",
+        "Building a complete application",
+        "Turn-by-turn work in Chat",
+        "Enterprise Search only"
+      ],
+      "answer": "C",
+      "explanation": "Iterative, conversational work is a good fit for Chat."
+    },
+    {
+      "id": 68,
+      "lesson": 4,
+      "prompt": "Which work pattern fits delegating a multi-step task over files and connected tools?",
+      "options": [
+        "Only a one-line chat answer",
+        "Cowork-style handoff, when available and authorized",
+        "A static FAQ page",
+        "A model selector by itself"
+      ],
+      "answer": "B",
+      "explanation": "Cowork is designed around multi-step task handoffs and working with files/tools."
+    },
+    {
+      "id": 69,
+      "lesson": 4,
+      "prompt": "Which work pattern is intended for building or modifying software in a development workflow?",
+      "options": [
+        "Projects only",
+        "A one-time chat prompt",
+        "Research mode only",
+        "Claude Code / coding workflow"
+      ],
+      "answer": "D",
+      "explanation": "A coding-oriented workflow is suited to software changes and repository tasks."
+    },
+    {
+      "id": 70,
+      "lesson": 4,
+      "prompt": "Why should you preview or inspect files Claude creates?",
+      "options": [
+        "The file may not satisfy formatting, content, or business requirements until reviewed",
+        "Files made by AI are always encrypted",
+        "It automatically changes permissions",
+        "It proves the source data is correct"
+      ],
+      "answer": "A",
+      "explanation": "Generated artifacts should be checked before use or sharing."
+    },
+    {
+      "id": 71,
+      "lesson": 4,
+      "prompt": "What should you establish before letting an AI workflow modify local files?",
+      "options": [
+        "Only the output font",
+        "A request to be creative",
+        "Scope, approved locations, permissions, and review expectations",
+        "That it may edit every drive"
+      ],
+      "answer": "C",
+      "explanation": "Clear boundaries reduce accidental changes and protect sensitive work."
+    },
+    {
+      "id": 72,
+      "lesson": 4,
+      "prompt": "A task requires repeated user choices at each step. Which approach is usually preferable?",
+      "options": [
+        "Unattended automation without checkpoints",
+        "Interactive turn-by-turn conversation",
+        "A hidden background job",
+        "A completed artifact with no input"
+      ],
+      "answer": "B",
+      "explanation": "Interactive work is appropriate when decisions depend on intermediate answers."
+    },
+    {
+      "id": 73,
+      "lesson": 4,
+      "prompt": "What is important when using scheduled or automated task features?",
+      "options": [
+        "Every task runs under every plan",
+        "A schedule removes all error risks",
+        "Local files are always accessible remotely",
+        "Check availability, execution conditions, permissions, and output before relying on it"
+      ],
+      "answer": "D",
+      "explanation": "Automation behavior depends on product capabilities, access, and task environment."
+    },
+    {
+      "id": 74,
+      "lesson": 4,
+      "prompt": "What is a good habit when delegating a long task to Claude?",
+      "options": [
+        "Define the goal, input sources, constraints, and expected deliverables",
+        "Only say 'do everything'",
+        "Avoid defining when it should ask for help",
+        "Never inspect progress"
+      ],
+      "answer": "A",
+      "explanation": "The delegated work needs a clear task contract and checkpoints appropriate to risk."
+    },
+    {
+      "id": 75,
+      "lesson": 4,
+      "prompt": "Why are permissions important in a tool-using workflow?",
+      "options": [
+        "They improve the model's writing style",
+        "They increase context length",
+        "They limit actions and data access to what is authorized",
+        "They eliminate the need for authentication"
+      ],
+      "answer": "C",
+      "explanation": "Least-privilege access reduces risk from accidental or inappropriate actions."
+    },
+    {
+      "id": 76,
+      "lesson": 4,
+      "prompt": "What should you do if Claude's proposed action exceeds the stated scope?",
+      "options": [
+        "Allow it because more work is better",
+        "Pause, clarify the scope, and obtain approval before expanding actions",
+        "Hide the extra action from the user",
+        "Assume the output is harmless"
+      ],
+      "answer": "B",
+      "explanation": "Tasks should stay within explicit authorization."
+    },
+    {
+      "id": 77,
+      "lesson": 5,
+      "prompt": "What are Projects useful for?",
+      "options": [
+        "Creating an isolated one-off answer without context",
+        "Running code with no files",
+        "Changing the global model",
+        "Keeping related work organized with reusable instructions and project knowledge"
+      ],
+      "answer": "D",
+      "explanation": "Projects provide a durable workspace for related work and context."
+    },
+    {
+      "id": 78,
+      "lesson": 5,
+      "prompt": "Where should guidance intended to apply across chats in a Project generally go?",
+      "options": [
+        "Project instructions",
+        "Only in the name of the Project",
+        "In an unrelated one-off conversation",
+        "In a filename"
+      ],
+      "answer": "A",
+      "explanation": "Project instructions establish reusable guidance for chats in that workspace."
+    },
+    {
+      "id": 79,
+      "lesson": 5,
+      "prompt": "What is a sensible use of project knowledge files?",
+      "options": [
+        "Store every unrelated file just in case",
+        "Treat them as always-current without review",
+        "Add relevant, trusted reference material that Claude can use across the project",
+        "Use them as a substitute for task instructions"
+      ],
+      "answer": "C",
+      "explanation": "Relevant knowledge improves grounded, repeatable project work."
+    },
+    {
+      "id": 80,
+      "lesson": 5,
+      "prompt": "How should a one-off file differ from a reusable project reference?",
+      "options": [
+        "A one-off file must become public",
+        "Attach it to the specific conversation if it should not be shared as persistent project knowledge",
+        "A one-off file must be renamed the project",
+        "There is no possible distinction"
+      ],
+      "answer": "B",
+      "explanation": "Conversation attachments and shared project knowledge serve different scopes."
+    },
+    {
+      "id": 81,
+      "lesson": 5,
+      "prompt": "Why keep project instructions concise and clear?",
+      "options": [
+        "To ensure they override all policies",
+        "To make every response identical regardless of task",
+        "To remove user context",
+        "To reduce conflicting directions and make intended behavior easier to follow"
+      ],
+      "answer": "D",
+      "explanation": "Clear instructions reduce ambiguity and conflicting expectations."
+    },
+    {
+      "id": 82,
+      "lesson": 5,
+      "prompt": "A shared project contains customer information. What should you check before inviting a colleague?",
+      "options": [
+        "Whether the colleague is authorized and what the sharing permissions expose",
+        "Only the project color",
+        "Whether the project name is short",
+        "Whether they can download unrelated files"
+      ],
+      "answer": "A",
+      "explanation": "Access should be granted according to business need and data policy."
+    },
+    {
+      "id": 83,
+      "lesson": 5,
+      "prompt": "What is the best approach when project knowledge is large?",
+      "options": [
+        "Upload duplicates of every file",
+        "Assume Claude will always find every detail perfectly",
+        "Organize, label, and maintain relevant knowledge; verify retrieved facts",
+        "Remove the instructions"
+      ],
+      "answer": "C",
+      "explanation": "Good organization and verification improve the reliability of knowledge-assisted work."
+    },
+    {
+      "id": 84,
+      "lesson": 5,
+      "prompt": "What should you do when a project reference document becomes outdated?",
+      "options": [
+        "Leave it because Claude will know",
+        "Update or remove it and identify the current source of truth",
+        "Add a conflicting file without explanation",
+        "Ask Claude to guess which version is latest"
+      ],
+      "answer": "B",
+      "explanation": "Current, unambiguous reference material helps avoid contradictory answers."
+    },
+    {
+      "id": 85,
+      "lesson": 5,
+      "prompt": "Do Project instructions eliminate the need to specify the immediate task?",
+      "options": [
+        "Yes, no task is needed",
+        "Only for code",
+        "Only when the answer is long",
+        "No; the current prompt still needs to state the task and its specifics"
+      ],
+      "answer": "D",
+      "explanation": "Persistent context supports but does not replace the immediate request."
+    },
+    {
+      "id": 86,
+      "lesson": 5,
+      "prompt": "Which design best supports repeatable work on a team?",
+      "options": [
+        "A shared Project with maintained knowledge and explicit instructions, subject to access controls",
+        "A different undocumented prompt each time",
+        "One employee's private chat copied manually forever",
+        "A project with no owner"
+      ],
+      "answer": "A",
+      "explanation": "A shared, maintained workspace can make work more consistent when access is controlled."
+    },
+    {
+      "id": 87,
+      "lesson": 6,
+      "prompt": "What is an artifact in Claude's product experience?",
+      "options": [
+        "A hidden model weight",
+        "A billing receipt",
+        "A content or deliverable such as a document, visualization, or interactive piece created alongside a conversation",
+        "An account password"
+      ],
+      "answer": "C",
+      "explanation": "Artifacts let users create and work with stand-alone content or interactive outputs."
+    },
+    {
+      "id": 88,
+      "lesson": 6,
+      "prompt": "When is an artifact especially useful?",
+      "options": [
+        "When you only need a yes/no answer",
+        "When a deliverable benefits from a separate, viewable, iteratively editable presentation",
+        "When you want to avoid all feedback",
+        "When the output must not be reviewed"
+      ],
+      "answer": "B",
+      "explanation": "Artifacts are useful for deliverables that deserve their own canvas or interactive view."
+    },
+    {
+      "id": 89,
+      "lesson": 6,
+      "prompt": "What is the best way to request a polished artifact?",
+      "options": [
+        "Say 'make it nice' and provide nothing else",
+        "Ask for unlimited features",
+        "Avoid stating who will use it",
+        "Describe the audience, purpose, content, desired format, and constraints"
+      ],
+      "answer": "D",
+      "explanation": "A good brief gives the artifact a clear purpose and acceptance criteria."
+    },
+    {
+      "id": 90,
+      "lesson": 6,
+      "prompt": "What should you do before sharing an AI-generated chart or dashboard?",
+      "options": [
+        "Check the underlying values, labels, units, and interpretation",
+        "Trust the visual because it looks professional",
+        "Remove source data",
+        "Assume axes are correct"
+      ],
+      "answer": "A",
+      "explanation": "Visual polish can conceal incorrect calculations or misleading presentation."
+    },
+    {
+      "id": 91,
+      "lesson": 6,
+      "prompt": "If an artifact misses an important requirement, what is the best iteration strategy?",
+      "options": [
+        "Start over without explaining why",
+        "Add unrelated requirements",
+        "Give specific feedback about the missing element and expected change",
+        "Publish it immediately"
+      ],
+      "answer": "C",
+      "explanation": "Targeted revision instructions make correction more efficient."
+    },
+    {
+      "id": 92,
+      "lesson": 6,
+      "prompt": "Which concern matters for an interactive artifact?",
+      "options": [
+        "Only the title color",
+        "Whether controls behave as intended, content is accessible, and edge cases are handled",
+        "Whether it uses the longest code",
+        "Whether it hides all data"
+      ],
+      "answer": "B",
+      "explanation": "Interactive outputs should be tested for function, accessibility, and robustness."
+    },
+    {
+      "id": 93,
+      "lesson": 6,
+      "prompt": "Which is a strong acceptance criterion for a project status artifact?",
+      "options": [
+        "It should look futuristic",
+        "It should include as much text as possible",
+        "It must use every available color",
+        "It shows status, owner, due date, blocker, and next action accurately"
+      ],
+      "answer": "D",
+      "explanation": "Acceptance criteria should be specific and tied to the artifact's intended use."
+    },
+    {
+      "id": 94,
+      "lesson": 6,
+      "prompt": "Why should generated documents be checked for citations and factual claims?",
+      "options": [
+        "Because generated content may contain errors, missing context, or unsupported assertions",
+        "Because documents cannot contain text",
+        "Because the tool never uses inputs",
+        "Because citations reduce file size"
+      ],
+      "answer": "A",
+      "explanation": "Review helps ensure the deliverable is factually sound and usable."
+    },
+    {
+      "id": 95,
+      "lesson": 6,
+      "prompt": "What should you consider when sharing an artifact externally?",
+      "options": [
+        "Nothing; generated content is automatically public-domain and approved",
+        "Only the filename",
+        "Sensitive data, permissions, factual review, and any applicable ownership or policy requirements",
+        "Whether it was produced quickly"
+      ],
+      "answer": "C",
+      "explanation": "External sharing requires content, privacy, and policy checks."
+    },
+    {
+      "id": 96,
+      "lesson": 6,
+      "prompt": "Which statement about artifacts is most accurate?",
+      "options": [
+        "They are always equivalent to a production application",
+        "They are useful deliverables, but complex outputs still require testing and review",
+        "They cannot be revised",
+        "They always stay private in every context"
+      ],
+      "answer": "B",
+      "explanation": "Artifacts can be powerful, but capabilities and sharing behavior should be checked."
+    },
+    {
+      "id": 97,
+      "lesson": 6,
+      "prompt": "What is the main benefit of iterating directly on a visual deliverable?",
+      "options": [
+        "It removes all need for requirements",
+        "It makes the source data accurate automatically",
+        "It prevents anyone from seeing it",
+        "It lets you evaluate the result and refine specific elements against the goal"
+      ],
+      "answer": "D",
+      "explanation": "Direct iteration can improve fit to the intended audience and workflow."
+    },
+    {
+      "id": 98,
+      "lesson": 7,
+      "prompt": "What is a Skill intended to provide?",
+      "options": [
+        "Reusable instructions and knowledge for a type of task or workflow",
+        "A permanent change to the model's weights",
+        "Unrestricted access to all company systems",
+        "A guarantee that outputs are correct"
+      ],
+      "answer": "A",
+      "explanation": "Skills package repeatable guidance so common tasks can be handled more consistently."
+    },
+    {
+      "id": 99,
+      "lesson": 7,
+      "prompt": "When is using a Skill a good idea?",
+      "options": [
+        "For a one-off task that has no recurring pattern",
+        "When a repeatable task benefits from documented steps, standards, and examples",
+        "Whenever you want to bypass organization policy",
+        "Only for mathematical tasks"
+      ],
+      "answer": "B",
+      "explanation": "Skills are most useful when procedures or standards should be applied repeatedly."
+    },
+    {
+      "id": 100,
+      "lesson": 7,
+      "prompt": "What makes a Skill more reliable?",
+      "options": [
+        "Vague rules and no examples",
+        "A requirement to follow every instruction regardless of context",
+        "Relevant instructions, clear triggers, examples, and maintained supporting resources",
+        "No description of intended use"
+      ],
+      "answer": "C",
+      "explanation": "Clear scope and useful examples improve discoverability and consistent behavior."
+    },
+    {
+      "id": 101,
+      "lesson": 7,
+      "prompt": "Why should a Skill define its scope?",
+      "options": [
+        "To make every task invoke it",
+        "To remove human review",
+        "To make the file larger",
+        "To help determine when it is relevant and when it should not be used"
+      ],
+      "answer": "D",
+      "explanation": "A defined scope reduces inappropriate or accidental use."
+    },
+    {
+      "id": 102,
+      "lesson": 7,
+      "prompt": "What should you do after changing a Skill?",
+      "options": [
+        "Test it on representative tasks and inspect whether it follows the intended workflow",
+        "Assume all future outputs are correct",
+        "Delete all test cases",
+        "Avoid reviewing the output"
+      ],
+      "answer": "A",
+      "explanation": "Testing helps discover conflicting instructions and missing edge cases."
+    },
+    {
+      "id": 103,
+      "lesson": 7,
+      "prompt": "A Skill includes instructions that conflict with company policy. What should happen?",
+      "options": [
+        "The Skill always wins",
+        "Follow company policy and correct the Skill before reuse",
+        "Follow whichever instruction is longer",
+        "Ignore policy only for small tasks"
+      ],
+      "answer": "B",
+      "explanation": "Reusable instructions do not override organizational requirements or higher-priority rules."
+    },
+    {
+      "id": 104,
+      "lesson": 7,
+      "prompt": "How should a team maintain shared Skills?",
+      "options": [
+        "Let everyone change the only copy without review",
+        "Never update them",
+        "Assign ownership, review changes, and keep guidance current",
+        "Make them confidential from all intended users"
+      ],
+      "answer": "C",
+      "explanation": "Ownership and review help keep shared guidance reliable and auditable."
+    },
+    {
+      "id": 105,
+      "lesson": 7,
+      "prompt": "What is a useful use of a Skill in software development?",
+      "options": [
+        "Granting production credentials to the model",
+        "Automatically approving every pull request",
+        "Replacing the test suite",
+        "Applying a consistent code-review checklist and repository conventions"
+      ],
+      "answer": "D",
+      "explanation": "A Skill can encode repeatable standards, but code still needs testing and review."
+    },
+    {
+      "id": 106,
+      "lesson": 7,
+      "prompt": "What is the difference between a Skill and a normal prompt?",
+      "options": [
+        "A Skill can package reusable guidance for repeated use, whereas a prompt usually describes an immediate task",
+        "A prompt always runs in the background",
+        "A Skill changes the model architecture",
+        "There is no possible difference"
+      ],
+      "answer": "A",
+      "explanation": "Skills help reuse workflows without rewriting the full guidance every time."
+    },
+    {
+      "id": 107,
+      "lesson": 7,
+      "prompt": "What is a responsible way to handle a Skill that produces inconsistent results?",
+      "options": [
+        "Use it for more sensitive work without changes",
+        "Review the trigger, instructions, examples, and inputs; then test revisions",
+        "Remove all output checks",
+        "Tell users the Skill is infallible"
+      ],
+      "answer": "B",
+      "explanation": "Troubleshoot the workflow systematically and validate revised behavior."
+    },
+    {
+      "id": 108,
+      "lesson": 8,
+      "prompt": "What does a connector generally enable?",
+      "options": [
+        "It permanently copies every external database into model memory",
+        "It disables all access controls",
+        "It lets Claude interact with an external service or data source within configured permissions",
+        "It guarantees every result is current"
+      ],
+      "answer": "C",
+      "explanation": "Connectors can provide authorized access to external tools or information."
+    },
+    {
+      "id": 109,
+      "lesson": 8,
+      "prompt": "What should you check before connecting a workplace account?",
+      "options": [
+        "Only whether the service has a recognizable logo",
+        "Nothing, because all connectors are risk-free",
+        "Whether you can grant every possible permission",
+        "The requested permissions, data scope, organizational approval, and intended use"
+      ],
+      "answer": "D",
+      "explanation": "Connections can expose sensitive data or enable actions, so access deserves review."
+    },
+    {
+      "id": 110,
+      "lesson": 8,
+      "prompt": "What does least privilege mean for tool access?",
+      "options": [
+        "Grant only the access needed for the task",
+        "Grant administrator access to avoid errors",
+        "Share one account with every colleague",
+        "Turn off authentication"
+      ],
+      "answer": "A",
+      "explanation": "Least privilege limits potential harm from misuse or mistakes."
+    },
+    {
+      "id": 111,
+      "lesson": 8,
+      "prompt": "A connector returns a customer record unrelated to the question. What should you do?",
+      "options": [
+        "Repeat the data in your response",
+        "Avoid exposing it, stop unnecessary processing, and investigate permissions or query scope",
+        "Send it to a public channel",
+        "Assume access implies authorization to disclose"
+      ],
+      "answer": "B",
+      "explanation": "Unexpectedly retrieved data should not be disclosed; check access and relevance."
+    },
+    {
+      "id": 112,
+      "lesson": 8,
+      "prompt": "Why might an integration fail to retrieve data?",
+      "options": [
+        "Claude always refuses external data",
+        "The user typed too few words",
+        "Connection may be expired, permissions insufficient, service unavailable, or data outside scope",
+        "The service has no data in any case"
+      ],
+      "answer": "C",
+      "explanation": "Troubleshooting should consider access, connection state, service health, and scope."
+    },
+    {
+      "id": 113,
+      "lesson": 8,
+      "prompt": "What is a safe pattern when using a connector to perform an external action?",
+      "options": [
+        "Let it perform unlimited actions without checking",
+        "Use any available account token",
+        "Assume no confirmation is ever required",
+        "Confirm intended action and scope, then review high-impact changes as appropriate"
+      ],
+      "answer": "D",
+      "explanation": "Actions should be authorized and reviewed in proportion to their impact."
+    },
+    {
+      "id": 114,
+      "lesson": 8,
+      "prompt": "How should credentials for integrations be handled?",
+      "options": [
+        "Use supported secure authentication and never paste secrets into ordinary prompts",
+        "Put passwords in a shared Skill file",
+        "Publish tokens in the repository",
+        "Reuse personal credentials across all tools"
+      ],
+      "answer": "A",
+      "explanation": "Credentials should be protected and managed through approved authentication mechanisms."
+    },
+    {
+      "id": 115,
+      "lesson": 8,
+      "prompt": "What should an organization do before enabling a connector broadly?",
+      "options": [
+        "Enable it for everyone and assess later",
+        "Evaluate business need, access boundaries, data handling, and governance",
+        "Disable audit and logging",
+        "Ignore user training"
+      ],
+      "answer": "B",
+      "explanation": "Rollout should include authorization, governance, and appropriate controls."
+    },
+    {
+      "id": 116,
+      "lesson": 8,
+      "prompt": "What is the value of connecting a tool rather than copying data by hand?",
+      "options": [
+        "It removes all access risks",
+        "It guarantees no stale data",
+        "It can streamline workflows and access relevant data within permissions",
+        "It makes data review unnecessary"
+      ],
+      "answer": "C",
+      "explanation": "Connectors may improve workflow efficiency but do not remove risk or review needs."
+    },
+    {
+      "id": 117,
+      "lesson": 8,
+      "prompt": "What is a sensible response if a connector's permission request seems broader than needed?",
+      "options": [
+        "Approve it because broad access is convenient",
+        "Share it with another account",
+        "Use it in production without clarification",
+        "Pause and ask an administrator or owner to review the access scope"
+      ],
+      "answer": "D",
+      "explanation": "Permission requests should be scrutinized and minimized."
+    },
+    {
+      "id": 118,
+      "lesson": 9,
+      "prompt": "What is Enterprise Search designed to help with?",
+      "options": [
+        "Finding relevant information across connected organizational sources, subject to access controls",
+        "Replacing every database",
+        "Making public internet search private",
+        "Automatically changing source documents"
+      ],
+      "answer": "A",
+      "explanation": "Enterprise search helps locate relevant organizational information across connected sources."
+    },
+    {
+      "id": 119,
+      "lesson": 9,
+      "prompt": "Why do access controls matter in Enterprise Search?",
+      "options": [
+        "They only make search slower",
+        "They should ensure people see only information they are authorized to access",
+        "They guarantee the answer is complete",
+        "They are optional when AI summarizes a document"
+      ],
+      "answer": "B",
+      "explanation": "Search should respect source permissions; relevant access must not become unrestricted access."
+    },
+    {
+      "id": 120,
+      "lesson": 9,
+      "prompt": "How should you evaluate an enterprise-search answer that cites internal sources?",
+      "options": [
+        "Assume it is correct because the source is internal",
+        "Ignore the cited passages",
+        "Open or inspect cited sources and confirm they support the answer",
+        "Share it publicly without review"
+      ],
+      "answer": "C",
+      "explanation": "Citations help verification, but the source must actually support the claim."
+    },
+    {
+      "id": 121,
+      "lesson": 9,
+      "prompt": "A search summary conflicts with the official policy document. What should you do?",
+      "options": [
+        "Use the summary because it is shorter",
+        "Merge both versions without noting conflict",
+        "Let the model choose at random",
+        "Consult the authoritative current source and flag the discrepancy"
+      ],
+      "answer": "D",
+      "explanation": "Use the source of truth and resolve conflicts rather than hide them."
+    },
+    {
+      "id": 122,
+      "lesson": 9,
+      "prompt": "Why might Enterprise Search miss relevant information?",
+      "options": [
+        "A source may not be connected, indexed, accessible, or phrased in a way the query retrieves",
+        "Enterprise search sees every system automatically",
+        "Every index is always complete instantly",
+        "Search terms never affect results"
+      ],
+      "answer": "A",
+      "explanation": "Coverage and permissions depend on configuration, source state, and query."
+    },
+    {
+      "id": 123,
+      "lesson": 9,
+      "prompt": "What is a good search question for company policy?",
+      "options": [
+        "Tell me all things about work",
+        "What is the current travel reimbursement limit, and which official policy section states it?",
+        "Guess the current reimbursement rule",
+        "Use the most recent rumor"
+      ],
+      "answer": "B",
+      "explanation": "A focused question and request for supporting policy source make verification easier."
+    },
+    {
+      "id": 124,
+      "lesson": 9,
+      "prompt": "If a document is restricted to a particular team, should a broad search result expose its contents to others?",
+      "options": [
+        "Yes, if the summary is short",
+        "Yes, if Claude thinks it is helpful",
+        "No; information access and disclosure must honor source permissions",
+        "Only if the title is visible"
+      ],
+      "answer": "C",
+      "explanation": "Summarization should not bypass underlying authorization boundaries."
+    },
+    {
+      "id": 125,
+      "lesson": 9,
+      "prompt": "What is the best reason to include citations in enterprise search responses?",
+      "options": [
+        "They make every result legally binding",
+        "They make sources unnecessary",
+        "They allow unrestricted redisclosure",
+        "They help users verify claims and navigate to supporting information"
+      ],
+      "answer": "D",
+      "explanation": "Source links support auditability and fact checking."
+    },
+    {
+      "id": 126,
+      "lesson": 9,
+      "prompt": "How should you handle duplicate or contradictory internal sources?",
+      "options": [
+        "Identify source-of-truth hierarchy and freshness; report unresolved conflicts",
+        "Always use the longest file",
+        "Combine all statements into one claim",
+        "Delete the originals"
+      ],
+      "answer": "A",
+      "explanation": "Source authority and freshness matter when records disagree."
+    },
+    {
+      "id": 127,
+      "lesson": 9,
+      "prompt": "What should you do if Enterprise Search results omit a key policy detail?",
+      "options": [
+        "Assume the missing detail does not exist",
+        "Refine the query, inspect authoritative documents, or contact the responsible owner",
+        "Invent a reasonable policy",
+        "Cite a result that does not support it"
+      ],
+      "answer": "B",
+      "explanation": "Missing evidence should prompt further retrieval or escalation, not fabrication."
+    },
+    {
+      "id": 128,
+      "lesson": 10,
+      "prompt": "What distinguishes research for a deep dive from a quick answer?",
+      "options": [
+        "It never uses external sources",
+        "It avoids comparing evidence",
+        "It systematically gathers, compares, and synthesizes multiple relevant sources to answer a complex question",
+        "It provides only a confident conclusion"
+      ],
+      "answer": "C",
+      "explanation": "Deep research is useful when a question requires breadth, depth, and synthesis."
+    },
+    {
+      "id": 129,
+      "lesson": 10,
+      "prompt": "What should a strong research request specify?",
+      "options": [
+        "Only 'research this'",
+        "Only the desired number of pages",
+        "Only a topic word",
+        "The question, scope, time period, source preferences, and desired deliverables"
+      ],
+      "answer": "D",
+      "explanation": "A clear brief defines the research boundaries and output."
+    },
+    {
+      "id": 130,
+      "lesson": 10,
+      "prompt": "Why is source quality important in research?",
+      "options": [
+        "Different sources vary in authority, evidence, recency, and potential bias",
+        "All websites are equally reliable",
+        "A large source count guarantees truth",
+        "Only the first result matters"
+      ],
+      "answer": "A",
+      "explanation": "Assess sources based on relevance, evidence quality, authority, and recency."
+    },
+    {
+      "id": 131,
+      "lesson": 10,
+      "prompt": "A report cites a study but the study does not support the stated claim. What is the right response?",
+      "options": [
+        "Keep the citation because it looks credible",
+        "Correct or remove the claim and locate evidence that actually supports it",
+        "Add more unrelated citations",
+        "Hide the source list"
+      ],
+      "answer": "B",
+      "explanation": "A citation must substantively support the claim it accompanies."
+    },
+    {
+      "id": 132,
+      "lesson": 10,
+      "prompt": "When researching a fast-changing topic, what should you prioritize?",
+      "options": [
+        "Undated blog posts only",
+        "Sources with no author",
+        "Recent, authoritative sources and explicit publication or event dates",
+        "Only a model's remembered answer"
+      ],
+      "answer": "C",
+      "explanation": "Recency and source authority both matter for dynamic topics."
+    },
+    {
+      "id": 133,
+      "lesson": 10,
+      "prompt": "Why seek opposing or differing perspectives?",
+      "options": [
+        "To make the report longer",
+        "To force the answer to be neutral even when evidence is clear",
+        "To avoid reaching any conclusion",
+        "To identify disagreement, uncertainty, assumptions, and evidence limits"
+      ],
+      "answer": "D",
+      "explanation": "Comparative evidence supports balanced, transparent analysis."
+    },
+    {
+      "id": 134,
+      "lesson": 10,
+      "prompt": "Which output is most useful for decision research?",
+      "options": [
+        "Findings with supporting sources, implications, uncertainties, and recommended next steps",
+        "A list of unexplained quotations",
+        "A conclusion with no reasoning",
+        "A summary that hides conflicting evidence"
+      ],
+      "answer": "A",
+      "explanation": "Decision-ready research connects findings to evidence and implications."
+    },
+    {
+      "id": 135,
+      "lesson": 10,
+      "prompt": "How should uncertainty be represented in a research report?",
+      "options": [
+        "Remove all caveats",
+        "State what is known, what is inferred, and what remains uncertain",
+        "Use exact numbers even without evidence",
+        "Call every source definitive"
+      ],
+      "answer": "B",
+      "explanation": "Transparent uncertainty reduces overclaiming."
+    },
+    {
+      "id": 136,
+      "lesson": 10,
+      "prompt": "What does triangulation mean in research?",
+      "options": [
+        "Reading one source repeatedly",
+        "Using only a single press release",
+        "Checking a conclusion against multiple independent sources or evidence types",
+        "Replacing sources with opinions"
+      ],
+      "answer": "C",
+      "explanation": "Independent corroboration increases confidence when sources agree for good reasons."
+    },
+    {
+      "id": 137,
+      "lesson": 10,
+      "prompt": "What should a final research report do with unsupported claims?",
+      "options": [
+        "Present them as facts if useful",
+        "Put them only in the executive summary",
+        "Assign them a made-up confidence percentage",
+        "Omit them or label them clearly as hypotheses needing validation"
+      ],
+      "answer": "D",
+      "explanation": "Distinguish evidence-supported findings from speculation."
+    },
+    {
+      "id": 138,
+      "lesson": 11,
+      "prompt": "How can Claude help a software developer responsibly?",
+      "options": [
+        "Draft code, explain unfamiliar code, propose tests, and support debugging while a developer reviews changes",
+        "Guarantee code is secure without tests",
+        "Deploy directly to production by default",
+        "Replace all version control"
+      ],
+      "answer": "A",
+      "explanation": "Claude can assist many development tasks, but code review and testing remain necessary."
+    },
+    {
+      "id": 139,
+      "lesson": 11,
+      "prompt": "What should a business analyst provide for a useful data-analysis task?",
+      "options": [
+        "A vague request to find everything",
+        "The dataset context, definitions, question, constraints, and desired outputs",
+        "Only an instruction to make a chart",
+        "No definitions of the metrics"
+      ],
+      "answer": "B",
+      "explanation": "Analysis quality depends on clear goals, input interpretation, and measure definitions."
+    },
+    {
+      "id": 140,
+      "lesson": 11,
+      "prompt": "How might a project manager use Claude effectively?",
+      "options": [
+        "Ask it to invent completion statuses",
+        "Replace stakeholder confirmation with assumptions",
+        "Summarize updates into risks, owners, dependencies, and next actions, then verify them",
+        "Publish private project notes publicly"
+      ],
+      "answer": "C",
+      "explanation": "Structured synthesis can support coordination when facts are validated."
+    },
+    {
+      "id": 141,
+      "lesson": 11,
+      "prompt": "What must be checked before using Claude to draft customer communications?",
+      "options": [
+        "Only grammar",
+        "Whether it sounds certain",
+        "Whether it includes as many technical terms as possible",
+        "Accuracy, customer context, tone, confidentiality, and required approvals"
+      ],
+      "answer": "D",
+      "explanation": "External communications need accurate facts and policy-appropriate tone and content."
+    },
+    {
+      "id": 142,
+      "lesson": 11,
+      "prompt": "How can a researcher use Claude safely with scientific literature?",
+      "options": [
+        "Ask for synthesis and critical comparison, then verify cited papers and interpretations",
+        "Assume all paper titles it provides exist",
+        "Use it to fabricate missing results",
+        "Skip methods and limitations"
+      ],
+      "answer": "A",
+      "explanation": "AI-assisted synthesis should be grounded in real publications and careful reading."
+    },
+    {
+      "id": 143,
+      "lesson": 11,
+      "prompt": "What is an appropriate use for HR-related drafting?",
+      "options": [
+        "Make final employment decisions based solely on AI",
+        "Draft role descriptions or communication templates with human review for fairness and policy",
+        "Infer protected characteristics",
+        "Upload confidential personnel files without authorization"
+      ],
+      "answer": "B",
+      "explanation": "Administrative drafting may be assisted, while consequential decisions require appropriate controls and human oversight."
+    },
+    {
+      "id": 144,
+      "lesson": 11,
+      "prompt": "Why is AI output for legal, medical, or financial matters especially sensitive?",
+      "options": [
+        "It is always wrong",
+        "It never contains useful information",
+        "Errors can have material consequences, requiring qualified review and reliable sources",
+        "It does not need citations"
+      ],
+      "answer": "C",
+      "explanation": "High-impact domains require careful verification and professional judgment."
+    },
+    {
+      "id": 145,
+      "lesson": 11,
+      "prompt": "What is a practical use of Claude in sales?",
+      "options": [
+        "Generate fake customer testimonials",
+        "Promise product capabilities without checking",
+        "Share competitors' confidential data",
+        "Draft tailored outreach based on approved, accurate prospect context and review it before sending"
+      ],
+      "answer": "D",
+      "explanation": "Personalized drafting can help, but claims and data use must be appropriate."
+    },
+    {
+      "id": 146,
+      "lesson": 11,
+      "prompt": "How should a teacher use Claude-generated learning materials?",
+      "options": [
+        "Review accuracy, level, inclusiveness, and alignment with learning goals before use",
+        "Assume a worksheet is pedagogically correct",
+        "Use it to publish students' private data",
+        "Avoid adapting the content"
+      ],
+      "answer": "A",
+      "explanation": "Generated education content should be reviewed for accuracy and learner suitability."
+    },
+    {
+      "id": 147,
+      "lesson": 11,
+      "prompt": "What is the role of human oversight in role-specific AI use cases?",
+      "options": [
+        "It is unnecessary for familiar tasks",
+        "It validates output, handles context and accountability, and decides when not to use AI",
+        "It only changes the formatting",
+        "It guarantees that the model cannot err"
+      ],
+      "answer": "B",
+      "explanation": "Human review ensures outputs fit real-world goals, rules, and responsibilities."
+    },
+    {
+      "id": 148,
+      "lesson": 12,
+      "prompt": "When should you use a specialized Claude product or workflow rather than ordinary chat?",
+      "options": [
+        "Whenever it is newer",
+        "Even when it does not support the task",
+        "When its capabilities fit the workflow and access is available",
+        "Only because someone else uses it"
+      ],
+      "answer": "C",
+      "explanation": "Use the product surface that best matches the task and required integrations."
+    },
+    {
+      "id": 149,
+      "lesson": 12,
+      "prompt": "What is a good habit when using Claude with spreadsheets?",
+      "options": [
+        "Assume all formulas are correct",
+        "Hide the calculation steps",
+        "Only inspect cell colors",
+        "Check formulas, units, row coverage, assumptions, and totals against source data"
+      ],
+      "answer": "D",
+      "explanation": "Spreadsheet outputs can contain subtle calculation or interpretation errors."
+    },
+    {
+      "id": 150,
+      "lesson": 12,
+      "prompt": "What is the purpose of exporting or downloading a generated file?",
+      "options": [
+        "To use the deliverable in another workflow, while checking format and contents first",
+        "To prove the content is correct",
+        "To grant access to anyone automatically",
+        "To remove the need for backups"
+      ],
+      "answer": "A",
+      "explanation": "Export enables reuse but should be followed by validation and safe handling."
+    },
+    {
+      "id": 151,
+      "lesson": 12,
+      "prompt": "Which behavior supports accessibility in AI-generated content?",
+      "options": [
+        "Use color alone to communicate status",
+        "Use clear headings, descriptive labels, readable structure, and alternatives where appropriate",
+        "Use tiny text to fit everything",
+        "Avoid meaningful link text"
+      ],
+      "answer": "B",
+      "explanation": "Accessible structure improves usability for many readers and assistive technologies."
+    },
+    {
+      "id": 152,
+      "lesson": 12,
+      "prompt": "What should you do if a product feature is unavailable in your workspace?",
+      "options": [
+        "Assume access is hidden and bypass controls",
+        "Use another person's credentials",
+        "Check plan/workspace settings or an administrator and choose an approved alternative",
+        "Tell the model to enable it"
+      ],
+      "answer": "C",
+      "explanation": "Availability and permission should be resolved through supported routes."
+    },
+    {
+      "id": 153,
+      "lesson": 12,
+      "prompt": "What should you consider when asking Claude to process a large collection of files?",
+      "options": [
+        "That every detail will be captured automatically",
+        "That file names are always trustworthy",
+        "That no source tracking is needed",
+        "File coverage, context limits, extraction quality, duplicates, and a way to verify important findings"
+      ],
+      "answer": "D",
+      "explanation": "Large-scale tasks need validation of scope and completeness."
+    },
+    {
+      "id": 154,
+      "lesson": 12,
+      "prompt": "Which practice is best for creating repeatable results?",
+      "options": [
+        "Document a reusable workflow, define inputs/outputs, and test it on representative cases",
+        "Keep all prompts undocumented",
+        "Change criteria every time",
+        "Avoid examples"
+      ],
+      "answer": "A",
+      "explanation": "Repeatability improves when the procedure and success criteria are explicit."
+    },
+    {
+      "id": 155,
+      "lesson": 12,
+      "prompt": "Why might an AI-generated summary of a meeting need confirmation?",
+      "options": [
+        "Meetings can never be summarized",
+        "Names, decisions, owners, and deadlines may be misheard or inferred incorrectly",
+        "Summaries cannot contain action items",
+        "Confirmation makes it longer"
+      ],
+      "answer": "B",
+      "explanation": "Verify decisions and action owners before distributing meeting notes."
+    },
+    {
+      "id": 156,
+      "lesson": 12,
+      "prompt": "What is a sensible approach to automating a workflow?",
+      "options": [
+        "Automate every step without testing",
+        "Remove logging and checkpoints",
+        "Start with bounded scope, test cases, exception handling, and human approval for risky actions",
+        "Give it unrestricted access"
+      ],
+      "answer": "C",
+      "explanation": "Safe automation uses boundaries, validation, and escalation paths."
+    },
+    {
+      "id": 157,
+      "lesson": 12,
+      "prompt": "How should users deal with product features that change over time?",
+      "options": [
+        "Assume screenshots from years ago are current",
+        "Rely solely on forum rumors",
+        "Use old instructions without verification",
+        "Consult current official documentation and check the interface/plan available to them"
+      ],
+      "answer": "D",
+      "explanation": "Product capabilities and naming can change, so current official references matter."
+    },
+    {
+      "id": 158,
+      "lesson": 13,
+      "prompt": "What is the best next step after completing Claude 101?",
+      "options": [
+        "Practice with varied scenarios, review weak areas, and check current official guidance before an assessment",
+        "Assume completion guarantees exam success",
+        "Memorize only answer letters",
+        "Stop evaluating model outputs"
+      ],
+      "answer": "A",
+      "explanation": "Course completion is a foundation; practice and current verification strengthen readiness."
+    },
+    {
+      "id": 159,
+      "lesson": 13,
+      "prompt": "How should you use this MCQ bank?",
+      "options": [
+        "As a guarantee of the official question pool",
+        "As original practice material that supports learning, not as official or leaked exam content",
+        "As a replacement for the course",
+        "As an answer-key memorization exercise only"
+      ],
+      "answer": "B",
+      "explanation": "These are practice questions aligned to broad course themes, not official test items."
+    },
+    {
+      "id": 160,
+      "lesson": 13,
+      "prompt": "If you consistently miss questions on connectors and search, what is a useful study strategy?",
+      "options": [
+        "Ignore those topics because the score is only a number",
+        "Retake until memorized without reading feedback",
+        "Revisit the relevant lessons, explain concepts in your own words, and retest with new scenarios",
+        "Assume the quiz is wrong"
+      ],
+      "answer": "C",
+      "explanation": "Targeted review and fresh application questions help uncover conceptual gaps."
+    },
+    {
+      "id": 161,
+      "lesson": 13,
+      "prompt": "Why should you read explanations after answering?",
+      "options": [
+        "They are optional because all answer letters are self-explanatory",
+        "They ensure you will pass a certification",
+        "They turn the question bank into official exam content",
+        "They reinforce reasoning and clarify why distractors are less appropriate"
+      ],
+      "answer": "D",
+      "explanation": "Explanations support understanding rather than shallow answer memorization."
+    },
+    {
+      "id": 162,
+      "lesson": 13,
+      "prompt": "What should you do when a question appears inconsistent with the current interface?",
+      "options": [
+        "Check current official documentation and treat the item as potentially outdated",
+        "Assume the question is always current",
+        "Change workspace settings blindly",
+        "Avoid reporting the discrepancy"
+      ],
+      "answer": "A",
+      "explanation": "Product behavior can change; current documentation should take precedence."
+    },
+    {
+      "id": 163,
+      "lesson": 13,
+      "prompt": "What does readiness for responsible Claude use look like?",
+      "options": [
+        "Never using AI for any task",
+        "Knowing the capabilities and limits, prompting clearly, verifying outputs, and managing data responsibly",
+        "Trusting every output without review",
+        "Using the most advanced model for every task"
+      ],
+      "answer": "B",
+      "explanation": "Responsible use combines task fit, good communication, verification, and appropriate data handling."
+    },
+    {
+      "id": 164,
+      "lesson": 13,
+      "prompt": "What is the most useful way to interpret a high practice score?",
+      "options": [
+        "It guarantees an official passing result",
+        "It proves every lesson detail is mastered",
+        "It is evidence of performance on this practice set, not a guarantee of certification success",
+        "It means the answer key should be ignored"
+      ],
+      "answer": "C",
+      "explanation": "Practice results are indicative and limited to the questions and concepts tested."
+    },
+    {
+      "id": 165,
+      "lesson": 13,
+      "prompt": "What is the appropriate response to uncertain or ambiguous exam terminology?",
+      "options": [
+        "Guess based on the wording alone",
+        "Assume one interpretation is universal",
+        "Rely on a social-media comment only",
+        "Check the current official course and assessment instructions, then interpret within that context"
+      ],
+      "answer": "D",
+      "explanation": "Authoritative, current guidance is the best reference for ambiguous terminology."
+    },
+    {
+      "id": 166,
+      "lesson": 13,
+      "prompt": "How should a learner prepare for scenario-based questions?",
+      "options": [
+        "Practice choosing actions based on goals, constraints, permissions, verification, and risk",
+        "Memorize only definitions",
+        "Avoid cases that have more than one consideration",
+        "Focus only on product logos"
+      ],
+      "answer": "A",
+      "explanation": "Scenario questions test applying concepts to practical situations."
+    },
+    {
+      "id": 167,
+      "lesson": 13,
+      "prompt": "What is the best final revision method?",
+      "options": [
+        "Study only the easiest topic",
+        "Review errors by concept, summarize key principles, and retest after a gap",
+        "Read the answer key without attempting questions",
+        "Focus exclusively on speed"
+      ],
+      "answer": "B",
+      "explanation": "Error-based revision with spaced practice is more useful than passive answer reading."
+    },
+    {
+      "id": 168,
+      "lesson": 13,
+      "prompt": "What should you remember about certification prep materials like this set?",
+      "options": [
+        "They are always complete and official",
+        "They ensure the exam contains these questions",
+        "They are supplementary practice; use the current course and official exam guidance as primary references",
+        "They never need updates"
+      ],
+      "answer": "C",
+      "explanation": "This bank is a supplement, not an official exam blueprint or guarantee."
+    }
+  ]
+}
