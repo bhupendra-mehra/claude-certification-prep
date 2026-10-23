@@ -19,7 +19,7 @@ Course: https://academy.claude.com/courses/claude-101
 - 12. Other ways to work with Claude
 - 13. What's next?
 
-**Question count:** 100. **Scenario-based:** 40.
+**Question count:** 100. **Scenario-based:** 15.
 
 ## Questions
 
@@ -34,8 +34,8 @@ Course: https://academy.claude.com/courses/claude-101
 
 - A. Assume the study exists because Claude supplied a plausible title.
 - B. Replace the citation with another paper without checking it.
-- C. Independently locate the study and verify it supports the claim; qualify or remove anything unverifiable.
-- D. undefined
+- C. Ask Claude to confirm the citation and accept that confirmation as proof.
+- D. Independently locate the study and verify it supports the claim; qualify or remove anything unverifiable.
 
 ### Q3. [Lesson 1] [Scenario] Your team needs a policy that may have changed this week. How should you obtain the answer?
 
@@ -46,38 +46,38 @@ Course: https://academy.claude.com/courses/claude-101
 
 ### Q4. [Lesson 1] What is the safest assumption about a fluent answer from Claude?
 
-- A. Assume fluent wording is enough unless someone identifies a contradiction.
-- B. Ask another chat to repeat the claim and trust the majority answer.
+- A. Treat a confident tone as proof that a claim is true.
+- B. Ask another chat to repeat the claim and choose the majority answer.
 - C. It may still contain mistakes and needs verification when accuracy matters
-- D. Use a detailed answer as proof that the underlying claim was verified.
+- D. Assume an answer is reliable if it contains specific details.
 
 ### Q5. [Lesson 1] What is Constitutional AI intended to support?
 
-- A. Assume fluent wording is enough unless someone identifies a contradiction.
+- A. Treat a confident tone as proof that a claim is true.
 - B. Guiding model behavior with principles intended to make it more helpful and safer
-- C. Ask another chat to repeat the claim and trust the majority answer.
-- D. Use a detailed answer as proof that the underlying claim was verified.
+- C. Ask another chat to repeat the claim and choose the majority answer.
+- D. Assume an answer is reliable if it contains specific details.
 
 ### Q6. [Lesson 1] Why does Claude sometimes give an incorrect answer?
 
-- A. Assume fluent wording is enough unless someone identifies a contradiction.
-- B. Ask another chat to repeat the claim and trust the majority answer.
-- C. Use a detailed answer as proof that the underlying claim was verified.
+- A. Treat a confident tone as proof that a claim is true.
+- B. Ask another chat to repeat the claim and choose the majority answer.
+- C. Assume an answer is reliable if it contains specific details.
 - D. Generative models can produce plausible text without guaranteeing factual correctness
 
 ### Q7. [Lesson 1] What does a model's context window refer to?
 
 - A. The amount of input and conversation content the model can consider in a request
-- B. Assume fluent wording is enough unless someone identifies a contradiction.
-- C. Ask another chat to repeat the claim and trust the majority answer.
-- D. Use a detailed answer as proof that the underlying claim was verified.
+- B. Treat a confident tone as proof that a claim is true.
+- C. Ask another chat to repeat the claim and choose the majority answer.
+- D. Assume an answer is reliable if it contains specific details.
 
 ### Q8. [Lesson 1] What does the course mean by selecting the right tool for a task?
 
-- A. Assume fluent wording is enough unless someone identifies a contradiction.
-- B. Ask another chat to repeat the claim and trust the majority answer.
+- A. Treat a confident tone as proof that a claim is true.
+- B. Ask another chat to repeat the claim and choose the majority answer.
 - C. Match the work pattern and available capability to the task
-- D. Use a detailed answer as proof that the underlying claim was verified.
+- D. Assume an answer is reliable if it contains specific details.
 
 ### Q9. [Lesson 2] [Scenario] You ask for a launch plan but receive generic advice. Which prompt revision is most likely to improve it?
 
@@ -90,8 +90,8 @@ Course: https://academy.claude.com/courses/claude-101
 
 - A. Keep the AWS assumption but request a more concise answer.
 - B. Remove cloud-specific details so the model can choose the common platform.
-- C. State Google Cloud and relevant architecture constraints explicitly, then verify the revised answer uses them.
-- D. undefined
+- C. Ask for an AWS/Google Cloud comparison without saying which platform the team uses.
+- D. State Google Cloud and relevant architecture constraints explicitly, then verify the revised answer uses them.
 
 ### Q11. [Lesson 2] [Scenario] You need JSON consumed by a script. How should you specify and validate the output?
 
@@ -102,38 +102,38 @@ Course: https://academy.claude.com/courses/claude-101
 
 ### Q12. [Lesson 2] Your first response is too generic. What is the best next step?
 
-- A. Add a role label but leave the task, audience, and constraints unspecified.
-- B. Ask for a longer response without explaining what is missing.
+- A. Add a role label but leave the task and constraints unspecified.
+- B. Ask for more words without explaining what is missing.
 - C. Add the missing context, constraints, examples, or output criteria
-- D. Remove output constraints so the model can choose its own format.
+- D. Remove constraints so the model can choose the output format.
 
 ### Q13. [Lesson 2] What is the benefit of requesting a specific output format?
 
-- A. Add a role label but leave the task, audience, and constraints unspecified.
+- A. Add a role label but leave the task and constraints unspecified.
 - B. It helps make the response easier to use, compare, or process
-- C. Ask for a longer response without explaining what is missing.
-- D. Remove output constraints so the model can choose its own format.
+- C. Ask for more words without explaining what is missing.
+- D. Remove constraints so the model can choose the output format.
 
 ### Q14. [Lesson 2] Which prompt includes a meaningful constraint?
 
-- A. Add a role label but leave the task, audience, and constraints unspecified.
-- B. Ask for a longer response without explaining what is missing.
-- C. Remove output constraints so the model can choose its own format.
+- A. Add a role label but leave the task and constraints unspecified.
+- B. Ask for more words without explaining what is missing.
+- C. Remove constraints so the model can choose the output format.
 - D. Explain REST APIs to a junior developer in five bullets, with one example and no code
 
 ### Q15. [Lesson 2] What should a good prompt do when the task has multiple deliverables?
 
 - A. List the deliverables and define their order or relationship
-- B. Add a role label but leave the task, audience, and constraints unspecified.
-- C. Ask for a longer response without explaining what is missing.
-- D. Remove output constraints so the model can choose its own format.
+- B. Add a role label but leave the task and constraints unspecified.
+- C. Ask for more words without explaining what is missing.
+- D. Remove constraints so the model can choose the output format.
 
 ### Q16. [Lesson 2] When should you ask Claude to state assumptions?
 
-- A. Add a role label but leave the task, audience, and constraints unspecified.
-- B. Ask for a longer response without explaining what is missing.
+- A. Add a role label but leave the task and constraints unspecified.
+- B. Ask for more words without explaining what is missing.
 - C. When details are missing and assumptions could materially affect the result
-- D. Remove output constraints so the model can choose its own format.
+- D. Remove constraints so the model can choose the output format.
 
 ### Q17. [Lesson 3] [Scenario] A ticket classifier works on easy examples but fails on unusual cases. What should the team do before rollout?
 
@@ -158,21 +158,21 @@ Course: https://academy.claude.com/courses/claude-101
 
 ### Q20. [Lesson 3] Which 4D competency concerns deciding what should be done by AI versus a human?
 
-- A. Test only a few easy examples and assume edge cases will behave similarly.
+- A. Test only easy examples and assume edge cases will behave similarly.
 - B. Ask the model to certify that its own output is correct.
 - C. Delegation
 - D. Use writing quality as the main measure of analytical accuracy.
 
 ### Q21. [Lesson 3] Which 4D competency focuses on critically evaluating AI outputs and behavior?
 
-- A. Test only a few easy examples and assume edge cases will behave similarly.
+- A. Test only easy examples and assume edge cases will behave similarly.
 - B. Discernment
 - C. Ask the model to certify that its own output is correct.
 - D. Use writing quality as the main measure of analytical accuracy.
 
 ### Q22. [Lesson 3] Which 4D competency emphasizes responsible use and accountability?
 
-- A. Test only a few easy examples and assume edge cases will behave similarly.
+- A. Test only easy examples and assume edge cases will behave similarly.
 - B. Ask the model to certify that its own output is correct.
 - C. Use writing quality as the main measure of analytical accuracy.
 - D. Diligence
@@ -180,13 +180,13 @@ Course: https://academy.claude.com/courses/claude-101
 ### Q23. [Lesson 3] What is a hallucination in an AI response?
 
 - A. A plausible-sounding but unsupported or incorrect claim
-- B. Test only a few easy examples and assume edge cases will behave similarly.
+- B. Test only easy examples and assume edge cases will behave similarly.
 - C. Ask the model to certify that its own output is correct.
 - D. Use writing quality as the main measure of analytical accuracy.
 
 ### Q24. [Lesson 3] Which is the best handling of confidential company data?
 
-- A. Test only a few easy examples and assume edge cases will behave similarly.
+- A. Test only easy examples and assume edge cases will behave similarly.
 - B. Ask the model to certify that its own output is correct.
 - C. Check organizational policy and product data controls before sharing sensitive material
 - D. Use writing quality as the main measure of analytical accuracy.
@@ -270,79 +270,79 @@ Course: https://academy.claude.com/courses/claude-101
 
 ### Q36. [Lesson 5] Where should guidance intended to apply across chats in a Project generally go?
 
-- A. Choose the longest reference document without checking its date or authority.
-- B. Blend conflicting policy statements into one answer without disclosing the conflict.
+- A. Choose the longest reference without checking its date or authority.
+- B. Blend conflicting statements without disclosing the conflict.
 - C. Project instructions
-- D. Assume all past chats are automatically available in the current Project.
+- D. Assume unrelated past chats are always available in the current Project.
 
 ### Q37. [Lesson 5] How should a one-off file differ from a reusable project reference?
 
-- A. Choose the longest reference document without checking its date or authority.
+- A. Choose the longest reference without checking its date or authority.
 - B. Attach it to the specific conversation if it should not be shared as persistent project knowledge
-- C. Blend conflicting policy statements into one answer without disclosing the conflict.
-- D. Assume all past chats are automatically available in the current Project.
+- C. Blend conflicting statements without disclosing the conflict.
+- D. Assume unrelated past chats are always available in the current Project.
 
 ### Q38. [Lesson 5] A shared project contains customer information. What should you check before inviting a colleague?
 
-- A. Choose the longest reference document without checking its date or authority.
-- B. Blend conflicting policy statements into one answer without disclosing the conflict.
-- C. Assume all past chats are automatically available in the current Project.
+- A. Choose the longest reference without checking its date or authority.
+- B. Blend conflicting statements without disclosing the conflict.
+- C. Assume unrelated past chats are always available in the current Project.
 - D. Whether the colleague is authorized and what the sharing permissions expose
 
 ### Q39. [Lesson 5] What is the best approach when project knowledge is large?
 
 - A. Organize, label, and maintain relevant knowledge; verify retrieved facts
-- B. Choose the longest reference document without checking its date or authority.
-- C. Blend conflicting policy statements into one answer without disclosing the conflict.
-- D. Assume all past chats are automatically available in the current Project.
+- B. Choose the longest reference without checking its date or authority.
+- C. Blend conflicting statements without disclosing the conflict.
+- D. Assume unrelated past chats are always available in the current Project.
 
 ### Q40. [Lesson 5] Do Project instructions eliminate the need to specify the immediate task?
 
-- A. Choose the longest reference document without checking its date or authority.
-- B. Blend conflicting policy statements into one answer without disclosing the conflict.
+- A. Choose the longest reference without checking its date or authority.
+- B. Blend conflicting statements without disclosing the conflict.
 - C. No; the current prompt still needs to state the task and its specifics
-- D. Assume all past chats are automatically available in the current Project.
+- D. Assume unrelated past chats are always available in the current Project.
 
-### Q41. [Lesson 6] [Scenario] A dashboard looks polished but totals do not match the source spreadsheet. What should you investigate?
+### Q41. [Lesson 6] A dashboard looks polished but totals do not match the source spreadsheet. What should you investigate?
 
-- A. Publish it because the chart looks professional.
+- A. Publish the artifact if the visual design looks polished.
 - B. Reconcile source coverage, filters, formulas, units, and aggregations before sharing.
-- C. Change the chart until the total appears closer.
-- D. Ask Claude to confirm the total and accept that as independent validation.
+- C. Adjust the chart until it supports the intended conclusion.
+- D. Assume controls work because they look clickable.
 
-### Q42. [Lesson 6] [Scenario] An interactive artifact has controls that do not change the displayed data. What is the best next step?
+### Q42. [Lesson 6] An interactive artifact has controls that do not change the displayed data. What is the best next step?
 
-- A. Remove all controls so users cannot notice the problem.
-- B. Share it because the controls look interactive.
-- C. Add more controls to make the artifact appear complete.
+- A. Publish the artifact if the visual design looks polished.
+- B. Adjust the chart until it supports the intended conclusion.
+- C. Assume controls work because they look clickable.
 - D. Describe expected behavior, test each control, and revise the implementation before relying on it.
 
-### Q43. [Lesson 6] [Scenario] A chart exaggerates a small difference because its axis is truncated. How should it be corrected?
+### Q43. [Lesson 6] A chart exaggerates a small difference because its axis is truncated. How should it be corrected?
 
 - A. Use a truthful scale or clearly disclose the axis choice so the chart does not mislead.
-- B. Keep the axis because it makes the difference easier to see.
-- C. Replace it with a 3D chart.
-- D. Hide axis labels and explain the difference in a footnote.
+- B. Publish the artifact if the visual design looks polished.
+- C. Adjust the chart until it supports the intended conclusion.
+- D. Assume controls work because they look clickable.
 
 ### Q44. [Lesson 6] What is the best way to request a polished artifact?
 
 - A. Publish the artifact if the visual design looks polished.
 - B. Adjust the chart until it supports the intended conclusion.
 - C. Describe the audience, purpose, content, desired format, and constraints
-- D. Assume clickable-looking controls are functional without testing them.
+- D. Assume controls work because they look clickable.
 
 ### Q45. [Lesson 6] If an artifact misses an important requirement, what is the best iteration strategy?
 
 - A. Publish the artifact if the visual design looks polished.
 - B. Give specific feedback about the missing element and expected change
 - C. Adjust the chart until it supports the intended conclusion.
-- D. Assume clickable-looking controls are functional without testing them.
+- D. Assume controls work because they look clickable.
 
 ### Q46. [Lesson 6] Which concern matters for an interactive artifact?
 
 - A. Publish the artifact if the visual design looks polished.
 - B. Adjust the chart until it supports the intended conclusion.
-- C. Assume clickable-looking controls are functional without testing them.
+- C. Assume controls work because they look clickable.
 - D. Whether controls behave as intended, content is accessible, and edge cases are handled
 
 ### Q47. [Lesson 6] Why should generated documents be checked for citations and factual claims?
@@ -350,40 +350,40 @@ Course: https://academy.claude.com/courses/claude-101
 - A. Because generated content may contain errors, missing context, or unsupported assertions
 - B. Publish the artifact if the visual design looks polished.
 - C. Adjust the chart until it supports the intended conclusion.
-- D. Assume clickable-looking controls are functional without testing them.
+- D. Assume controls work because they look clickable.
 
 ### Q48. [Lesson 6] Which statement about artifacts is most accurate?
 
 - A. Publish the artifact if the visual design looks polished.
 - B. Adjust the chart until it supports the intended conclusion.
 - C. They are useful deliverables, but complex outputs still require testing and review
-- D. Assume clickable-looking controls are functional without testing them.
+- D. Assume controls work because they look clickable.
 
-### Q49. [Lesson 7] [Scenario] A code-review Skill runs on unrelated writing tasks. What change is most likely to fix this?
+### Q49. [Lesson 7] A code-review Skill runs on unrelated writing tasks. What change is most likely to fix this?
 
-- A. Make the Skill mandatory for all tasks.
+- A. Make the Skill apply to every request so it is never missed.
 - B. Clarify the Skill's trigger, intended scope, and explicit non-use cases.
-- C. Remove all scope instructions so it can improvise.
-- D. Add more steps without checking when the Skill is selected.
+- C. Remove trigger conditions and non-use cases to make it flexible.
+- D. Assume more instructions always produce more consistent behavior.
 
-### Q50. [Lesson 7] [Scenario] A Skill update makes results less consistent. How should the owner troubleshoot it?
+### Q50. [Lesson 7] A Skill update makes results less consistent. How should the owner troubleshoot it?
 
-- A. Assume results will stabilize with more use.
-- B. Delete all examples to simplify it.
-- C. Make the Skill mandatory to avoid variation.
+- A. Make the Skill apply to every request so it is never missed.
+- B. Remove trigger conditions and non-use cases to make it flexible.
+- C. Assume more instructions always produce more consistent behavior.
 - D. Compare before-and-after outputs on representative tasks, inspect regressions, and revise or roll back the change.
 
-### Q51. [Lesson 7] [Scenario] A Skill tells Claude to ignore company policy to finish faster. What should the team do?
+### Q51. [Lesson 7] A Skill tells Claude to ignore company policy to finish faster. What should the team do?
 
 - A. Correct or remove the conflicting instruction; a Skill cannot override company policy.
-- B. Keep the instruction because Skills override policy.
-- C. Use the Skill only for small tasks and leave it unchanged.
-- D. Move the instruction into a sample output.
+- B. Make the Skill apply to every request so it is never missed.
+- C. Remove trigger conditions and non-use cases to make it flexible.
+- D. Assume more instructions always produce more consistent behavior.
 
 ### Q52. [Lesson 7] What makes a Skill more reliable?
 
 - A. Make the Skill apply to every request so it is never missed.
-- B. Remove trigger conditions and non-use cases to make the Skill flexible.
+- B. Remove trigger conditions and non-use cases to make it flexible.
 - C. Relevant instructions, clear triggers, examples, and maintained supporting resources
 - D. Assume more instructions always produce more consistent behavior.
 
@@ -391,13 +391,13 @@ Course: https://academy.claude.com/courses/claude-101
 
 - A. Make the Skill apply to every request so it is never missed.
 - B. Test it on representative tasks and inspect whether it follows the intended workflow
-- C. Remove trigger conditions and non-use cases to make the Skill flexible.
+- C. Remove trigger conditions and non-use cases to make it flexible.
 - D. Assume more instructions always produce more consistent behavior.
 
 ### Q54. [Lesson 7] A Skill includes instructions that conflict with company policy. What should happen?
 
 - A. Make the Skill apply to every request so it is never missed.
-- B. Remove trigger conditions and non-use cases to make the Skill flexible.
+- B. Remove trigger conditions and non-use cases to make it flexible.
 - C. Assume more instructions always produce more consistent behavior.
 - D. Follow company policy and correct the Skill before reuse
 
@@ -405,36 +405,36 @@ Course: https://academy.claude.com/courses/claude-101
 
 - A. Applying a consistent code-review checklist and repository conventions
 - B. Make the Skill apply to every request so it is never missed.
-- C. Remove trigger conditions and non-use cases to make the Skill flexible.
+- C. Remove trigger conditions and non-use cases to make it flexible.
 - D. Assume more instructions always produce more consistent behavior.
 
 ### Q56. [Lesson 7] What is the difference between a Skill and a normal prompt?
 
 - A. Make the Skill apply to every request so it is never missed.
-- B. Remove trigger conditions and non-use cases to make the Skill flexible.
+- B. Remove trigger conditions and non-use cases to make it flexible.
 - C. A Skill can package reusable guidance for repeated use, whereas a prompt usually describes an immediate task
 - D. Assume more instructions always produce more consistent behavior.
 
-### Q57. [Lesson 8] [Scenario] A connector requests full-drive access but only one folder is needed. What should you do?
+### Q57. [Lesson 8] A connector requests full-drive access but only one folder is needed. What should you do?
 
-- A. Approve full-drive access and narrow it only after a problem.
+- A. Approve broad permissions and narrow them only after an incident.
 - B. Pause and request narrower access or an approved alternative before connecting.
-- C. Use a colleague's connection instead of reviewing permissions.
-- D. Assume broad access is acceptable if the vendor is known.
+- C. Assume connector access means every retrieved item is appropriate to disclose.
+- D. Store tokens in a shared prompt so teammates can reuse them.
 
-### Q58. [Lesson 8] [Scenario] A connector unexpectedly returns a confidential record unrelated to the request. What is the correct response?
+### Q58. [Lesson 8] A connector unexpectedly returns a confidential record unrelated to the request. What is the correct response?
 
-- A. Include the record because the connector returned it.
-- B. Copy it into a shared Project to investigate later.
-- C. Assume access means every user can see it.
+- A. Approve broad permissions and narrow them only after an incident.
+- B. Assume connector access means every retrieved item is appropriate to disclose.
+- C. Store tokens in a shared prompt so teammates can reuse them.
 - D. Avoid disclosure and further processing, then investigate query scope and permissions with the appropriate owner.
 
-### Q59. [Lesson 8] [Scenario] A read-only task uses a connector that can also edit records. What permission setup is preferable?
+### Q59. [Lesson 8] A read-only task uses a connector that can also edit records. What permission setup is preferable?
 
 - A. Use read-only access if it satisfies the task; grant write permissions only when justified.
-- B. Grant write access because it may be useful later.
-- C. Share an administrator account.
-- D. Disable audit logging to avoid noise.
+- B. Approve broad permissions and narrow them only after an incident.
+- C. Assume connector access means every retrieved item is appropriate to disclose.
+- D. Store tokens in a shared prompt so teammates can reuse them.
 
 ### Q60. [Lesson 8] What should you check before connecting a workplace account?
 
@@ -471,31 +471,31 @@ Course: https://academy.claude.com/courses/claude-101
 - C. It can streamline workflows and access relevant data within permissions
 - D. Store tokens in a shared prompt so teammates can reuse them.
 
-### Q65. [Lesson 9] [Scenario] Enterprise Search returns two conflicting policies. How should the answer be handled?
+### Q65. [Lesson 9] Enterprise Search returns two conflicting policies. How should the answer be handled?
 
-- A. Choose the first result because ranking proves authority.
+- A. Choose the first result because search ranking proves authority.
 - B. Check authority, freshness, and scope; cite the current source and flag any unresolved conflict.
-- C. Average the two policy versions.
-- D. Treat both documents as equally current without checking dates.
+- C. Treat all documents as equally current and authoritative.
+- D. Assume no result means the policy does not exist.
 
-### Q66. [Lesson 9] [Scenario] You know a policy exists, but Enterprise Search returns nothing. What should you check?
+### Q66. [Lesson 9] You know a policy exists, but Enterprise Search returns nothing. What should you check?
 
-- A. Conclude the policy does not exist.
-- B. Ask Claude to invent likely policy wording.
-- C. Use another user's account to search restricted sources.
+- A. Choose the first result because search ranking proves authority.
+- B. Treat all documents as equally current and authoritative.
+- C. Assume no result means the policy does not exist.
 - D. Refine the query and check source connection, indexing, and access, or ask the policy owner.
 
-### Q67. [Lesson 9] [Scenario] A result is relevant but three years old, while the user asks for the current procedure. What should you do?
+### Q67. [Lesson 9] A result is relevant but three years old, while the user asks for the current procedure. What should you do?
 
 - A. Find a current authoritative source and disclose any freshness limitation if current status cannot be confirmed.
-- B. Use the old result because it is relevant.
-- C. Remove the publication date from the summary.
-- D. Assume the policy has not changed because search found no newer result.
+- B. Choose the first result because search ranking proves authority.
+- C. Treat all documents as equally current and authoritative.
+- D. Assume no result means the policy does not exist.
 
 ### Q68. [Lesson 9] How should you evaluate an enterprise-search answer that cites internal sources?
 
 - A. Choose the first result because search ranking proves authority.
-- B. Treat every returned document as equally current and authoritative.
+- B. Treat all documents as equally current and authoritative.
 - C. Open or inspect cited sources and confirm they support the answer
 - D. Assume no result means the policy does not exist.
 
@@ -503,13 +503,13 @@ Course: https://academy.claude.com/courses/claude-101
 
 - A. Choose the first result because search ranking proves authority.
 - B. A source may not be connected, indexed, accessible, or phrased in a way the query retrieves
-- C. Treat every returned document as equally current and authoritative.
+- C. Treat all documents as equally current and authoritative.
 - D. Assume no result means the policy does not exist.
 
 ### Q70. [Lesson 9] What is a good search question for company policy?
 
 - A. Choose the first result because search ranking proves authority.
-- B. Treat every returned document as equally current and authoritative.
+- B. Treat all documents as equally current and authoritative.
 - C. Assume no result means the policy does not exist.
 - D. What is the current travel reimbursement limit, and which official policy section states it?
 
@@ -517,148 +517,148 @@ Course: https://academy.claude.com/courses/claude-101
 
 - A. They help users verify claims and navigate to supporting information
 - B. Choose the first result because search ranking proves authority.
-- C. Treat every returned document as equally current and authoritative.
+- C. Treat all documents as equally current and authoritative.
 - D. Assume no result means the policy does not exist.
 
 ### Q72. [Lesson 9] How should you handle duplicate or contradictory internal sources?
 
 - A. Choose the first result because search ranking proves authority.
-- B. Treat every returned document as equally current and authoritative.
+- B. Treat all documents as equally current and authoritative.
 - C. Identify source-of-truth hierarchy and freshness; report unresolved conflicts
 - D. Assume no result means the policy does not exist.
 
-### Q73. [Lesson 10] [Scenario] Two credible market reports give different estimates. How should a research report handle the difference?
+### Q73. [Lesson 10] Two credible market reports give different estimates. How should a research report handle the difference?
 
-- A. Choose the larger estimate because it is useful for planning.
+- A. Choose the largest estimate without comparing definitions.
 - B. Compare dates, definitions, scope, and methods; explain the difference rather than averaging blindly.
-- C. Average estimates without checking their methods.
-- D. Use whichever estimate appears in more search results.
+- C. Average conflicting figures before checking methodology.
+- D. Treat multiple summaries of the same source as independent corroboration.
 
-### Q74. [Lesson 10] [Scenario] A cited study does not support the claim beside it. What should the researcher do?
+### Q74. [Lesson 10] A cited study does not support the claim beside it. What should the researcher do?
 
-- A. Keep the citation because the source is reputable.
-- B. Add unrelated citations to make the paragraph look balanced.
-- C. Move the citation to a footnote but keep the claim unchanged.
+- A. Choose the largest estimate without comparing definitions.
+- B. Average conflicting figures before checking methodology.
+- C. Treat multiple summaries of the same source as independent corroboration.
 - D. Correct or remove the claim and locate evidence that actually supports it.
 
-### Q75. [Lesson 10] [Scenario] A decision-maker wants a recommendation, but key evidence is missing. What should the report include?
+### Q75. [Lesson 10] A decision-maker wants a recommendation, but key evidence is missing. What should the report include?
 
 - A. Separate established findings, assumptions, unknowns, and implications; explain what evidence would change the recommendation.
-- B. Present a confident recommendation and omit missing evidence.
-- C. Fill gaps with plausible estimates without labeling them.
-- D. Delay all useful synthesis until every fact is known.
+- B. Choose the largest estimate without comparing definitions.
+- C. Average conflicting figures before checking methodology.
+- D. Treat multiple summaries of the same source as independent corroboration.
 
 ### Q76. [Lesson 10] Why is source quality important in research?
 
-- A. Choose the largest estimate without comparing the definitions.
-- B. Average conflicting figures before checking their scope or methodology.
+- A. Choose the largest estimate without comparing definitions.
+- B. Average conflicting figures before checking methodology.
 - C. Different sources vary in authority, evidence, recency, and potential bias
-- D. Use the number that appears most often in search results.
+- D. Treat multiple summaries of the same source as independent corroboration.
 
 ### Q77. [Lesson 10] When researching a fast-changing topic, what should you prioritize?
 
-- A. Choose the largest estimate without comparing the definitions.
+- A. Choose the largest estimate without comparing definitions.
 - B. Recent, authoritative sources and explicit publication or event dates
-- C. Average conflicting figures before checking their scope or methodology.
-- D. Use the number that appears most often in search results.
+- C. Average conflicting figures before checking methodology.
+- D. Treat multiple summaries of the same source as independent corroboration.
 
 ### Q78. [Lesson 10] Why seek opposing or differing perspectives?
 
-- A. Choose the largest estimate without comparing the definitions.
-- B. Average conflicting figures before checking their scope or methodology.
-- C. Use the number that appears most often in search results.
+- A. Choose the largest estimate without comparing definitions.
+- B. Average conflicting figures before checking methodology.
+- C. Treat multiple summaries of the same source as independent corroboration.
 - D. To identify disagreement, uncertainty, assumptions, and evidence limits
 
 ### Q79. [Lesson 10] How should uncertainty be represented in a research report?
 
 - A. State what is known, what is inferred, and what remains uncertain
-- B. Choose the largest estimate without comparing the definitions.
-- C. Average conflicting figures before checking their scope or methodology.
-- D. Use the number that appears most often in search results.
+- B. Choose the largest estimate without comparing definitions.
+- C. Average conflicting figures before checking methodology.
+- D. Treat multiple summaries of the same source as independent corroboration.
 
 ### Q80. [Lesson 10] What does triangulation mean in research?
 
-- A. Choose the largest estimate without comparing the definitions.
-- B. Average conflicting figures before checking their scope or methodology.
+- A. Choose the largest estimate without comparing definitions.
+- B. Average conflicting figures before checking methodology.
 - C. Checking a conclusion against multiple independent sources or evidence types
-- D. Use the number that appears most often in search results.
+- D. Treat multiple summaries of the same source as independent corroboration.
 
-### Q81. [Lesson 11] [Scenario] A Product Manager asks Claude to rank roadmap priorities from customer feedback. What workflow is most appropriate?
+### Q81. [Lesson 11] A Product Manager asks Claude to rank roadmap priorities from customer feedback. What workflow is most appropriate?
 
-- A. Let Claude set priorities based only on mention frequency.
+- A. Let Claude make the final decision because it can explain its reasoning.
 - B. Provide approved feedback and criteria, then validate themes and trade-offs against product strategy.
-- C. Ignore negative feedback to avoid biasing the summary.
-- D. Treat the ranked list as a binding roadmap decision.
+- C. Skip review when generated output includes a rationale.
+- D. Use unverified inferred facts to personalize customer communications.
 
-### Q82. [Lesson 11] [Scenario] A developer uses an observability log to investigate a production bug with Claude. What should the workflow include?
+### Q82. [Lesson 11] A developer uses an observability log to investigate a production bug with Claude. What should the workflow include?
 
-- A. Paste all raw logs and secrets into the prompt.
-- B. Rewrite the whole service before reproducing the issue.
-- C. Deploy the first proposed fix directly to production.
+- A. Let Claude make the final decision because it can explain its reasoning.
+- B. Skip review when generated output includes a rationale.
+- C. Use unverified inferred facts to personalize customer communications.
 - D. Sanitize logs, correlate timestamps and traces, reproduce the issue, test a targeted fix, and follow release controls.
 
-### Q83. [Lesson 11] [Scenario] A project manager asks Claude to convert meeting notes into action items. What must be verified?
+### Q83. [Lesson 11] A project manager asks Claude to convert meeting notes into action items. What must be verified?
 
 - A. Confirm decisions, owners, deadlines, and dependencies against source notes or with participants.
-- B. Let Claude infer owners and dates where notes are incomplete.
-- C. Remove actions that have no due date.
-- D. Treat all generated deadlines as approved commitments.
+- B. Let Claude make the final decision because it can explain its reasoning.
+- C. Skip review when generated output includes a rationale.
+- D. Use unverified inferred facts to personalize customer communications.
 
 ### Q84. [Lesson 11] How might a project manager use Claude effectively?
 
 - A. Let Claude make the final decision because it can explain its reasoning.
-- B. Use unverified inferred facts to personalize customer communications.
+- B. Skip review when generated output includes a rationale.
 - C. Summarize updates into risks, owners, dependencies, and next actions, then verify them
-- D. Skip review when generated output includes a rationale.
+- D. Use unverified inferred facts to personalize customer communications.
 
 ### Q85. [Lesson 11] How can a researcher use Claude safely with scientific literature?
 
 - A. Let Claude make the final decision because it can explain its reasoning.
 - B. Ask for synthesis and critical comparison, then verify cited papers and interpretations
-- C. Use unverified inferred facts to personalize customer communications.
-- D. Skip review when generated output includes a rationale.
+- C. Skip review when generated output includes a rationale.
+- D. Use unverified inferred facts to personalize customer communications.
 
 ### Q86. [Lesson 11] What is an appropriate use for HR-related drafting?
 
 - A. Let Claude make the final decision because it can explain its reasoning.
-- B. Use unverified inferred facts to personalize customer communications.
-- C. Skip review when generated output includes a rationale.
+- B. Skip review when generated output includes a rationale.
+- C. Use unverified inferred facts to personalize customer communications.
 - D. Draft role descriptions or communication templates with human review for fairness and policy
 
 ### Q87. [Lesson 11] What is a practical use of Claude in sales?
 
 - A. Draft tailored outreach based on approved, accurate prospect context and review it before sending
 - B. Let Claude make the final decision because it can explain its reasoning.
-- C. Use unverified inferred facts to personalize customer communications.
-- D. Skip review when generated output includes a rationale.
+- C. Skip review when generated output includes a rationale.
+- D. Use unverified inferred facts to personalize customer communications.
 
 ### Q88. [Lesson 11] How should a teacher use Claude-generated learning materials?
 
 - A. Let Claude make the final decision because it can explain its reasoning.
-- B. Use unverified inferred facts to personalize customer communications.
+- B. Skip review when generated output includes a rationale.
 - C. Review accuracy, level, inclusiveness, and alignment with learning goals before use
-- D. Skip review when generated output includes a rationale.
+- D. Use unverified inferred facts to personalize customer communications.
 
-### Q89. [Lesson 12] [Scenario] A generated spreadsheet contains fewer rows than the source. What should be investigated?
+### Q89. [Lesson 12] A generated spreadsheet contains fewer rows than the source. What should be investigated?
 
-- A. Assume the file is complete because it opened successfully.
+- A. Assume a file is complete because it opens without an error.
 - B. Investigate parsing, filtering, duplicates, extraction limits, and reconcile row counts and samples.
-- C. Fill missing rows with typical values without disclosure.
-- D. Ask Claude whether it processed every row and rely on its answer.
+- C. Fill missing data with typical values without labeling assumptions.
+- D. Use percentages without documenting the denominator or filters.
 
-### Q90. [Lesson 12] [Scenario] A workflow routes customer documents automatically but sometimes receives incomplete records. What design is safest?
+### Q90. [Lesson 12] A workflow routes customer documents automatically but sometimes receives incomplete records. What design is safest?
 
-- A. Let the workflow guess missing fields so processing continues.
-- B. Skip invalid records silently and do not log them.
-- C. Retry every incomplete record indefinitely.
+- A. Assume a file is complete because it opens without an error.
+- B. Fill missing data with typical values without labeling assumptions.
+- C. Use percentages without documenting the denominator or filters.
 - D. Validate required fields, define exception handling, log failures, and route uncertain cases for review.
 
-### Q91. [Lesson 12] [Scenario] A generated report includes a percentage without stating its denominator. What should the analyst do?
+### Q91. [Lesson 12] A generated report includes a percentage without stating its denominator. What should the analyst do?
 
 - A. Request numerator, denominator, population, filters, and method, then verify the calculation.
-- B. Use the percentage if it is rounded.
-- C. Add decimal places to make it look more precise.
-- D. Assume the denominator is the total row count.
+- B. Assume a file is complete because it opens without an error.
+- C. Fill missing data with typical values without labeling assumptions.
+- D. Use percentages without documenting the denominator or filters.
 
 ### Q92. [Lesson 12] What is the purpose of exporting or downloading a generated file?
 
@@ -695,33 +695,33 @@ Course: https://academy.claude.com/courses/claude-101
 - C. Start with bounded scope, test cases, exception handling, and human approval for risky actions
 - D. Use percentages without documenting the denominator or filters.
 
-### Q97. [Lesson 13] [Scenario] A learner scores 92% on this practice bank. What does that result actually demonstrate?
+### Q97. [Lesson 13] A learner scores 92% on this practice bank. What does that result actually demonstrate?
 
-- A. It guarantees the official assessment result.
+- A. Treat a high practice score as a guarantee of official exam success.
 - B. It shows performance on this set only; review mistakes and consult current official assessment guidance.
-- C. It proves every course topic was tested.
-- D. It means the official course can be skipped.
+- C. Memorize answer letters rather than the underlying principles.
+- D. Use this practice bank instead of current official course guidance.
 
-### Q98. [Lesson 13] [Scenario] A question conflicts with the current product interface. What should the learner do?
+### Q98. [Lesson 13] A question conflicts with the current product interface. What should the learner do?
 
-- A. Assume the practice bank is more current than the interface.
-- B. Memorize both answers without resolving the conflict.
-- C. Use whichever answer appears more often online.
+- A. Treat a high practice score as a guarantee of official exam success.
+- B. Memorize answer letters rather than the underlying principles.
+- C. Use this practice bank instead of current official course guidance.
 - D. Check current official documentation and mark the practice item for revision if outdated.
 
-### Q99. [Lesson 13] [Scenario] A learner keeps missing scenario questions about connectors. Which study method is strongest?
+### Q99. [Lesson 13] A learner keeps missing scenario questions about connectors. Which study method is strongest?
 
 - A. Revisit the connector lesson, explain permission and least-privilege principles, and retest with new scenarios.
-- B. Memorize answer letters and repeat the same quiz.
-- C. Skip connectors because the score is already adequate.
-- D. Rely on explanations without revisiting the lesson.
+- B. Treat a high practice score as a guarantee of official exam success.
+- C. Memorize answer letters rather than the underlying principles.
+- D. Use this practice bank instead of current official course guidance.
 
-### Q100. [Lesson 13] [Scenario] How can a learner show genuine understanding rather than memorizing answer letters?
+### Q100. [Lesson 13] How can a learner show genuine understanding rather than memorizing answer letters?
 
-- A. Memorize the correct letter and recognize the same wording.
-- B. Choose the longest option because it usually includes more safeguards.
+- A. Treat a high practice score as a guarantee of official exam success.
+- B. Memorize answer letters rather than the underlying principles.
 - C. Explain the reasoning and apply the principle correctly to a new scenario with different details.
-- D. Retake the same items until familiar without explaining why.
+- D. Use this practice bank instead of current official course guidance.
 
 ---
 
@@ -730,7 +730,7 @@ Course: https://academy.claude.com/courses/claude-101
 | Q | Lesson | Answer | Explanation |
 |---:|---:|:---:|---|
 | 1 | 1 | B | Verify material claims against authoritative sources and correct unsupported statements before sharing. |
-| 2 | 1 | D | Independently locate the study and verify that it supports the claim; qualify or remove anything unverifiable. |
+| 2 | 1 | D | Independently locate the study and verify it supports the claim; qualify or remove anything unverifiable. |
 | 3 | 1 | A | Check a current authoritative policy source and verify its date and scope. |
 | 4 | 1 | C | A confident tone is not evidence that a claim is true. |
 | 5 | 1 | B | Constitutional AI uses principles to guide behavior toward safer, more helpful responses. |
@@ -738,7 +738,7 @@ Course: https://academy.claude.com/courses/claude-101
 | 7 | 1 | A | Context windows are finite and model/feature-dependent. |
 | 8 | 1 | C | Tool choice should fit the task, workflow, and permissions. |
 | 9 | 2 | B | Add the audience, launch date, constraints, owners, risks, and specific deliverables to the prompt. |
-| 10 | 2 | D | State Google Cloud and the relevant architecture constraints explicitly, then verify the revised answer uses them. |
+| 10 | 2 | D | State Google Cloud and relevant architecture constraints explicitly, then verify the revised answer uses them. |
 | 11 | 2 | A | Specify the schema and allowed fields, require JSON only, then parse and validate it in code. |
 | 12 | 2 | C | Refine the prompt based on the mismatch rather than merely repeating it. |
 | 13 | 2 | B | Format instructions reduce ambiguity about the expected structure. |
