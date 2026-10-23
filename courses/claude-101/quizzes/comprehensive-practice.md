@@ -126,7 +126,7 @@ Course: https://academy.claude.com/courses/claude-101
 - C. Give it all permissions
 - D. Disable logging
 
-### Q16. [Lesson 5] What are Projects useful for?
+### Q16. [Lesson 5] A team has several ongoing chats about the same product and wants reusable project-wide guidance. Which feature best fits?
 
 - A. Replacing every chat with a permanent record
 - B. Granting access to all files
@@ -168,21 +168,21 @@ Course: https://academy.claude.com/courses/claude-101
 - C. Add unrelated features
 - D. Ask the model to guarantee it
 
-### Q22. [Lesson 7] What is a Skill intended to provide?
+### Q22. [Lesson 7] Which is the main purpose of a Skill in a repeated business process?
 
 - A. A new permanent model
 - B. Unrestricted account access
 - C. Reusable instructions and knowledge for a task or workflow
 - D. A guarantee of accuracy
 
-### Q23. [Lesson 7] What makes a Skill more reliable?
+### Q23. [Lesson 7] Which set of practices usually improves a Skill's consistency over time?
 
 - A. Clear scope, relevant instructions, examples, and testing
 - B. Ambiguous instructions
 - C. No ownership
 - D. Conflicts with policies
 
-### Q24. [Lesson 8] What does a connector generally enable?
+### Q24. [Lesson 8] A team wants Claude to retrieve CRM details while respecting account permissions. What can a connector provide?
 
 - A. Unlimited access to company data
 - B. An automatic copy of every system
